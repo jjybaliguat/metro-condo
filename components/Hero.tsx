@@ -2,13 +2,8 @@
 import React from 'react'
 import CustomButton from './CustomButton'
 import Image from 'next/image'
-import Css from 'csstype'
 
-type HeroProps = {
-    styles: React.CSSProperties;
-}
-
-const Hero = (props: HeroProps) => {
+const Hero = () => {
     const handleScroll = () => {
         alert("This site is under development")
       }
