@@ -33,7 +33,11 @@
 }
 
 .custom-btn {
-  @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
+  @apply flex flex-row relative justify-center items-center py-3 px-5 outline-none;
+}
+
+.section-title {
+  @apply md:text-[2rem] text-[1rem] text-center font-bold;
 }
 /* END: General styles */
 
@@ -52,11 +56,11 @@
 }
 
 .hero__bg-container {
-  @apply h-screen w-full absolute;
+  @apply h-screen w-full bg-fixed;
 }
 
 .hero__black-overlay {
-  @apply absolute h-full w-full bg-black opacity-50 from-current z-10;
+  @apply absolute h-screen w-full z-10 bg-gradient-to-t from-[rgba(0,0,0,0.2)] to-[rgba(0,0,0,0.6)];
 }
 
 .hero__image {

@@ -3,7 +3,7 @@ import './globals.css'
 
 
 export const metadata = {
-  title: 'Metro Condo Living',
+  title: 'Residential | Metro Condo Living | Mandaluyong',
   description: 'Stunning condo unit in the metro.',
   icons: {
     icon: "/favicon.ico",

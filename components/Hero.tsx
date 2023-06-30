@@ -2,16 +2,22 @@
 import React from 'react'
 import CustomButton from './CustomButton'
 import Image from 'next/image'
+import Css from 'csstype'
 
-const Hero = () => {
+type HeroProps = {
+    styles: React.CSSProperties;
+}
+
+const Hero = (props: HeroProps) => {
     const handleScroll = () => {
         alert("This site is under development")
       }
 
   return (
-    <div className="hero">
+    <div className="hero bg-fixed bg-no-repeat bg-center bg-cover" 
+    style={{ backgroundImage: 'url("/condopic.jpg")'}}>
         <div className='hero__black-overlay' />
-        <div className='hero__bg-container'>
+        {/* <div className='hero__bg-container'>
             <div className="hero__image">
                 <Image
                     src="/condopic.jpg"
@@ -20,7 +26,7 @@ const Hero = () => {
                     className='xs:object-contain'
                 />
             </div>
-        </div>
+        </div> */}
         <div className="absolute flex-1 pt-36 padding-x z-20">
             <h1 className="hero__title">
                 METRO CONDO LIVING

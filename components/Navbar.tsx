@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import CustomButton from './CustomButton'
 import { usePathname } from 'next/navigation'
@@ -30,44 +30,59 @@ const NavLinks = [
 
 const Navbar = () => {
   const pathname = usePathname()
+  const [showMenu, setShowMenu] = useState(false)
+
+  const toggleMenu = () => setShowMenu(!showMenu)
 
   return (
-    <header className='w-full absolute z-30 bg-white'>
+    <header className='w-full sticky top-0 z-50 bg-white shadow-sm'>
         <nav className='max-w-[1440px] h-[70px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4'>
             <Link
                 href="/"
-                className=''
+                className='flex items-center text-[14px]'
             >
-                METRO CONDO LIVING
+                <Image
+                  src="/logo.png"
+                  alt="logo"
+                  height={50}
+                  width={50}
+                  className='object-contain'
+                />
+                <span>METRO CONDO LIVING</span>
             </Link>
-            <div className='lg:flex gap-10 hidden'>
+            <div className={`flex md:flex-row flex-col md:gap-10 gap-5 absolute md:static duration-500 
+            md:min-h-fit left-0 md:w-auto w-full items-center px-5 z-30
+            py-10 md:py-3
+            ${showMenu ? 'top-[70px] bg-white' : 'top-[-1000px]'}`}>
               {
                 NavLinks.map((item, index)=>(
                   <Link
                     key={index}
-                    className={pathname === item.href ? `text-primary font-bold` : ''}
+                    className={pathname === item.href ? `text-primary font-bold` : 'hover:text-primary'}
                     href={item.href}
+                    onClick={toggleMenu}
                   >
                     {item.title}
                   </Link>
                 ))
               }
             </div>
-            <div className='flex-center gap-2'>
+            <div className='flex-center gap-0 md:gap-2'>
                 <CustomButton
                   title="Book Now"
-                  containerStyles='bg-primary text-white rounded-full hover:scale-105'
+                  containerStyles='bg-primary text-white rounded-full hover:scale-105 text-[11px]
+                   md:text-[1rem]'
                   handleClick={()=>alert("This site is under development")}
                 />
                 <CustomButton
                   title="Login"
-                  containerStyles='hidden lg:flex'
+                  containerStyles='text-[14px] md:text-[1rem]'
                   handleClick={()=>alert("This site is under development")}
                 />
                 <Image
-                  className='flex lg:hidden cursor-pointer'
-                  onClick={()=>alert("this site is under development")}
-                  src="/menubar.svg"
+                  className='flex md:hidden cursor-pointer'
+                  onClick={toggleMenu}
+                  src={showMenu ? '/close.svg' : '/menubar.svg'}
                   alt="menubar"
                   height={30}
                   width={30}
