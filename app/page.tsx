@@ -1,5 +1,6 @@
+"use client"
 import { Hero, Section2 } from '@/components'
-import { PageWrapper } from '@/components/page-wrapper'
+import { PageWrapper } from '@/helpers/page-wrapper'
 
 export default function Home() {
   return (

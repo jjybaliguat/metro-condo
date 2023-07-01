@@ -1,4 +1,4 @@
-import { PageWrapper } from '@/components/page-wrapper'
+import { PageWrapper } from '@/helpers/page-wrapper'
 import React from 'react'
 
 const Projects = () => {
