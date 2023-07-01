@@ -4,12 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
-  scroll-behavior: smooth;
 }
 
 /* START: General styles */
@@ -49,7 +52,7 @@
 }
 
 .hero__title {
-  @apply 2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold;
+  @apply text-[2.5rem] md:text-[4rem] font-extrabold;
 }
 
 .hero__subtitle {

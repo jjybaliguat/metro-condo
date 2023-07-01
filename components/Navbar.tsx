@@ -4,6 +4,7 @@ import Link from 'next/link'
 import CustomButton from './CustomButton'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
+import {motion} from 'framer-motion'
 
 const NavLinks = [
   {
@@ -39,7 +40,7 @@ const Navbar = () => {
         <nav className='max-w-[1440px] h-[70px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4'>
             <Link
                 href="/"
-                className='flex items-center'
+                className='flex items-center text-[12px] md:text-[1rem]'
             >
                 <Image
                   src="/logo.png"
@@ -66,11 +67,17 @@ const Navbar = () => {
                   </Link>
                 ))
               }
+              <button
+                  className='flex md:hidden justify-center py-2 w-full border border-[3px] border-primary rounded-full hover:scale-105'
+                  onClick={()=>alert("This site is under development")}
+              >
+                Login
+              </button>
             </div>
             <div className='flex-center gap-2'>
                 <CustomButton
                   title="Book Now"
-                  containerStyles='bg-primary text-white rounded-full hover:scale-105'
+                  containerStyles='bg-primary text-[10px] md:text-[1rem] text-white rounded-full hover:scale-105'
                   handleClick={()=>alert("This site is under development")}
                 />
                 <button type="button" className='hidden md:flex py-3 px-5 outline-none'>

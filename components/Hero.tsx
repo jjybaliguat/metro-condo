@@ -3,11 +3,19 @@ import React from 'react'
 import CustomButton from './CustomButton'
 import Image from 'next/image'
 import { motion} from 'framer-motion'
+import Link from 'next/link'
 
 const Hero = () => {
-    const handleScroll = () => {
-        alert("This site is under development")
-      }
+
+    const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        e.preventDefault()
+        const href = e.currentTarget.href
+        const targetId = href.replace(/.*\#/, "");
+        const elem = document.getElementById(targetId)
+        elem?.scrollIntoView({
+            behavior: "smooth"
+        })
+    }
 
   return (
     <div className="hero bg-fixed bg-no-repeat bg-center bg-cover" 
@@ -36,16 +44,16 @@ const Hero = () => {
                 exit={{ opacity: 0, x: 75}}
                 transition= {{duration: 1, delay: 0.25}}
             >
-                <CustomButton
-                    title="Explore Condos"
-                    containerStyles="bg-primary text-white rounded-full mt-10 hover:scale-105"
-                    handleClick={handleScroll}
-                />
+                <Link href="#discover" onClick={handleScroll}>
+                    <CustomButton
+                        title="Explore Condos"
+                        containerStyles="bg-primary text-white rounded-full mt-10 hover:scale-105"
+                    />
+                </Link>
                 <CustomButton
                     title="Book Now"
                     containerStyles="border border-2 border-primary text-white rounded-full 
                     mt-10 hover:scale-105"
-                    handleClick={handleScroll}
                 />
             </motion.div>
       </div>

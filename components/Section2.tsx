@@ -19,7 +19,7 @@ const Section2 = () => {
 
   return (
     <div id="discover"
-        className='h-fit w-full py-6'
+        className='h-screen w-full py-6'
     >
        <div className='max-w-[1230px] h-full mx-auto'>
             <h1 className='section-title'>DISCOVER RESIDENTIAL PROPERTIES FOR SALE</h1>
@@ -48,7 +48,7 @@ const Section2 = () => {
                         ></iframe>
                     </motion.div>
                 <div
-                    className='flex md:flex-row flex-col'
+                    className='flex md:flex-row flex-col max-w-[90%]'
                 >
                         <RevealAnimate direction={-100}>
                             <Image
