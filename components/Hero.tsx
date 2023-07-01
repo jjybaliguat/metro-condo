@@ -1,7 +1,8 @@
 "use client"
-import React from 'react'
+import React, { useRef } from 'react'
 import CustomButton from './CustomButton'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 const Hero = () => {
     const handleScroll = () => {
@@ -29,7 +30,11 @@ const Hero = () => {
             <p className='hero__subtitle'>
                 Discover Luxurious Living: Your Dream Condo Awaits!
             </p>
-            <div className='flex gap-2'>
+            <motion.div className='flex gap-2'
+                initial= {{ opacity: 0, x: 20}}
+                animate={{opacity: 1, x: 0, transition: { delay: 0.9}}}
+                exit={{ opacity: 0, x: 20}}
+            >
                 <CustomButton
                     title="Explore Condos"
                     containerStyles="bg-primary text-white rounded-full mt-10 hover:scale-105"
@@ -41,7 +46,7 @@ const Hero = () => {
                     mt-10 hover:scale-105"
                     handleClick={handleScroll}
                 />
-            </div>
+            </motion.div>
       </div>
     </div>
   )

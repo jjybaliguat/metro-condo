@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Section2 = () => {
   return (
-    <div
+    <div id="discover"
         className='h-fit w-full py-6'
     >
        <div className='max-w-[1230px] h-full mx-auto'>

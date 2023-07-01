@@ -39,7 +39,7 @@ const Navbar = () => {
         <nav className='max-w-[1440px] h-[70px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4'>
             <Link
                 href="/"
-                className='flex items-center text-[14px]'
+                className='flex items-center'
             >
                 <Image
                   src="/logo.png"
@@ -67,25 +67,22 @@ const Navbar = () => {
                 ))
               }
             </div>
-            <div className='flex-center gap-0 md:gap-2'>
+            <div className='flex-center gap-2'>
                 <CustomButton
                   title="Book Now"
-                  containerStyles='bg-primary text-white rounded-full hover:scale-105 text-[11px]
-                   md:text-[1rem]'
+                  containerStyles='bg-primary text-white rounded-full hover:scale-105'
                   handleClick={()=>alert("This site is under development")}
                 />
-                <CustomButton
-                  title="Login"
-                  containerStyles='text-[14px] md:text-[1rem]'
-                  handleClick={()=>alert("This site is under development")}
-                />
+                <button type="button" className='hidden md:flex py-3 px-5 outline-none'>
+                  Login
+                </button>
                 <Image
                   className='flex md:hidden cursor-pointer'
                   onClick={toggleMenu}
                   src={showMenu ? '/close.svg' : '/menubar.svg'}
                   alt="menubar"
-                  height={30}
-                  width={30}
+                  height={35}
+                  width={35}
                 />
             </div>
         </nav>
