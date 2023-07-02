@@ -19,7 +19,7 @@ const Section2 = () => {
 
   return (
     <div id="discover"
-        className='h-screen w-full py-6'
+        className='h-full w-full py-6'
     >
        <div className='max-w-[1230px] h-full mx-auto'>
             <h1 className='section-title'>DISCOVER RESIDENTIAL PROPERTIES FOR SALE</h1>
