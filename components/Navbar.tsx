@@ -5,6 +5,7 @@ import CustomButton from './CustomButton'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import {motion} from 'framer-motion'
+import Avatar from './Avatar'
 
 const NavLinks = [
   {
@@ -83,6 +84,11 @@ const Navbar = () => {
                 <button type="button" className='hidden md:flex py-3 px-5 outline-none'>
                   Login
                 </button>
+                <Avatar
+                  size="small"
+                  img='/mypic.jpg'
+                  style='border border-2 border-primary cursor-pointer'
+                />
                 <Image
                   className='flex md:hidden cursor-pointer'
                   onClick={toggleMenu}
