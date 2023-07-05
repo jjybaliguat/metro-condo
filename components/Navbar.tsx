@@ -1,11 +1,13 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import CustomButton from './CustomButton'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import {motion} from 'framer-motion'
 import Avatar from './Avatar'
+import { signInWithPopup } from 'firebase/auth'
+import { auth, provider } from '@/lib/firebase'
 
 const NavLinks = [
   {
@@ -31,10 +33,36 @@ const NavLinks = [
 ]
 
 const Navbar = () => {
+  const [user, setUser] = useState(
+    {
+      name: '',
+      email: '',
+      photoUrl: '',
+    }
+  )
   const pathname = usePathname()
   const [showMenu, setShowMenu] = useState(false)
 
   const toggleMenu = () => setShowMenu(!showMenu)
+
+  const handleSignIn = async() => {
+    try {
+      const data = await signInWithPopup(auth, provider)
+        if(data.user){
+          setUser({
+          name: data.user.displayName,
+          email: data.user.email,
+          photoUrl: data.user.photoURL,
+        })
+      }
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  useEffect(()=> {
+    localStorage.setItem("user", user)
+  }, [user])
 
   return (
     <header className='w-full sticky top-0 z-50 bg-white shadow-sm'>
@@ -68,12 +96,15 @@ const Navbar = () => {
                   </Link>
                 ))
               }
+              {!user && (
               <button
                   className='flex md:hidden justify-center py-2 w-full border border-[3px] border-primary rounded-full hover:scale-105'
-                  onClick={()=>alert("This site is under development")}
+                  onClick={handleSignIn}
               >
-                Login
+                Signin
               </button>
+              )
+              }
             </div>
             <div className='flex-center gap-2'>
                 <CustomButton
@@ -81,14 +112,24 @@ const Navbar = () => {
                   containerStyles='bg-primary text-[10px] md:text-[1rem] text-white rounded-full hover:scale-105'
                   handleClick={()=>alert("This site is under development")}
                 />
-                <button type="button" className='hidden md:flex py-3 px-5 outline-none'>
-                  Login
-                </button>
-                <Avatar
-                  size="small"
-                  img='/mypic.jpg'
-                  style='border border-2 border-primary cursor-pointer'
-                />
+                {
+                  !user && (
+                    <button type="button"
+                    onClick={handleSignIn}
+                    className='hidden md:flex py-3 px-5 outline-none'>
+                      Signin
+                    </button>
+                  )
+                }
+                {
+                  user && (
+                    <Avatar
+                      size="small"
+                      // img='/mypic.jpg'
+                      style='cursor-pointer'
+                    />
+                  )
+                }
                 <Image
                   className='flex md:hidden cursor-pointer'
                   onClick={toggleMenu}
