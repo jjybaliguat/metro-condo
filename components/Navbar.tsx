@@ -33,13 +33,13 @@ const NavLinks = [
 ]
 
 const Navbar = () => {
-  const [user, setUser] = useState(
-    {
-      name: '',
-      email: '',
-      photoUrl: '',
-    }
-  )
+  // const [user, setUser] = useState(
+  //   {
+  //     name: '',
+  //     email: '',
+  //     photoUrl: '',
+  //   }
+  // )
   const pathname = usePathname()
   const [showMenu, setShowMenu] = useState(false)
 
@@ -48,21 +48,16 @@ const Navbar = () => {
   const handleSignIn = async() => {
     try {
       const data = await signInWithPopup(auth, provider)
-        if(data.user){
-          setUser({
-          name: data.user.displayName,
-          email: data.user.email,
-          photoUrl: data.user.photoURL,
-        })
-      }
+      console.log(data.user);
+      
     } catch (error) {
       console.log(error)
     }
   }
 
-  useEffect(()=> {
-    localStorage.setItem("user", user)
-  }, [user])
+  // useEffect(()=> {
+  //   localStorage.setItem("user", user)
+  // }, [user])
 
   return (
     <header className='w-full sticky top-0 z-50 bg-white shadow-sm'>
