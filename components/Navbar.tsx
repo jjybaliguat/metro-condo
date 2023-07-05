@@ -91,15 +91,15 @@ const Navbar = () => {
                   </Link>
                 ))
               }
-              {!user && (
+              {/* {!user && ( */}
               <button
                   className='flex md:hidden justify-center py-2 w-full border border-[3px] border-primary rounded-full hover:scale-105'
                   onClick={handleSignIn}
               >
                 Signin
               </button>
-              )
-              }
+              {/* )
+              } */}
             </div>
             <div className='flex-center gap-2'>
                 <CustomButton
@@ -107,24 +107,24 @@ const Navbar = () => {
                   containerStyles='bg-primary text-[10px] md:text-[1rem] text-white rounded-full hover:scale-105'
                   handleClick={()=>alert("This site is under development")}
                 />
-                {
-                  !user && (
+                {/* {
+                  !user && ( */}
                     <button type="button"
                     onClick={handleSignIn}
                     className='hidden md:flex py-3 px-5 outline-none'>
                       Signin
                     </button>
-                  )
+                  {/* )
                 }
                 {
-                  user && (
+                  user && ( */}
                     <Avatar
                       size="small"
                       // img='/mypic.jpg'
                       style='cursor-pointer'
                     />
-                  )
-                }
+                  {/* )
+                } */}
                 <Image
                   className='flex md:hidden cursor-pointer'
                   onClick={toggleMenu}
