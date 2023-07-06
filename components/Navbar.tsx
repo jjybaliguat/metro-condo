@@ -118,11 +118,11 @@ const Navbar = () => {
                 }
                 {
                   user && ( */}
-                    <Avatar
+                    {/* <Avatar
                       size="small"
                       // img='/mypic.jpg'
                       style='cursor-pointer'
-                    />
+                    /> */}
                   {/* )
                 } */}
                 <Image

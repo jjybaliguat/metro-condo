@@ -82,7 +82,7 @@ html {
 /* Catalog Section */
 
 .catalog{
-  @apply relative h-fit min-h-screen bg-white w-full py-5;
+  @apply relative h-fit bg-white w-full pt-[1rem] pb-[1rem];
 }
 
 .condo-description{
