@@ -1,13 +1,13 @@
 import Navbar from "./Navbar"
 import Hero from "./Hero"
-import Section2 from "./Section2"
+import Section3 from "./Section3"
 import Footer from "./Footer"
 import CondoCatalog from "./CondoCatalog"
 
 export {
     Navbar,
     Hero,
-    Section2,
+    Section3,
     Footer,
     CondoCatalog
 }

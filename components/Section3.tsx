@@ -5,7 +5,7 @@ import Image from 'next/image'
 import RevealAnimate from '@/helpers/reveal-animate'
 import {motion, useAnimation, useInView} from "framer-motion"
 
-const Section2 = () => {
+const Section3 = () => {
     const ref = useRef(null)
     const isInView = useInView(ref, {once: true})
 
@@ -19,10 +19,10 @@ const Section2 = () => {
 
   return (
     <div id="discover"
-        className='h-full w-full py-6'
+        className='h-fit pb-[5rem] w-full py-6 bg-secondary'
     >
        <div className='max-w-[1230px] h-full mx-auto'>
-            <h1 className='section-title'>DISCOVER RESIDENTIAL PROPERTIES FOR SALE</h1>
+            <h1 className='section-title text-white'>DISCOVER RESIDENTIAL PROPERTIES FOR RENT/SALE</h1>
             
             <div className='flex flex-col md:flex-row items-center md:gap-10 gap-5 mt-9'>
                     <motion.div ref={ref}
@@ -73,4 +73,4 @@ const Section2 = () => {
   )
 }
 
-export default Section2
+export default Section3

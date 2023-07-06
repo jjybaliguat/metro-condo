@@ -10,7 +10,7 @@ const CondoCatalog = () => {
   const toggleViewAll = () => setViewAll(!viewAll)
 
   return (
-    <div className='catalog'>
+    <div className='catalog' id="explore">
       <div className='absolute top-[-90px] mx-auto h-[100px] w-full
       bg-gradient-to-b from-[transparent] to-[rgb(255,255,255)]
       ' />

@@ -56,9 +56,10 @@ const Hero = () => {
         e.preventDefault()
         const href = e.currentTarget.href
         const targetId = href.replace(/.*\#/, "");
-        const elem = document.getElementById(targetId)
+        const elem = document.getElementById(targetId);
         elem?.scrollIntoView({
-            behavior: "smooth"
+            behavior: "smooth",
+            block: 'start'
         })
     }
 
@@ -135,7 +136,7 @@ const Hero = () => {
                 exit={{ opacity: 0, x: 75}}
                 transition= {{duration: 1, delay: 0.25}}
             >
-                <Link href="#discover" onClick={handleScroll}>
+                <Link href="#explore" onClick={handleScroll}>
                     <CustomButton
                         title="Explore Condos"
                         containerStyles="bg-primary text-white rounded-full mt-10 hover:scale-105"

@@ -1,5 +1,5 @@
 "use client"
-import { CondoCatalog, Footer, Hero, Section2 } from '@/components'
+import { CondoCatalog, Footer, Hero, Section3 } from '@/components'
 import CustomButton from '@/components/CustomButton'
 import { PageWrapper } from '@/helpers/page-wrapper'
 import Link from 'next/link'
@@ -10,7 +10,7 @@ export default function Home() {
       <main className="relative overflow-hidden">
         <Hero />
         <CondoCatalog />
-        {/* <Section2 /> */}
+        <Section3 />
         <Footer />
         <Link
             href="tel:+639979112814"
