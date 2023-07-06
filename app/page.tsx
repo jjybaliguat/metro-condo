@@ -1,5 +1,5 @@
 "use client"
-import { Footer, Hero, Section2 } from '@/components'
+import { CondoCatalog, Footer, Hero, Section2 } from '@/components'
 import { PageWrapper } from '@/helpers/page-wrapper'
 
 export default function Home() {
@@ -7,7 +7,8 @@ export default function Home() {
     <PageWrapper>
       <main className="overflow-hidden">
         <Hero />
-        <Section2 />
+        <CondoCatalog />
+        {/* <Section2 /> */}
         <Footer />
       </main>
     </PageWrapper>
