@@ -54,7 +54,7 @@ const CondoCard = ({
             <p>Starting from</p>
             <p className='text-[red] font-bold'>{price}</p>
         </div>
-        <Link href={`/residence/${link}`}>
+        <Link href={link}>
             <CustomButton
                 title="Learn More"
                 containerStyles='rounded-full bg-secondary text-white text-[12px]'

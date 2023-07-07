@@ -159,7 +159,7 @@ const Hero = () => {
                     smooth={true} 
                     offset={-70} 
                     duration={500} 
-                    delay={500}
+                    delay={100}
                   >
                     <CustomButton
                         title="Explore Condos"
