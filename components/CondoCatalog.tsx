@@ -51,7 +51,7 @@ const CondoCatalog = () => {
                             location={item.location}
                             description={item.description}
                             price={item.price}
-                            img={item.img}
+                            img={item.img[0]}
                             link={item.link}
                         />
                     ))
@@ -62,7 +62,7 @@ const CondoCatalog = () => {
                             location={item.location}
                             description={item.description}
                             price={item.price}
-                            img={item.img}
+                            img={item.img[0]}
                             link={item.link}
                         />
                   ))

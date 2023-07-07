@@ -44,16 +44,16 @@ const Contact = () => {
             <div className="flex flex-col-reverse md:flex-row items-center gap-5 mx-auto w-full max-w-[90vw] mt-5">
                 {/* Location Section */}
                 <div className='flex flex-col gap-5 md:w-[35%] w-[90%] bg-[#e8e8e8] shadow-lg p-6 rounded-lg'>
-                    <div className='flex flex-row items-center gap-5'>
+                    <div className='flex md:flex-row flex-col md:items-center md:gap-5 gap-1'>
                         <div className='h-[2rem] w-[2rem] rounded-full bg-primary p-1'>
                             <MapPinIcon className="h-full w-full text-white" />
                         </div>
                         <div className="flex flex-col gap-2">
                             <h1 className='font-medium text-[2rem]'>Location</h1>
-                            <h1 className='text-[1rem]'>Some location...</h1>
+                            <h1 className='text-[1rem]'>632 Shaw Blvd, Mandaluyong, 1550 Metro Manila</h1>
                         </div>
                     </div>
-                    <div className='flex flex-row items-center gap-5'>
+                    <div className='flex md:flex-row flex-col md:items-center md:gap-5 gap-1'>
                         <div className='h-[2rem] w-[2rem] rounded-full bg-primary p-1'>
                             <EnvelopeIcon className="h-6 w-6 text-white" />
                         </div>
@@ -62,7 +62,7 @@ const Contact = () => {
                             <h1 className='text-[1rem]'>metrocondolifestyle@gmail.com</h1>
                         </div>
                     </div>
-                    <div className='flex flex-row items-center gap-5'>
+                    <div className='flex md:flex-row flex-col md:items-center md:gap-5 gap-1'>
                         <div className='h-[2rem] w-[2rem] rounded-full bg-primary p-1'>
                             <PhoneIcon className="h-6 w-6 text-white" />
                         </div>
@@ -74,9 +74,9 @@ const Contact = () => {
                     <div
                         className='h-[12rem] w-full'
                     >
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1930.691967493682!2d121.05141643404379!3d14.57718539960508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9ea6617a3f9%3A0xfd9a22b17a0b4a75!2sFame%20Residences%20Tower%202!5e0!3m2!1sfil!2sph!4v1688712870496!5m2!1sfil!2sph"  
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.26888778488!2d121.04789967400892!3d14.583748277491235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8394a420d2d%3A0x254aa51e3ad54dff!2s632%20Bulebar%20Shaw%2C%20Mandaluyong%2C%201552%20Kalakhang%20Maynila!5e0!3m2!1sfil!2sph!4v1688742256504!5m2!1sfil!2sph" 
+                        allowFullScreen={false}
                         style={{border:0, width: "100%", height: "100%"}}
-                        allowFullScreen={false} 
                         loading="lazy" 
                         referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
