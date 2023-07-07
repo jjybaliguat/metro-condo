@@ -4,6 +4,7 @@ import CustomButton from './CustomButton'
 import Image from 'next/image'
 import { AnimatePresence, motion} from 'framer-motion'
 import Link from 'next/link'
+import SelectPropertyType from './SelectPropertyType'
 
 const images = [
     "/condoimage2.jpg",
@@ -36,6 +37,7 @@ const variants = {
 
 const Hero = () => {
     const [index, setIndex] = useState(0)
+    const [propertyType, setPropertytype] = useState('')
 
     const forWardImage = () => {
         if(index == (images.length - 1)){

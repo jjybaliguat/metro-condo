@@ -8,9 +8,9 @@ const CustomButton = ({title, containerStyles, textStyles, isDisabled, rightIcon
     
   return (
     <button
-        disabled={false}
+        disabled={isDisabled}
         type={btnType || "button"}
-        className={`custom-btn ${containerStyles}`}
+        className={`custom-btn ${containerStyles} ${isDisabled ? 'opacity-[0.6] cursor-not-allowed' : ''}`}
         onClick={handleClick}
     >
         <span className={`flex-1 ${textStyles}`}>
