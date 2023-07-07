@@ -4,7 +4,8 @@ import CustomButton from './CustomButton'
 import Image from 'next/image'
 import { AnimatePresence, motion} from 'framer-motion'
 import Link from 'next/link'
-import SelectPropertyType from './SelectPropertyType'
+import {Link as LinkS} from 'react-scroll'
+import { styled } from 'styled-components'
 
 const images = [
     "/condoimage2.jpg",
@@ -19,6 +20,19 @@ const images = [
 //     "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg?auto=compress&cs=tinysrgb&w=600",
 //     "https://images.pexels.com/photos/6301168/pexels-photo-6301168.jpeg?auto=compress&cs=tinysrgb&w=600",
 // ]
+
+const CustomLink = styled(LinkS)`
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &.active{
+    color: #b29c5b;
+    font-weight: bold;
+  }
+  &.hover{
+    color: #b29c5b;
+  }
+`
 
 const variants = {
     hidden: {
@@ -70,6 +84,7 @@ const Hero = () => {
     <motion.div 
     className="hero bg-fixed bg-no-repeat bg-center bg-cover"
     style={{backgroundImage: `url("${images[index]}")`}}
+    id='home'
     >
         {/* <div className="image-slideshow">
             <AnimatePresence initial={false}>
@@ -138,17 +153,24 @@ const Hero = () => {
                 exit={{ opacity: 0, x: 75}}
                 transition= {{duration: 1, delay: 0.25}}
             >
-                <Link href="#explore" onClick={handleScroll}>
+                <CustomLink
+                    to="catalog"
+                    spy={true} 
+                    smooth={true} 
+                    offset={-70} 
+                    duration={500} 
+                    delay={500}
+                  >
                     <CustomButton
                         title="Explore Condos"
                         containerStyles="bg-primary text-white rounded-full mt-10 hover:scale-105"
                     />
-                </Link>
-                <CustomButton
-                    title="Book Now"
-                    containerStyles="border border-2 border-primary text-white rounded-full 
-                    mt-10 hover:scale-105"
-                />
+                </CustomLink>
+                    <CustomButton
+                        title="Book Now"
+                        containerStyles="border border-2 border-primary text-white rounded-full 
+                        mt-10 hover:scale-105"
+                    />
             </motion.div>
       </div>
     </motion.div>

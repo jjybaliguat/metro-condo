@@ -17,9 +17,12 @@ module.exports = {
         "black-100": "#2B2C35",
         "primary": {
           DEFAULT: "#b29c5b",
-          100: "#F5F8FF",
+          100: "#e6ddc8",
         },
-        "secondary": "#696969",
+        "secondary": {
+          DEFAULT: "#696969",
+          100: "#b0aeae"
+        },
         "light-white": {
           DEFAULT: "rgba(59,60,152,0.03)",
           100: "rgba(59,60,152,0.02)",

@@ -18,7 +18,7 @@ const CondoCatalog = () => {
       isOpen={open}
       closeModal={()=>setOpen(false)}
     />
-    <div className='catalog' id="explore">
+    <div className='catalog' id="catalog">
       <div className='absolute top-[-90px] mx-auto h-[100px] w-full
       bg-gradient-to-b from-[transparent] to-[rgb(255,255,255)]
       ' />

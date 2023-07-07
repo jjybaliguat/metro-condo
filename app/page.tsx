@@ -1,5 +1,5 @@
 "use client"
-import { CondoCatalog, Footer, Hero, Section3 } from '@/components'
+import { CondoCatalog, Contact, Faqs, Footer, Hero, Section3 } from '@/components'
 import CustomButton from '@/components/CustomButton'
 import { PageWrapper } from '@/helpers/page-wrapper'
 import Link from 'next/link'
@@ -11,10 +11,12 @@ export default function Home() {
         <Hero />
         <CondoCatalog />
         <Section3 />
-        <Footer />
+        <Faqs />
+        <Contact />
         <Link
-            href="tel:+639979112814"
+            href="tel: 09979112814"
             className='fixed top-0 right-[1rem] z-50 mt-[70px]'
+            passHref
         >
             <CustomButton
                 title='Call Us Now'

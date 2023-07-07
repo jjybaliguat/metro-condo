@@ -41,7 +41,7 @@ html {
 }
 
 .section-title {
-  @apply md:text-[2rem] text-[1rem] text-center font-bold;
+  @apply md:text-[2rem] text-[1.5rem] text-center font-bold;
 }
 /* END: General styles */
 

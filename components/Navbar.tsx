@@ -8,6 +8,8 @@ import {motion} from 'framer-motion'
 import Avatar from './Avatar'
 import { signInWithPopup } from 'firebase/auth'
 import { auth, provider } from '@/lib/firebase'
+import {Link as LinkS} from 'react-scroll'
+import { styled } from 'styled-components'
 
 const NavLinks = [
   {
@@ -31,6 +33,19 @@ const NavLinks = [
     href: "/contact",
   },
 ]
+
+const CustomLink = styled(LinkS)`
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &.active{
+    color: #b29c5b;
+    font-weight: bold;
+  }
+  &.hover{
+    color: #b29c5b;
+  }
+`
 
 const Navbar = () => {
   // const [user, setUser] = useState(
@@ -60,7 +75,7 @@ const Navbar = () => {
   // }, [user])
 
   return (
-    <header className='w-full sticky top-0 z-50 bg-white shadow-sm'>
+    <header className='w-full sticky top-0 z-50 bg-white shadow-lg'>
         <nav className='max-w-[1440px] h-[70px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4'>
             <Link
                 href="/"
