@@ -4,6 +4,10 @@ import SideBar from '@/components/SideBar'
 import { PageWrapper } from '@/helpers/page-wrapper'
 import { CondoLocations } from '@/lib/contents/condo-locations'
 import React, { useEffect, useState } from 'react'
+import { MapPinIcon } from "@heroicons/react/24/solid";
+import Select from '@/components/Select'
+import { CubeIcon } from "@heroicons/react/24/solid";
+
 
 const page = ({
     params
@@ -13,11 +17,23 @@ const page = ({
 
     const [residence, setResidence] = useState<any | null>()
     const [openMenu, setOpenMenu] = useState(false)
+    const [units, setUnits] = useState<any | null>()
+    const [unitOptions, setUnitOptions] = useState([])
+
+    // useEffect(()=> {
+    //     let options = []
+    //     residence?.units.map((item: { name: string })=>{
+    //         options.push(item.name)
+    //     })
+    //     setUnitOptions(options)
+        
+    // }, [units])
 
     useEffect(()=>{
         const res = CondoLocations.find((item)=>item.link === `/residence/${params.residenceName}`)
         if(res){
             setResidence(res)
+            setUnits(res.units)
         }else{
             setResidence(null)
         }
@@ -71,6 +87,155 @@ const page = ({
               </div>
           </div>
           {/* End Main Site Description */}
+          <div className='flex flex-col gap-10 mx-auto w-[90vw] h-fit py-10'>
+            {/* Location */}
+            <div id="location" className="flex md:flex-row flex-col gap-5 p-5 bg-white rounded-[15px] shadow-lg">
+                <div className='flex md:flex-row flex-col gap-5 md:w-[50%] w-[100%]'>
+                    <MapPinIcon className="h-8 w-8 text-black" />
+                    <div className='flex flex-col gap-5'>
+                        <h1 className='md:text-[2rem] text-[1.5rem] font-bold'>LOCATION</h1>
+                        <h1>{residence.address}</h1>
+                    </div>
+                </div>
+                <div className='md:h-[400px] h-[250px] md:w-[50%] w-[100%]'>
+                    <iframe src={residence.embedLink}
+                    className='h-full w-full'
+                    width="600" 
+                    height="450" 
+                    allowFullScreen={true} 
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            {/* End Location */}
+            {/* 5 Star Amenities */}
+            <div id="amenities" className="flex md:flex-row flex-col gap-5 p-5 bg-white rounded-[15px] shadow-lg">
+                <img className="h-12 w-12" src='/amenitiesicon.png' />
+                <div className='flex flex-col gap-5'>
+                    <h1 className='md:text-[2rem] text-[1.5rem] font-bold'>5 STAR AMENITIES</h1>
+                    {residence?.amenities?.map((item: string, index: React.Key | null | undefined)=>(
+                        <h1
+                        key={index}
+                        className='mt-3'
+                        >{item}</h1>
+                    ))}
+                </div>
+            </div>
+            {/* End 5 Star Amenities */}
+            {/* Site Plan*/}
+            <div id="site-plan" className="flex md:flex-row flex-col gap-5 p-5 bg-white rounded-[15px] shadow-lg">
+                <img className="h-10 w-10 text-black" src='/site-plan-icon.png' />
+                <div className='flex flex-col gap-5'>
+                    <h1 className='md:text-[2rem] text-[1.5rem] font-bold'>SITE DEVELOPMENT PLAN</h1>
+                    <div className='flex flex-col md:flex-row gap-3'>
+                        <div className="md:w-[50%] w-[100%]">
+                            {residence?.sitePlan?.descriptions?.map((item: string, index: React.Key | null | undefined)=>(
+                                <h1
+                                key={index}
+                                className='mt-3'
+                                >{item}</h1>
+                            ))}
+                        </div>
+                        <div className="md:w-[50%] w-[100%] md:h-[400px] h-[250px]">
+                            <img src={residence.sitePlan?.img} 
+                                className='w-full h-full'
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* End Site Plan */}
+            {/* Unit Layout */}
+            <div id="layout" className="flex md:flex-row flex-col gap-5 p-5 bg-white rounded-[15px] shadow-lg">
+                <img className="h-10 w-10 text-black" src='/site-plan-icon.png' />
+                <div className='flex flex-col gap-5'>
+                    <div className='flex flex-row items-center gap-2'>
+                        <h1 className='md:text-[2rem] text-[1.5rem] font-bold'>UNIT LAYOUT</h1>
+                        {/* <Select 
+                            options={unitOptions}
+                            selected={unitOptions?.name}
+                            handleSelect={}
+                        /> */}
+                    </div>
+                    {/* <div className='flex flex-col md:flex-row gap-3'>
+                        <div className="md:w-[50%] w-[100%]">
+                            {residence?.sitePlan?.descriptions?.map((item: string, index: React.Key | null | undefined)=>(
+                                <h1
+                                key={index}
+                                className='mt-3'
+                                >{item}</h1>
+                            ))}
+                        </div>
+                        <div className="md:w-[50%] w-[100%] md:h-[400px] h-[250px]">
+                            <img src={residence.sitePlan?.img} 
+                                className='w-full h-full'
+                            />
+                        </div>
+                    </div> */}
+                </div>
+            </div>
+            {/* End Unit Layout */}
+            {/* 3D Visualization */}
+            <div id="3d-visualization" className="flex md:flex-row flex-col gap-5 p-5 bg-white rounded-[15px] shadow-lg">
+                <CubeIcon className="h-10 w-10 text-black" />
+                <div className='flex flex-col gap-5'>
+                    <div className='flex flex-row items-center gap-2'>
+                        <h1 className='md:text-[2rem] text-[1.5rem] font-bold'>3D VISUALIZATION</h1>
+                        {/* <Select 
+                            options={unitOptions}
+                            selected={unitOptions?.name}
+                            handleSelect={}
+                        /> */}
+                    </div>
+                    {/* <div className='flex flex-col md:flex-row gap-3'>
+                        <div className="md:w-[50%] w-[100%]">
+                            {residence?.sitePlan?.descriptions?.map((item: string, index: React.Key | null | undefined)=>(
+                                <h1
+                                key={index}
+                                className='mt-3'
+                                >{item}</h1>
+                            ))}
+                        </div>
+                        <div className="md:w-[50%] w-[100%] md:h-[400px] h-[250px]">
+                            <img src={residence.sitePlan?.img} 
+                                className='w-full h-full'
+                            />
+                        </div>
+                    </div> */}
+                </div>
+            </div>
+            {/* End 3D Visualization */}
+            {/* Schematic */}
+            <div id="schematic" className="flex md:flex-row flex-col gap-5 p-5 bg-white rounded-[15px] shadow-lg">
+                <CubeIcon className="h-10 w-10 text-black" />
+                <div className='flex flex-col gap-5'>
+                    <div className='flex flex-row items-center gap-2'>
+                        <h1 className='md:text-[2rem] text-[1.5rem] font-bold'>SCHEMATIC</h1>
+                        {/* <Select 
+                            options={unitOptions}
+                            selected={unitOptions?.name}
+                            handleSelect={}
+                        /> */}
+                    </div>
+                    {/* <div className='flex flex-col md:flex-row gap-3'>
+                        <div className="md:w-[50%] w-[100%]">
+                            {residence?.sitePlan?.descriptions?.map((item: string, index: React.Key | null | undefined)=>(
+                                <h1
+                                key={index}
+                                className='mt-3'
+                                >{item}</h1>
+                            ))}
+                        </div>
+                        <div className="md:w-[50%] w-[100%] md:h-[400px] h-[250px]">
+                            <img src={residence.sitePlan?.img} 
+                                className='w-full h-full'
+                            />
+                        </div>
+                    </div> */}
+                </div>
+            </div>
+            {/* End Schematic */}
+          </div>
       </div>
       </PageWrapper>
     </>

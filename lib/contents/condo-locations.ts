@@ -8,7 +8,37 @@ export const CondoLocations = [
             "/empireeasthighland/empire-east-highland.jpg",
             "/empireeasthighland/city-2.jpg"
         ],
-        link: "/residence/empire-east-highland-city"
+        link: "/residence/empire-east-highland-city",
+        embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30889.48245032833!2d121.0876140428903!3d14.588514379773875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b9d4c926b2ed%3A0xf20d8b6e90a6a72b!2sEmpire%20East%20Highland%20City!5e0!3m2!1sfil!2sph!4v1688827263285!5m2!1sfil!2sph",
+        address: "Felix Avenue, Pasig City, and Cainta, Rizal boundary",
+        amenities: [
+            "Amenity 1",
+            "Amenity 2",
+            "Amenity 3",
+            "Amenity 4",
+            "Amenity 5",
+        ],
+        sitePlan: {
+            descriptions: [
+                "A community of 37 high-rise towers carefully designed to preserve privacy, safety, and luxury, Highland Residences await and fulfill aspiring homeowners’ dreams of the high life.",
+            ],
+            img: "/empireeasthighland/site-plan.png"
+        },
+        units: [
+            {
+                name: "Tower 1",
+                image: "",
+                units: [
+                    {
+                        name: "",
+                        area: "",
+                        price: ""
+                    },
+                ]
+            }
+        ],
+        visualization: "",
+        schematic: "",
     },
     {
         name: 'The Paddington Place',
@@ -18,7 +48,35 @@ export const CondoLocations = [
         img: [
             "/paddington-perspective.jpg",
         ],
-        link: "/residence/the-paddington-place"
+        link: "/residence/the-paddington-place",
+        embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.26888778488!2d121.04789967400892!3d14.583748277491235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8394a420d2d%3A0x254aa51e3ad54dff!2s632%20Bulebar%20Shaw%2C%20Mandaluyong%2C%201552%20Kalakhang%20Maynila!5e0!3m2!1sfil!2sph!4v1688826205319!5m2!1sfil!2sph",
+        address: "632 Shaw Blvd, Mandaluyong, 1550 Metro Manila",
+        amenities: [
+            "Amenity 1",
+            "Amenity 2",
+            "Amenity 3",
+            "Amenity 4",
+            "Amenity 5",
+        ],
+        sitePlan: {
+            descriptions: [""],
+            img: ""
+        },
+        units: [
+            {
+                name: "",
+                image: "",
+                units: [
+                    {
+                        name: "",
+                        area: "",
+                        price: ""
+                    },
+                ]
+            }
+        ],
+        visualization: "",
+        schematic: "",
     },
     {
         name: 'Kasara Urban Resort Residences',
@@ -28,7 +86,35 @@ export const CondoLocations = [
         img: [
             "/kasara.jpg",
         ],
-        link: "/residence/kasara-urban-resort-residences"
+        link: "/residence/kasara-urban-resort-residences",
+        embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30892.15514307917!2d121.06027014286583!3d14.569454484443263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c809dac27529%3A0x361493293fe2fc4f!2sKasara%20Urban%20Resort%20Residences!5e0!3m2!1sfil!2sph!4v1688827355490!5m2!1sfil!2sph",
+        address: "Eagle St. and P.E Antonio., Ugong, Pasig City. Walking distance from C-5 Road, Tiendesitas, SM Supercenter Pasig and Valle Verde Subdivisions.",
+        amenities: [
+            "Amenity 1",
+            "Amenity 2",
+            "Amenity 3",
+            "Amenity 4",
+            "Amenity 5",
+        ],
+        sitePlan: {
+            descriptions: [""],
+            img: ""
+        },
+        units: [
+            {
+                name: "",
+                image: "",
+                units: [
+                    {
+                        name: "",
+                        area: "",
+                        price: ""
+                    },
+                ]
+            }
+        ],
+        visualization: "",
+        schematic: "",
     },
     {
         name: 'Pioneer Woodlands',
@@ -38,7 +124,35 @@ export const CondoLocations = [
         img: [
             "/pioneer-woodlands.jpg",
         ],
-        link: "/residence/pioneer-woodlands"
+        link: "/residence/pioneer-woodlands",
+        embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.46980630942!2d121.0447695740087!3d14.572284977771496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c84506f1b82f%3A0x29b1e75196a3519f!2sEpifanio%20de%20los%20Santos%20Ave%20%26%20Pioneer%20St%2C%20Mandaluyong%2C%20Metro%20Manila!5e0!3m2!1sfil!2sph!4v1688827407163!5m2!1sfil!2sph",
+        address: "EDSA corner Pioneer St., Mandaluyong City",
+        amenities: [
+            "Amenity 1",
+            "Amenity 2",
+            "Amenity 3",
+            "Amenity 4",
+            "Amenity 5",
+        ],
+        sitePlan: {
+            descriptions: [""],
+            img: ""
+        },
+        units: [
+            {
+                name: "",
+                image: "",
+                units: [
+                    {
+                        name: "",
+                        area: "",
+                        price: ""
+                    },
+                ]
+            }
+        ],
+        visualization: "",
+        schematic: "",
     },
     {
         name: 'Covent Garden',
@@ -48,7 +162,35 @@ export const CondoLocations = [
         img: [
             "/covent-garden.jpg",
         ],
-        link: "/residence/covent-garden"
+        link: "/residence/covent-garden",
+        embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.9460552691694!2d121.00623187400926!3d14.60214887704093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9e4ec9b87a9%3A0x96ff6c492523d031!2sBulebar%20Magsaysay%2C%20Santa%20Mesa%2C%20Maynila%2C%20Kalakhang%20Maynila!5e0!3m2!1sfil!2sph!4v1688827445235!5m2!1sfil!2sph",
+        address: "Santol Extension-Magsaysay Boulevard, Sta. Mesa, Manila",
+        amenities: [
+            "Amenity 1",
+            "Amenity 2",
+            "Amenity 3",
+            "Amenity 4",
+            "Amenity 5",
+        ],
+        sitePlan: {
+            descriptions: [""],
+            img: ""
+        },
+        units: [
+            {
+                name: "",
+                image: "",
+                units: [
+                    {
+                        name: "",
+                        area: "",
+                        price: ""
+                    },
+                ]
+            }
+        ],
+        visualization: "",
+        schematic: "",
     },
     {
         name: 'The Rochester',
@@ -58,7 +200,35 @@ export const CondoLocations = [
         img: [
             "/the-rochester.jpg",
         ],
-        link: "/residence/the-rochester"
+        link: "/residence/the-rochester",
+        embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.8445078352247!2d121.07528357400824!3d14.550882978294153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c6299a193947%3A0x1081accea1bf1f76!2sElisco%20Road%2C%20Pasig%2C%20Kalakhang%20Maynila!5e0!3m2!1sfil!2sph!4v1688827489342!5m2!1sfil!2sph",
+        address: "Elisco Road, San Joaquin, Pasig City",
+        amenities: [
+            "Amenity 1",
+            "Amenity 2",
+            "Amenity 3",
+            "Amenity 4",
+            "Amenity 5",
+        ],
+        sitePlan: {
+            descriptions: [""],
+            img: ""
+        },
+        units: [
+            {
+                name: "",
+                image: "",
+                units: [
+                    {
+                        name: "",
+                        area: "",
+                        price: ""
+                    },
+                ]
+            }
+        ],
+        visualization: "",
+        schematic: "",
     },
     {
         name: 'San Lorenzo Place',
@@ -68,7 +238,35 @@ export const CondoLocations = [
         img: [
             "/san-lorenzo-place.jpg",
         ],
-        link: "/residence/san-lorenzo-place"
+        link: "/residence/san-lorenzo-place",
+        embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61791.951046140726!2d120.94624982167971!3d14.542167600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c93d8fe5c703%3A0x1e38613ba018b178!2sSan%20Lorenzo%20Place!5e0!3m2!1sfil!2sph!4v1688827529642!5m2!1sfil!2sph",
+        address: "EDSA cor. Chino Roces Ave., Makati City",
+        amenities: [
+            "Amenity 1",
+            "Amenity 2",
+            "Amenity 3",
+            "Amenity 4",
+            "Amenity 5",
+        ],
+        sitePlan: {
+            descriptions: [""],
+            img: ""
+        },
+        units: [
+            {
+                name: "",
+                image: "",
+                units: [
+                    {
+                        name: "",
+                        area: "",
+                        price: ""
+                    },
+                ]
+            }
+        ],
+        visualization: "",
+        schematic: "",
     },
     {
         name: 'Mango Tree Residence',
@@ -78,7 +276,35 @@ export const CondoLocations = [
         img: [
             "/mango-tree-residence.jpg",
         ],
-        link: "/residence/mango-tree-residence"
+        link: "/residence/mango-tree-residence",
+        embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.859722443119!2d121.03145077400929!3d14.607065776920509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7d4b6c1318d%3A0xc60eb565a12977dd!2sM.%20Paterno%20%26%20ledesma%2C%20San%20Juan%2C%20Metro%20Manila!5e0!3m2!1sfil!2sph!4v1688827577889!5m2!1sfil!2sph",
+        address: "M. Paterno St. cor. Ledesma St., San Juan City.",
+        amenities: [
+            "Amenity 1",
+            "Amenity 2",
+            "Amenity 3",
+            "Amenity 4",
+            "Amenity 5",
+        ],
+        sitePlan: {
+            descriptions: [""],
+            img: ""
+        },
+        units: [
+            {
+                name: "",
+                image: "",
+                units: [
+                    {
+                        name: "",
+                        area: "",
+                        price: ""
+                    },
+                ]
+            }
+        ],
+        visualization: "",
+        schematic: "",
     },
     {
         name: 'The Sonoma',
@@ -88,7 +314,35 @@ export const CondoLocations = [
         img: [
             "/the-sonoma.jpg",
         ],
-        link: "/residence/the-sonoma"
+        link: "/residence/the-sonoma",
+        embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3867.2777277950677!2d121.05869136999574!3d14.237014355417625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd7dfb24f8225d%3A0x4e3e83e3ae1da5a8!2sThe%20Sonoma%20Residences!5e0!3m2!1sfil!2sph!4v1688827639448!5m2!1sfil!2sph",
+        address: "Sonoma Blvd, Santa Rosa, Laguna",
+        amenities: [
+            "Amenity 1",
+            "Amenity 2",
+            "Amenity 3",
+            "Amenity 4",
+            "Amenity 5",
+        ],
+        sitePlan: {
+            descriptions: [""],
+            img: ""
+        },
+        units: [
+            {
+                name: "",
+                image: "",
+                units: [
+                    {
+                        name: "",
+                        area: "",
+                        price: ""
+                    },
+                ]
+            }
+        ],
+        visualization: "",
+        schematic: "",
     },
     {
         name: 'Cambridge Village',
@@ -98,6 +352,34 @@ export const CondoLocations = [
         img: [
             "/cambridge-village.jpg",
         ],
-        link: "/residence/cambridge-village"
+        link: "/residence/cambridge-village",
+        embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.506228613532!2d121.10569597400864!3d14.570205977822301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c7bdb7c133ff%3A0xb72413036b26dd74!2sCambridge%20Village!5e0!3m2!1sfil!2sph!4v1688827681679!5m2!1sfil!2sph",
+        address: "Cambridge St, Cainta, 1900 Rizal",
+        amenities: [
+            "Amenity 1",
+            "Amenity 2",
+            "Amenity 3",
+            "Amenity 4",
+            "Amenity 5",
+        ],
+        sitePlan: {
+            descriptions: [""],
+            img: ""
+        },
+        units: [
+            {
+                name: "",
+                image: "",
+                units: [
+                    {
+                        name: "",
+                        area: "",
+                        price: ""
+                    },
+                ]
+            }
+        ],
+        visualization: "",
+        schematic: "",
     },
 ]
