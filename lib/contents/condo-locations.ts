@@ -8,7 +8,7 @@ export const CondoLocations = [
             "/empireeasthighland/empire-east-highland.jpg",
             "/empireeasthighland/city-2.jpg"
         ],
-        link: "/empire-east-highland-city"
+        link: "/residence/empire-east-highland-city"
     },
     {
         name: 'The Paddington Place',
@@ -18,7 +18,7 @@ export const CondoLocations = [
         img: [
             "/paddington-perspective.jpg",
         ],
-        link: "/the-paddington-place"
+        link: "/residence/the-paddington-place"
     },
     {
         name: 'Kasara Urban Resort Residences',
@@ -28,7 +28,7 @@ export const CondoLocations = [
         img: [
             "/kasara.jpg",
         ],
-        link: "/kasara-urban-resort-residences"
+        link: "/residence/kasara-urban-resort-residences"
     },
     {
         name: 'Pioneer Woodlands',
@@ -38,7 +38,7 @@ export const CondoLocations = [
         img: [
             "/pioneer-woodlands.jpg",
         ],
-        link: "/pioneer-woodlands"
+        link: "/residence/pioneer-woodlands"
     },
     {
         name: 'Covent Garden',
@@ -48,7 +48,7 @@ export const CondoLocations = [
         img: [
             "/covent-garden.jpg",
         ],
-        link: "/covent-garden"
+        link: "/residence/covent-garden"
     },
     {
         name: 'The Rochester',
@@ -58,7 +58,7 @@ export const CondoLocations = [
         img: [
             "/the-rochester.jpg",
         ],
-        link: "/the-rochester"
+        link: "/residence/the-rochester"
     },
     {
         name: 'San Lorenzo Place',
@@ -68,7 +68,7 @@ export const CondoLocations = [
         img: [
             "/san-lorenzo-place.jpg",
         ],
-        link: "/san-lorenzo-place"
+        link: "/residence/san-lorenzo-place"
     },
     {
         name: 'Mango Tree Residence',
@@ -78,7 +78,7 @@ export const CondoLocations = [
         img: [
             "/mango-tree-residence.jpg",
         ],
-        link: "/mango-tree-residence"
+        link: "/residence/mango-tree-residence"
     },
     {
         name: 'The Sonoma',
@@ -88,7 +88,7 @@ export const CondoLocations = [
         img: [
             "/the-sonoma.jpg",
         ],
-        link: "/the-sonoma"
+        link: "/residence/the-sonoma"
     },
     {
         name: 'Cambridge Village',
@@ -98,6 +98,6 @@ export const CondoLocations = [
         img: [
             "/cambridge-village.jpg",
         ],
-        link: "/cambridge-village"
+        link: "/residence/cambridge-village"
     },
 ]

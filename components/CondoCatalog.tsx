@@ -47,6 +47,7 @@ const CondoCatalog = () => {
                 {viewAll ? (
                     CondoLocations.map((item)=> (
                         <CondoCard
+                            key={item.name}
                             name={item.name}
                             location={item.location}
                             description={item.description}
