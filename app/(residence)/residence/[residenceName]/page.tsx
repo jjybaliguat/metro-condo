@@ -7,6 +7,7 @@ import React, { useEffect, useState } from 'react'
 import { MapPinIcon } from "@heroicons/react/24/solid";
 import Select from '@/components/Select'
 import { CubeIcon } from "@heroicons/react/24/solid";
+import SelectUnit from '@/components/SelectUnit'
 
 
 const page = ({
@@ -18,18 +19,13 @@ const page = ({
     const [residence, setResidence] = useState<any | null>()
     const [openMenu, setOpenMenu] = useState(false)
     const [units, setUnits] = useState<any | null>()
-    const [unitOptions, setUnitOptions] = useState([])
-
-    // useEffect(()=> {
-    //     let options = []
-    //     residence?.units.map((item: { name: string })=>{
-    //         options.push(item.name)
-    //     })
-    //     setUnitOptions(options)
-        
-    // }, [units])
 
     useEffect(()=>{
+        console.log(units);
+    }, [units])
+
+    useEffect(()=>{
+        
         const res = CondoLocations.find((item)=>item.link === `/residence/${params.residenceName}`)
         if(res){
             setResidence(res)
@@ -146,32 +142,59 @@ const page = ({
             </div>
             {/* End Site Plan */}
             {/* Unit Layout */}
-            <div id="layout" className="flex md:flex-row flex-col gap-5 p-5 bg-white rounded-[15px] shadow-lg">
-                <img className="h-10 w-10 text-black" src='/site-plan-icon.png' />
-                <div className='flex flex-col gap-5'>
-                    <div className='flex flex-row items-center gap-2'>
+            <div id="layout" className="flex flex-col gap-10 p-5 bg-white rounded-[15px] shadow-lg">
+                <div className='flex md:flex-row md:justify-between flex-col'>
+                    <div className='flex flex-row items-center gap-3'>
+                        <img className="h-10 w-10 text-black" src='/site-plan-icon.png' />
                         <h1 className='md:text-[2rem] text-[1.5rem] font-bold'>UNIT LAYOUT</h1>
-                        {/* <Select 
-                            options={unitOptions}
-                            selected={unitOptions?.name}
-                            handleSelect={}
-                        /> */}
                     </div>
-                    {/* <div className='flex flex-col md:flex-row gap-3'>
-                        <div className="md:w-[50%] w-[100%]">
-                            {residence?.sitePlan?.descriptions?.map((item: string, index: React.Key | null | undefined)=>(
-                                <h1
-                                key={index}
-                                className='mt-3'
-                                >{item}</h1>
-                            ))}
-                        </div>
-                        <div className="md:w-[50%] w-[100%] md:h-[400px] h-[250px]">
-                            <img src={residence.sitePlan?.img} 
-                                className='w-full h-full'
-                            />
-                        </div>
-                    </div> */}
+                    <div className='flex flex-row gap-2 items-center'>
+                        <h1>Select Unit / Tower</h1>
+                        <SelectUnit
+                            units={residence?.units}
+                            selected={units}
+                            handleSelect={setUnits}
+                            containerStyle='md:w-[300px] w-[200px] shadow-md'
+                        />
+                    </div>
+                </div>
+                <div className='flex md:flex-row flex-col gap-5 mt-5'>
+                    <div className="w-[300px] h-[400px] mx-auto">
+                        <img src={units.image? units.image : residence.units[0].image} alt="unit image" className='w-full h-full'/>
+                    </div>
+                    <div className='flex flex-wrap gap-5'>
+                        {
+                            units.units? (
+                                units.units.map((item: {
+                                    name: string,
+                                    image: string,
+                                    area: string,
+                                    price: number
+                                })=>(
+                                    <div
+                                    key={item.name}
+                                    className='w-[250px] h-[250px] outline outline-1 outline-secondary-100'
+                                    >
+                                        <img src={item.image} className='w-full h-full'/>
+                                    </div>
+                                ))
+                            ) : (
+                                residence.units[0].units.map((item: {
+                                    name: string,
+                                    image: string,
+                                    area: string,
+                                    price: number
+                                })=>(
+                                    <div
+                                    key={item.name}
+                                    className='w-[250px] h-[250px] outline outline-1 outline-secondary-100'
+                                    >
+                                        <img src={item.image} className='w-full h-full'/>
+                                    </div>
+                                ))
+                            )
+                        }
+                    </div>
                 </div>
             </div>
             {/* End Unit Layout */}

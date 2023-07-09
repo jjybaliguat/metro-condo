@@ -26,16 +26,101 @@ export const CondoLocations = [
         },
         units: [
             {
-                name: "Tower 1",
-                image: "",
+                name: "Arcadia Tower 1",
+                image: "/empireeasthighland/arcadia-tower-1.png",
                 units: [
                     {
-                        name: "",
-                        area: "",
-                        price: ""
+                        name: "EXECUTIVE STUDIO",
+                        image: "/empireeasthighland/executive-studio.png",
+                        area: "22.86 SQM",
+                        price: 3900000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        image: "/empireeasthighland/onebedroom.png",
+                        area: "31.52 SQM",
+                        price: 5200000
+                    },
+                    {
+                        name: "TWO BEDROOM",
+                        image: "/empireeasthighland/two-bedroom.png",
+                        area: "46.50 SQM",
+                        price: 7600000
                     },
                 ]
-            }
+            },
+            {
+                name: "Arcadia Tower 2",
+                image: "/empireeasthighland/arcadia-tower-2.jpg",
+                units: [
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        image: "/empireeasthighland/executive-studio.png",
+                        area: "22.86 SQM",
+                        price: 3900000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        image: "/empireeasthighland/onebedroom.png",
+                        area: "31.52 SQM",
+                        price: 5200000
+                    },
+                    {
+                        name: "TWO BEDROOM",
+                        image: "/empireeasthighland/two-bedroom.png",
+                        area: "46.50 SQM",
+                        price: 7600000
+                    },
+                ]
+            },
+            {
+                name: "Arcadia Tower 3",
+                image: "/empireeasthighland/arcadia-tower-3.jpg",
+                units: [
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        image: "/empireeasthighland/executive-studio.png",
+                        area: "22.86 SQM",
+                        price: 3900000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        image: "/empireeasthighland/onebedroom.png",
+                        area: "31.52 SQM",
+                        price: 5200000
+                    },
+                    {
+                        name: "TWO BEDROOM",
+                        image: "/empireeasthighland/two-bedroom.png",
+                        area: "46.50 SQM",
+                        price: 7600000
+                    },
+                ]
+            },
+            {
+                name: "Arcadia Tower 4",
+                image: "/empireeasthighland/arcadia-tower-4.jpg",
+                units: [
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        image: "/empireeasthighland/executive-studio.png",
+                        area: "22.86 SQM",
+                        price: "3900000"
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        image: "/empireeasthighland/onebedroom.png",
+                        area: "31.52 SQM",
+                        price: 5200000
+                    },
+                    {
+                        name: "TWO BEDROOM",
+                        image: "/empireeasthighland/two-bedroom.png",
+                        area: "46.50 SQM",
+                        price: 7600000
+                    },
+                ]
+            },
         ],
         visualization: "",
         schematic: "",
@@ -64,13 +149,13 @@ export const CondoLocations = [
         },
         units: [
             {
-                name: "",
+                name: "Condo 1",
                 image: "",
                 units: [
                     {
                         name: "",
                         area: "",
-                        price: ""
+                        price: 0
                     },
                 ]
             }
