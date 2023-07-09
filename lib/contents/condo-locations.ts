@@ -121,6 +121,54 @@ export const CondoLocations = [
                     },
                 ]
             },
+            {
+                name: "Bellara Tower 1",
+                image: "/empireeasthighland/arcadia-tower-4.jpg",
+                units: [
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        image: "/empireeasthighland/bellara-studio.png",
+                        area: "22.86 SQM",
+                        price: "3900000"
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        image: "/empireeasthighland/bellara-1bedroom.png",
+                        area: "31.52 SQM",
+                        price: 5200000
+                    },
+                    {
+                        name: "TWO BEDROOM",
+                        image: "/empireeasthighland/bellara-two-bedroom.png",
+                        area: "46.50 SQM",
+                        price: 7600000
+                    },
+                ]
+            },
+            {
+                name: "Bellara Tower 2",
+                image: "/empireeasthighland/bellara-tower-2.jpg",
+                units: [
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        image: "/empireeasthighland/bellara-studio.png",
+                        area: "22.86 SQM",
+                        price: "3900000"
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        image: "/empireeasthighland/bellara-1bedroom.png",
+                        area: "31.52 SQM",
+                        price: 5200000
+                    },
+                    {
+                        name: "TWO BEDROOM",
+                        image: "/empireeasthighland/bellara-two-bedroom.png",
+                        area: "46.50 SQM",
+                        price: 7600000
+                    },
+                ]
+            },
         ],
         visualization: "",
         schematic: "",
@@ -144,18 +192,49 @@ export const CondoLocations = [
             "Amenity 5",
         ],
         sitePlan: {
-            descriptions: [""],
-            img: ""
+            descriptions: ["Under the Empire East Elite brand, a new four-tower cosmopolitan enclave will soon rise across the ebullient skyline of the Tiger City along Shaw Boulevard – The Paddington Place."],
+            img: "/paddington/siteplan.png"
         },
         units: [
             {
-                name: "Condo 1",
-                image: "",
+                name: "Tower 1",
+                image: "/paddington/tower-1.png",
                 units: [
                     {
-                        name: "",
-                        area: "",
-                        price: 0
+                        name: "EXECUTIVE STUDIO",
+                        area: "23.67 SQ.M.",
+                        image: "/paddington/studio-1.png",
+                        price: 4600000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "23.70 SQ.M.",
+                        image: "/paddington/studio-2.png",
+                        price: 4600000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "24.12 SQM",
+                        image: "/paddington/studio-3.png",
+                        price: 4700000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "27.42 SQM",
+                        image: "/paddington/studio-4.png",
+                        price: 5300000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "40.17 SQM",
+                        image: "/paddington/1-bedroom.png",
+                        price: 7600000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "35.12 SQM",
+                        image: "/paddington/1-bedroom2.png",
+                        price: 6700000
                     },
                 ]
             }

@@ -8,6 +8,7 @@ import { MapPinIcon } from "@heroicons/react/24/solid";
 import Select from '@/components/Select'
 import { CubeIcon } from "@heroicons/react/24/solid";
 import SelectUnit from '@/components/SelectUnit'
+import UnitsVewDialog from '@/components/UnitsVewDialog'
 
 
 const page = ({
@@ -19,9 +20,15 @@ const page = ({
     const [residence, setResidence] = useState<any | null>()
     const [openMenu, setOpenMenu] = useState(false)
     const [units, setUnits] = useState<any | null>()
+    const [openDialog, setOpenDialog] = useState({isOpen: false, image: ""})
+    const [unitImages, setUnitImages] = useState<Array<string>>()
 
     useEffect(()=>{
         console.log(units);
+        
+        units?.units?.map((item: { image: string })=>{
+            unitImages ? setUnitImages([...unitImages, item.image]) : setUnitImages([item.image])
+        })
     }, [units])
 
     useEffect(()=>{
@@ -48,6 +55,10 @@ const page = ({
   return (
     residence &&
     <>
+        <UnitsVewDialog
+            isOpen={openDialog}
+            closeModal={()=>setOpenDialog({isOpen: false, image: ""})}
+        />
       <PageWrapper>
         <SideBar
             isOpen={openMenu}
@@ -132,7 +143,9 @@ const page = ({
                                 >{item}</h1>
                             ))}
                         </div>
-                        <div className="md:w-[50%] w-[100%] md:h-[400px] h-[250px]">
+                        <div className="md:w-[50%] w-[100%] md:h-[400px] h-[250px] cursor-pointer"
+                        onClick={()=>setOpenDialog({isOpen: true, image: residence.sitePlan?.img})}
+                        >
                             <img src={residence.sitePlan?.img} 
                                 className='w-full h-full'
                             />
@@ -152,7 +165,7 @@ const page = ({
                         <h1>Select Unit / Tower</h1>
                         <SelectUnit
                             units={residence?.units}
-                            selected={units}
+                            selected={units.name? units : residence.units[0]}
                             handleSelect={setUnits}
                             containerStyle='md:w-[300px] w-[200px] shadow-md'
                         />
@@ -162,7 +175,7 @@ const page = ({
                     <div className="w-[300px] h-[400px] mx-auto">
                         <img src={units.image? units.image : residence.units[0].image} alt="unit image" className='w-full h-full'/>
                     </div>
-                    <div className='flex flex-wrap gap-5'>
+                    <div className='flex flex-wrap gap-5 justify-center'>
                         {
                             units.units? (
                                 units.units.map((item: {
@@ -170,13 +183,24 @@ const page = ({
                                     image: string,
                                     area: string,
                                     price: number
-                                })=>(
-                                    <div
-                                    key={item.name}
-                                    className='w-[250px] h-[250px] outline outline-1 outline-secondary-100'
-                                    >
-                                        <img src={item.image} className='w-full h-full'/>
+                                }, index: number)=>(
+                                    <>
+                                    <div className='flex flex-col gap-3'>
+                                        <div
+                                        key={item.name}
+                                        className='w-[250px] h-[250px] outline outline-1 
+                                        outline-secondary-100 cursor-pointer'
+                                        onClick={()=>setOpenDialog({isOpen: true, image: item.image})}
+                                        >
+                                            <img src={item.image} className='w-full h-full'/>
+                                        </div>
+                                        <div className='flex flex-col gap-1'>
+                                            <h1 className='font-extrabold'>{item.name}</h1>
+                                            <p>{item.area}</p>
+                                            <p className='text-[#ff0000]'>{item.price}</p>
+                                        </div>
                                     </div>
+                                    </>
                                 ))
                             ) : (
                                 residence.units[0].units.map((item: {
@@ -184,13 +208,24 @@ const page = ({
                                     image: string,
                                     area: string,
                                     price: number
-                                })=>(
-                                    <div
-                                    key={item.name}
-                                    className='w-[250px] h-[250px] outline outline-1 outline-secondary-100'
-                                    >
-                                        <img src={item.image} className='w-full h-full'/>
+                                }, index: number)=>(
+                                    <>
+                                    <div className='flex flex-col gap-3'>
+                                        <div
+                                        key={item.name}
+                                        className='w-[250px] h-[250px] outline outline-1 
+                                        outline-secondary-100 cursor-pointer'
+                                        onClick={()=>setOpenDialog({isOpen: true, image: item.image})}
+                                        >
+                                            <img src={item.image} className='w-full h-full'/>
+                                        </div>
+                                        <div className='flex flex-col gap-1'>
+                                            <h1 className='font-extrabold'>{item.name}</h1>
+                                            <p>{item.area}</p>
+                                            <p className='text-[#ff0000]'>{item.price}</p>
+                                        </div>
                                     </div>
+                                    </>
                                 ))
                             )
                         }
