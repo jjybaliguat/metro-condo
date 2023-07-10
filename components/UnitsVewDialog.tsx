@@ -39,7 +39,7 @@ const UnitsVewDialog = ({
                         leaveTo='opacity-0 scale-95'
                     >
                         <Dialog.Panel className="relative
-                        md:w-[700px] w-full md:h-[90vh] h-[350px] overflow-y-auto
+                        w-fit h-[90vh] overflow-y-auto
                         transform rounded-2xl bg-white p-6 text-left shadow-xl transition-all flex flex-col">
                             <button
                                 type="button"

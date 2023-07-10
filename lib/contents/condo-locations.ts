@@ -1,4 +1,5 @@
 export const CondoLocations = [
+    // HIGHLAND
     {
         name: 'Empire East Highland City',
         location: 'Pasig City - Cainta',
@@ -173,6 +174,7 @@ export const CondoLocations = [
         visualization: "",
         schematic: "",
     },
+    // PADDINGTON
     {
         name: 'The Paddington Place',
         location: 'Mandaluyong City',
@@ -448,10 +450,209 @@ export const CondoLocations = [
                     },
                 ]
             },
+            {
+                name: "Tower 3",
+                image: "/paddington/tower-2.png",
+                units: [
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "21.42 SQM",
+                        image: "/paddington/tower3-studio.png",
+                        price: 4000000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "23.52 SQM",
+                        image: "/paddington/tower3-studio2.png",
+                        price: 5000000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "24.35 SQM",
+                        image: "/paddington/tower3-studio3.png",
+                        price: 4500000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "25.04 SQM",
+                        image: "/paddington/tower3-studio4.png",
+                        price: 4600000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "25.44 SQM",
+                        image: "/paddington/tower3-studio5.png",
+                        price: 4700000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "26.63 SQM",
+                        image: "/paddington/tower3-studio6.png",
+                        price: 4900000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "27.42 SQM",
+                        image: "/paddington/tower3-studio7.png",
+                        price: 5100000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "28.17 SQM",
+                        image: "/paddington/tower3-studio8.png",
+                        price: 5200000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "21.32 SQM",
+                        image: "/paddington/tower3-studio9.png",
+                        price: 4200000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "23.18 SQM",
+                        image: "/paddington/tower3-studio10.png",
+                        price: 4500000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "23.98 SQM",
+                        image: "/paddington/tower3-studio11.png",
+                        price: 4650000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "24.12 SQM",
+                        image: "/paddington/tower3-studio12.png",
+                        price: 4700000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "24.81 SQM",
+                        image: "/paddington/tower3-studio13.png",
+                        price: 4800000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "27.34 SQM",
+                        image: "/paddington/tower3-studio14.png",
+                        price: 5250000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "27.96 SQM",
+                        image: "/paddington/tower3-studio15.png",
+                        price: 5400000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "33.16 SQM",
+                        image: "/paddington/tower3-onebedroom.png",
+                        price: 6100000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "35.35 SQM",
+                        image: "/paddington/tower3-onebedroom2.png",
+                        price: 6500000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "37.63 SQM",
+                        image: "/paddington/tower3-onebedroom3.png",
+                        price: 6900000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "40.17 SQM",
+                        image: "/paddington/tower3-onebedroom4.png",
+                        price: 7400000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "35.12 SQM",
+                        image: "/paddington/tower3-onebedroom5.png",
+                        price: 6700000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "35.25 SQM",
+                        image: "/paddington/tower3-onebedroom6.png",
+                        price: 6700000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "47.37 SQM",
+                        image: "/paddington/tower3-twobedroom.png",
+                        price: 8700000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "48.78 SQM",
+                        image: "/paddington/tower3-twobedroom2.png",
+                        price: 8900000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "59.76 SQM",
+                        image: "/paddington/tower3-twobedroom3.png",
+                        price: 10900000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "61.76 SQM",
+                        image: "/paddington/tower3-twobedroom4.png",
+                        price: 11300000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "70.19 SQM",
+                        image: "/paddington/tower3-twobedroom5.png",
+                        price: 12800000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "78.76 SQM",
+                        image: "/paddington/tower3-twobedroom6.png",
+                        price: 14400000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "95.46 SQM",
+                        image: "/paddington/tower3-twobedroom7.png",
+                        price: 17400000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "49.39 SQM",
+                        image: "/paddington/tower3-twobedroom8.png",
+                        price: 9250000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "55.11 SQM",
+                        image: "/paddington/tower3-twobedroom9.png",
+                        price: 10300000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "59.24 SQM",
+                        image: "/paddington/tower3-twobedroom10.png",
+                        price: 11050000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "70.30 SQM",
+                        image: "/paddington/tower3-twobedroom11.png",
+                        price: 13050000
+                    },
+                ]
+            },
         ],
         visualization: "",
         schematic: "",
     },
+    // KASARA
     {
         name: 'Kasara Urban Resort Residences',
         location: 'Pasig City',
@@ -471,25 +672,639 @@ export const CondoLocations = [
             "Amenity 5",
         ],
         sitePlan: {
-            descriptions: [""],
-            img: ""
+            descriptions: ["Wake up every morning to a refreshing view of the Sierra Madre mountains or your own lake-inspired pool and water cascades when you step out on the balcony of your two-bedroom home at Kasara Urban Resort Residences!"],
+            img: "/kasara/kasara-siteplan.png"
         },
         units: [
             {
-                name: "",
-                image: "",
+                name: "Tower 1",
+                image: "/kasara/kasara-tower1.png",
                 units: [
                     {
-                        name: "",
-                        area: "",
-                        price: ""
+                        name: "EXECUTIVE STUDIO",
+                        area: "22.50 SQM",
+                        image: "/kasara/kasara-tower1-studio.png",
+                        price: 4100000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "24 SQM",
+                        image: "/kasara/kasara-tower1-studio2.png",
+                        price: 4400000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO WITH PATIO",
+                        area: "28.50 SQM",
+                        image: "/kasara/kasara-tower1-studio3.png",
+                        price: 5150000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO WITH PATIO",
+                        area: "30 SQM",
+                        image: "/kasara/kasara-tower1-studio-patio.png",
+                        price: 5400000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "28 SQM",
+                        image: "/kasara/kasara-tower1-onebedroom.png",
+                        price: 5100000
+                    },
+                    {
+                        name: "ONE BEDROOM WITH BALCONY",
+                        area: "31.36 SQM",
+                        image: "/kasara/kasara-tower1-onebedroom.png",
+                        price: 5650000
+                    },
+                    {
+                        name: "ONE BEDROOM WITH PATIO",
+                        area: "35 SQM",
+                        image: "/kasara/kasara-tower1-onebedroom-patio.png",
+                        price: 6300000
+                    },
+                    {
+                        name: "ONE BEDROOM WITH PATIO",
+                        area: "38 SQM",
+                        image: "/kasara/kasara-tower1-onebedroom-patio2.png",
+                        price: 6800000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "93.28 SQM",
+                        image: "/kasara/kasara-tower1-penthouse-bilevel.png",
+                        price: 16200000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "114.65 SQM",
+                        image: "/kasara/kasara-tower1-penthouse-bilevel2.png",
+                        price: 19850000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "117.06 SQM",
+                        image: "/kasara/kasara-tower1-penthouse-bilevel3.png",
+                        price: 20300000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "128.46 SQM",
+                        image: "/kasara/kasara-tower1-penthouse-bilevel4.png",
+                        price: 22200000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "129.38 SQM",
+                        image: "/kasara/kasara-tower1-penthouse-bilevel5.png",
+                        price: 22400000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "141.1 SQM",
+                        image: "/kasara/kasara-tower1-penthouse-bilevel5.png",
+                        price: 24400000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "30 SQM",
+                        image: "/kasara/kasara-tower1-twobedroom.png",
+                        price: 5400000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "58.68 SQM",
+                        image: "/kasara/kasara-tower1-twobedroom2.png",
+                        price: 10300000
                     },
                 ]
-            }
+            },
+            {
+                name: "Tower 2",
+                image: "/kasara/kasara-tower2.png",
+                units: [
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "22.50 SQM",
+                        image: "/kasara/kasara-tower1-studio.png",
+                        price: 4100000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "24 SQM",
+                        image: "/kasara/kasara-tower1-studio2.png",
+                        price: 4400000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO WITH PATIO",
+                        area: "28.50 SQM",
+                        image: "/kasara/kasara-tower1-studio3.png",
+                        price: 5150000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO WITH PATIO",
+                        area: "30 SQM",
+                        image: "/kasara/kasara-tower1-studio-patio.png",
+                        price: 5400000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "28 SQM",
+                        image: "/kasara/kasara-tower1-onebedroom.png",
+                        price: 5100000
+                    },
+                    {
+                        name: "ONE BEDROOM WITH BALCONY",
+                        area: "31.36 SQM",
+                        image: "/kasara/kasara-tower1-onebedroom.png",
+                        price: 5650000
+                    },
+                    {
+                        name: "ONE BEDROOM WITH PATIO",
+                        area: "35 SQM",
+                        image: "/kasara/kasara-tower1-onebedroom-patio.png",
+                        price: 6300000
+                    },
+                    {
+                        name: "ONE BEDROOM WITH PATIO",
+                        area: "38 SQM",
+                        image: "/kasara/kasara-tower1-onebedroom-patio2.png",
+                        price: 6800000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "93.28 SQM",
+                        image: "/kasara/kasara-tower1-penthouse-bilevel.png",
+                        price: 16200000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "114.65 SQM",
+                        image: "/kasara/kasara-tower1-penthouse-bilevel2.png",
+                        price: 19850000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "117.06 SQM",
+                        image: "/kasara/kasara-tower1-penthouse-bilevel3.png",
+                        price: 20300000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "128.46 SQM",
+                        image: "/kasara/kasara-tower1-penthouse-bilevel4.png",
+                        price: 22200000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "129.38 SQM",
+                        image: "/kasara/kasara-tower1-penthouse-bilevel5.png",
+                        price: 22400000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "141.1 SQM",
+                        image: "/kasara/kasara-tower1-penthouse-bilevel5.png",
+                        price: 24400000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "30 SQM",
+                        image: "/kasara/kasara-tower1-twobedroom.png",
+                        price: 5400000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "58.68 SQM",
+                        image: "/kasara/kasara-tower1-twobedroom2.png",
+                        price: 10300000
+                    },
+                ]
+            },
+            {
+                name: "Tower 3",
+                image: "/kasara/kasara-tower3.png",
+                units: [
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "22.50 SQM",
+                        image: "/kasara/kasara-tower3-studio.png",
+                        price: 4100000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO WITH PATIO",
+                        area: "28.50 SQM",
+                        image: "/kasara/kasara-tower3-studio-patio.png",
+                        price: 5150000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "36 SQM",
+                        image: "/kasara/kasara-tower3-onebedroom.png",
+                        price: 6400000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "44.80 SQM",
+                        image: "/kasara/kasara-tower3-onebedroom2.png",
+                        price: 7900000
+                    },
+                    {
+                        name: "ONE BEDROOM WITH PATIO",
+                        area: "45 SQM",
+                        image: "/kasara/kasara-tower3-onebedroom-patio.png",
+                        price: 8000000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "93.30 SQM",
+                        image: "/kasara/kasara-tower3-penthouse-bilevel.png",
+                        price: 16200000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "114.70 SQM",
+                        image: "/kasara/kasara-tower3-penthouse-bilevel2.png",
+                        price: 19900000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "117.10 SQM",
+                        image: "/kasara/kasara-tower3-penthouse-bilevel3.png",
+                        price: 20300000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "128.40 SQM",
+                        image: "/kasara/kasara-tower3-penthouse-bilevel4.png",
+                        price: 22200000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "129.40 SQM",
+                        image: "/kasara/kasara-tower3-penthouse-bilevel5.png",
+                        price: 22400000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "141.10 SQM",
+                        image: "/kasara/kasara-tower3-penthouse-bilevel6.png",
+                        price: 24400000
+                    },
+                    {
+                        name: "TWO BEDROOM",
+                        area: "56 SQM",
+                        image: "/kasara/kasara-tower3-twobedroom.png",
+                        price: 9850000
+                    },
+                    {
+                        name: "TWO BEDROOM WITH BALCONY",
+                        area: "57.60 SQM", 
+                        image: "/kasara/kasara-tower3-twobedroom-balcony.png",
+                        price: 10100000
+                    },
+                    {
+                        name: "TWO BEDROOM WITH BALCONY",
+                        area: "61.10 SQM", 
+                        image: "/kasara/kasara-tower3-twobedroom-balcony2.png",
+                        price: 10700000
+                    },
+                    {
+                        name: "TWO BEDROOM WITH PATIO",
+                        area: "70 SQM",
+                        image: "/kasara/kasara-tower3-twobedroom-patio.png",
+                        price: 12200000
+                    },
+                ]
+            },
+            {
+                name: "Tower 4",
+                image: "/kasara/kasara-tower4.png",
+                units: [
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "22.73 SQM",
+                        image: "/kasara/kasara-tower4-studio.png",
+                        price: 4200000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "22.98 SQM",
+                        image: "/kasara/kasara-tower4-studio2.png",
+                        price: 4200000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "27.60 SQM",
+                        image: "/kasara/kasara-tower4-onebedroom.png",
+                        price: 5000000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "29.33 SQM",
+                        image: "/kasara/kasara-tower4-onebedroom2.png",
+                        price: 5300000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "44.70 SQM",
+                        image: "/kasara/kasara-tower4-onebedroom3.png",
+                        price: 7900000
+                    },
+                    {
+                        name: "ONE BEDROOM WITH BALCONY",
+                        area: "30.96 SQM",
+                        image: "/kasara/kasara-tower4-onebedroom-balcony.png",
+                        price: 5600000
+                    },
+                    {
+                        name: "ONE BEDROOM WITH BALCONY",
+                        area: "31 SQM",
+                        image: "/kasara/kasara-tower4-onebedroom-balcony2.png",
+                        price: 5600000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "101.40 SQM",
+                        image: "/kasara/kasara-tower4-penthouse-bilevel.png",
+                        price: 17600000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "113.20 SQM",
+                        image: "/kasara/kasara-tower4-penthouse-bilevel2.png",
+                        price: 19600000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "118.30 SQM",
+                        image: "/kasara/kasara-tower4-penthouse-bilevel3.png",
+                        price: 20500000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "122 SQM",
+                        image: "/kasara/kasara-tower4-penthouse-bilevel4.png",
+                        price: 21100000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "129.35 SQM",
+                        image: "/kasara/kasara-tower4-penthouse-bilevel5.png",
+                        price: 22400000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "131.15 SQM",
+                        image: "/kasara/kasara-tower4-penthouse-bilevel6.png",
+                        price: 22700000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "144 SQM",
+                        image: "/kasara/kasara-tower4-penthouse-bilevel7.png",
+                        price: 24900000
+                    },
+                    {
+                        name: "TWO BEDROOM WITH BALCONY",
+                        area: "57.56 SQM",
+                        image: "/kasara/kasara-tower4-twobedroom-balcony.png",
+                        price: 10100000
+                    },
+                ]
+            },
+            {
+                name: "Tower 5",
+                image: "/kasara/kasara-tower5.png",
+                units: [
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "22.50 SQM",
+                        image: "/kasara/kasara-tower5-studio.png",
+                        price: 4100000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO WITH PATIO",
+                        area: "28.33 SQM",
+                        image: "/kasara/kasara-tower5-studio-patio.png",
+                        price: 5100000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "28 SQM",
+                        image: "/kasara/kasara-tower5-onebedroom.png",
+                        price: 5100000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "30 SQM",
+                        image: "/kasara/kasara-tower5-onebedroom2.png",
+                        price: 5400000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "36 SQM",
+                        image: "/kasara/kasara-tower5-onebedroom3.png",
+                        price: 6400000
+                    },
+                    {
+                        name: "ONE BEDROOM WITH BALCONY",
+                        area: "31.36 SQM",
+                        image: "/kasara/kasara-tower5-onebedroom-balcony.png",
+                        price: 5650000
+                    },
+                    {
+                        name: "ONE BEDROOM WITH BALCONY",
+                        area: "44.80 SQM",
+                        image: "/kasara/kasara-tower5-onebedroom-balcony2.png",
+                        price: 7900000
+                    },
+                    {
+                        name: "ONE BEDROOM WITH PATIO",
+                        area: "35 SQM",
+                        image: "/kasara/kasara-tower5-onebedroom-patio.png",
+                        price: 6300000
+                    },
+                    {
+                        name: "ONE BEDROOM WITH PATIO",
+                        area: "38 SQM",
+                        image: "/kasara/kasara-tower5-onebedroom-patio2.png",
+                        price: 6800000
+                    },
+                    {
+                        name: "ONE BEDROOM WITH PATIO",
+                        area: "45 SQM",
+                        image: "/kasara/kasara-tower5-onebedroom-patio3.png",
+                        price: 8000000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "93.30 SQM",
+                        image: "/kasara/kasara-tower5-penthouse-bilevel.png",
+                        price: 16200000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "114.70 SQM",
+                        image: "/kasara/kasara-tower5-penthouse-bilevel2.png",
+                        price: 19900000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "117.10 SQM",
+                        image: "/kasara/kasara-tower5-penthouse-bilevel3.png",
+                        price: 20300000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "128.40 SQM",
+                        image: "/kasara/kasara-tower5-penthouse-bilevel4.png",
+                        price: 22200000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "129.40 SQM",
+                        image: "/kasara/kasara-tower5-penthouse-bilevel5.png",
+                        price: 22400000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "141.10 SQM",
+                        image: "/kasara/kasara-tower5-penthouse-bilevel6.png",
+                        price: 24400000
+                    },
+                    {
+                        name: "TWO BEDROOM WITH BALCONY",
+                        area: "58.68 SQM",
+                        image: "/kasara/kasara-tower5-twobedroom-balcony.png",
+                        price: 10300000
+                    },
+                ]
+            },
+            {
+                name: "Tower 6",
+                image: "/kasara/kasara-tower5.png",
+                units: [
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "22.20 SQM",
+                        image: "/kasara/kasara-tower6-studio.png",
+                        price: 4100000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "23 SQM",
+                        image: "/kasara/kasara-tower6-studio2.png",
+                        price: 4200000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO WITH PATIO",
+                        area: "28.15 SQM",
+                        image: "/kasara/kasara-tower6-studio-patio.png",
+                        price: 5100000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO WITH PATIO",
+                        area: "29.10 SQM",
+                        image: "/kasara/kasara-tower6-studio-patio2.png",
+                        price: 5300000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "27.55 SQM",
+                        image: "/kasara/kasara-tower6-onebedroom.png",
+                        price: 5000000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "29.55 SQM",
+                        image: "/kasara/kasara-tower6-onebedroom2.png",
+                        price: 5300000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "35.80 SQM",
+                        image: "/kasara/kasara-tower6-onebedroom3.png",
+                        price: 6400000
+                    },
+                    {
+                        name: "ONE BEDROOM WITH BALCONY",
+                        area: "30.85 SQM",
+                        image: "/kasara/kasara-tower6-onebedroom-balcony.png",
+                        price: 5550000
+                    },
+                    {
+                        name: "ONE BEDROOM WITH PATIO",
+                        area: "34.40 SQM",
+                        image: "/kasara/kasara-tower6-onebedroom-patio.png",
+                        price: 6200000
+                    },
+                    {
+                        name: "ONE BEDROOM WITH PATIO",
+                        area: "37.45 SQM",
+                        image: "/kasara/kasara-tower6-onebedroom-patio2.png",
+                        price: 6700000
+                    },
+                    {
+                        name: "ONE BEDROOM WITH PATIO",
+                        area: "44.65 SQM",
+                        image: "/kasara/kasara-tower6-onebedroom-patio3.png",
+                        price: 7900000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "100.90 SQM",
+                        image: "/kasara/kasara-tower6-penthouse-bilevel.png",
+                        price: 17500000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "113.80 SQM",
+                        image: "/kasara/kasara-tower6-penthouse-bilevel2.png",
+                        price: 19700000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "118.05 SQM",
+                        image: "/kasara/kasara-tower6-penthouse-bilevel3.png",
+                        price: 20400000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "121.90 SQM",
+                        image: "/kasara/kasara-tower6-penthouse-bilevel4.png",
+                        price: 21100000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "129.30 SQM",
+                        image: "/kasara/kasara-tower6-penthouse-bilevel5.png",
+                        price: 22350000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "131.15 SQM",
+                        image: "/kasara/kasara-tower6-penthouse-bilevel6.png",
+                        price: 22700000
+                    },
+                    {
+                        name: "PENTHOUSE BI-LEVEL",
+                        area: "143.85 SQM",
+                        image: "/kasara/kasara-tower6-penthouse-bilevel6.png",
+                        price: 24800000
+                    },
+                    {
+                        name: "TWO BEDROOM WITH BALCONY",
+                        area: "57.55 SQM",
+                        image: "/kasara/kasara-tower5-twobedroom-balcony.png",
+                        price: 10100000
+                    },
+                ]
+            },
         ],
         visualization: "",
         schematic: "",
     },
+    // PIONEER WOODLANDS
     {
         name: 'Pioneer Woodlands',
         location: 'Mandaluyong City',
@@ -509,25 +1324,297 @@ export const CondoLocations = [
             "Amenity 5",
         ],
         sitePlan: {
-            descriptions: [""],
-            img: ""
+            descriptions: ["Pioneer Woodlands is a six-high-rise-tower residential community that is directly connected to the Boni Ave. station of the MRT-3 railway system, which connects both the North and South districts in Metro Manila. Having this convenience offers premium exclusive mobility among its residents which can bring them to the Makati Central Business District, Ortigas Central Business District and more transportation hubs that serve as jump-off point to other leisure hubs and tourist spots in the Philippines."],
+            img: "/pwl/pwl-siteplan.png"
         },
         units: [
             {
-                name: "",
-                image: "",
+                name: "Tower 1",
+                image: "/pwl/pwl-tower1_2.png",
                 units: [
                     {
-                        name: "",
-                        area: "",
-                        price: ""
+                        name: "EXECUTIVE STUDIO",
+                        area: "26.0 SQM",
+                        image: "/pwl/pwl-tower1-studio.png",
+                        price: 4500000
+                    },
+                    {
+                        name: "TWO BEDROOM UNIT",
+                        area: "30.0 SQM",
+                        image: "/pwl/pwl-tower1-twobedroom.png",
+                        price: 5200000
+                    },
+                    {
+                        name: "TWO BEDROOM UNIT",
+                        area: "31.5 SQM",
+                        image: "/pwl/pwl-tower1-twobedroom2.png",
+                        price: 5500000
+                    },
+                    {
+                        name: "TWO BEDROOM UNIT",
+                        area: "32.5 SQM",
+                        image: "/pwl/pwl-tower1-twobedroom3.png",
+                        price: 5700000
+                    },
+                    {
+                        name: "TWO BEDROOM UNIT",
+                        area: "33.5 SQM",
+                        image: "/pwl/pwl-tower1-twobedroom4.png",
+                        price: 5900000
+                    },
+                    {
+                        name: "TWO BEDROOM UNIT",
+                        area: "34.0 SQM",
+                        image: "/pwl/pwl-tower1-twobedroom5.png",
+                        price: 6000000
+                    },
+                    {
+                        name: "TWO BEDROOM UNIT",
+                        area: "35.5 SQM",
+                        image: "/pwl/pwl-tower1-twobedroom6.png",
+                        price: 6200000
+                    },
+                    {
+                        name: "TWO BEDROOM UNIT",
+                        area: "36.0 SQM",
+                        image: "/pwl/pwl-tower1-twobedroom7.png",
+                        price: 6300000
+                    },
+                    {
+                        name: "TWO BEDROOM UNIT",
+                        area: "38.0 SQM",
+                        image: "/pwl/pwl-tower1-twobedroom8.png",
+                        price: 6600000
+                    },
+                    {
+                        name: "TYPICAL TWO BEDROOM UNIT",
+                        area: "40.0 SQM",
+                        image: "/pwl/pwl-tower1-typical-twobedroom.png",
+                        price: 7000000
+                    },
+                    {
+                        name: "TYPICAL TWO BEDROOM UNIT",
+                        area: "45.5 SQM",
+                        image: "/pwl/pwl-tower1-typical-twobedroom2.png",
+                        price: 8000000
                     },
                 ]
-            }
+            },
+            {
+                name: "Tower 2",
+                image: "/pwl/pwl-tower1_2.png",
+                units: [
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "26.0 SQM",
+                        image: "/pwl/pwl-tower1-studio.png",
+                        price: 4500000
+                    },
+                    {
+                        name: "TWO BEDROOM UNIT",
+                        area: "30.0 SQM",
+                        image: "/pwl/pwl-tower1-twobedroom.png",
+                        price: 5200000
+                    },
+                    {
+                        name: "TWO BEDROOM UNIT",
+                        area: "31.5 SQM",
+                        image: "/pwl/pwl-tower1-twobedroom2.png",
+                        price: 5500000
+                    },
+                    {
+                        name: "TWO BEDROOM UNIT",
+                        area: "32.5 SQM",
+                        image: "/pwl/pwl-tower1-twobedroom3.png",
+                        price: 5700000
+                    },
+                    {
+                        name: "TWO BEDROOM UNIT",
+                        area: "33.5 SQM",
+                        image: "/pwl/pwl-tower1-twobedroom4.png",
+                        price: 5900000
+                    },
+                    {
+                        name: "TWO BEDROOM UNIT",
+                        area: "34.0 SQM",
+                        image: "/pwl/pwl-tower1-twobedroom5.png",
+                        price: 6000000
+                    },
+                    {
+                        name: "TWO BEDROOM UNIT",
+                        area: "35.5 SQM",
+                        image: "/pwl/pwl-tower1-twobedroom6.png",
+                        price: 6200000
+                    },
+                    {
+                        name: "TWO BEDROOM UNIT",
+                        area: "36.0 SQM",
+                        image: "/pwl/pwl-tower1-twobedroom7.png",
+                        price: 6300000
+                    },
+                    {
+                        name: "TWO BEDROOM UNIT",
+                        area: "38.0 SQM",
+                        image: "/pwl/pwl-tower1-twobedroom8.png",
+                        price: 6600000
+                    },
+                    {
+                        name: "TYPICAL TWO BEDROOM UNIT",
+                        area: "40.0 SQM",
+                        image: "/pwl/pwl-tower1-typical-twobedroom.png",
+                        price: 7000000
+                    },
+                    {
+                        name: "TYPICAL TWO BEDROOM UNIT",
+                        area: "45.5 SQM",
+                        image: "/pwl/pwl-tower1-typical-twobedroom2.png",
+                        price: 8000000
+                    },
+                ]
+            },
+            {
+                name: "Woodland Park 1",
+                image: "/pwl/pwl-woodland-park1.png",
+                units: [
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "20.5 SQM",
+                        image: "/pwl/pwl-woodland-park1-studio.png",
+                        price: 3600000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "22.5 SQM",
+                        image: "/pwl/pwl-woodland-park1-studio2.png",
+                        price: 4000000
+                    },
+                    {
+                        name: "ONE BEDROOM UNIT",
+                        area: "26.0 SQM",
+                        image: "/pwl/pwl-woodland-park1-onebedroom.png",
+                        price: 5200000
+                    },
+                    {
+                        name: "TWO BEDROOM UNIT",
+                        area: "36.0  SQM",
+                        image: "/pwl/pwl-woodland-park1-twobedroom.png",
+                        price: 6300000
+                    },
+                    {
+                        name: "TWO BEDROOM UNIT",
+                        area: "37.5 SQM",
+                        image: "/pwl/pwl-woodland-park1-twobedroom2.png",
+                        price: 6600000
+                    },
+                    {
+                        name: "TWO BEDROOM UNIT",
+                        area: "38.5 SQM",
+                        image: "/pwl/pwl-woodland-park1-twobedroom3.png",
+                        price: 6700000
+                    },
+                    {
+                        name: "TYPICAL TWO BEDROOM UNIT",
+                        area: "50.0 SQM",
+                        image: "/pwl/pwl-woodland-park1-typical-twobedroom.png",
+                        price: 8700000
+                    },
+                ]
+            },
+            {
+                name: "Woodland Park 2",
+                image: "/pwl/pwl-woodland-park2.png",
+                units: [
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "22.32 SQM",
+                        image: "/pwl/pwl-woodland-park2-studio.png",
+                        price: 3950000
+                    },
+                    {
+                        name: "TWO BEDROOM",
+                        area: "50.32 SQM",
+                        image: "/pwl/pwl-woodland-park2-twobedroom.png",
+                        price: 8840000
+                    },
+                    {
+                        name: "TWO BEDROOM",
+                        area: "61.14 SQM",
+                        image: "/pwl/pwl-woodland-park2-twobedroom2.png",
+                        price: 10730000
+                    },
+                    {
+                        name: "TYPICAL ONE BEDROOM UNIT",
+                        area: "30.26 SQM",
+                        image: "/pwl/pwl-woodland-park2-typical-onebedroom.png",
+                        price: 5300000
+                    },
+                ]
+            },
+            {
+                name: "Woodland Park 3",
+                image: "/pwl/pwl-woodland-park3.png",
+                units: [
+                    {
+                        name: "EXECUTIVE STUDIO UNITS",
+                        area: "22.32 SQM",
+                        image: "/pwl/pwl-woodland-park3-studio.png",
+                        price: 3950000
+                    },
+                    {
+                        name: "ONE BEDROOM UNIT",
+                        area: "30.26 SQM",
+                        image: "/pwl/pwl-woodland-park3-onebedroom.png",
+                        price: 5300000
+                    },
+                    {
+                        name: "TWO BEDROOM",
+                        area: "47.74 SQM",
+                        image: "/pwl/pwl-woodland-park3-twobedroom.png",
+                        price: 8300000
+                    },
+                    {
+                        name: "TWO BEDROOM",
+                        area: "50.32 SQM",
+                        image: "/pwl/pwl-woodland-park3-twobedroom2.png",
+                        price: 8840000
+                    },
+                ]
+            },
+            {
+                name: "Woodland Park 4",
+                image: "/pwl/pwl-woodland-park4.png",
+                units: [
+                    {
+                        name: "TYPICAL ONE BEDROOM UNITS",
+                        area: "30.26 SQM",
+                        image: "/pwl/pwl-woodland-park4-typical-onebedroom.png",
+                        price: 5300000
+                    },
+                    {
+                        name: "TYPICAL STUDIO UNITS",
+                        area: "30.26 SQM",
+                        image: "/pwl/pwl-woodland-park4-typical-studio.png",
+                        price: 4000000
+                    },
+                    {
+                        name: "TYPICAL TWO BEDROOM UNITS",
+                        area: "47.74 SQM",
+                        image: "/pwl/pwl-woodland-park4-typical-twobedroom.png",
+                        price: 8300000
+                    },
+                    {
+                        name: "TYPICAL TWO BEDROOM UNITS",
+                        area: "50.32 SQM",
+                        image: "/pwl/pwl-woodland-park4-typical-twobedroom2.png",
+                        price: 8843000
+                    },
+                ]
+            },
         ],
         visualization: "",
         schematic: "",
     },
+    // COVENT GARDEN
     {
         name: 'Covent Garden',
         location: 'Manila City',
@@ -566,6 +1653,7 @@ export const CondoLocations = [
         visualization: "",
         schematic: "",
     },
+    // THE ROCHESTER
     {
         name: 'The Rochester',
         location: 'Pasig City',
@@ -604,6 +1692,7 @@ export const CondoLocations = [
         visualization: "",
         schematic: "",
     },
+    // SAN LORENZO PLACE
     {
         name: 'San Lorenzo Place',
         location: 'Makati City',
@@ -642,6 +1731,7 @@ export const CondoLocations = [
         visualization: "",
         schematic: "",
     },
+    // MANGO TREE RESIDENCE
     {
         name: 'Mango Tree Residence',
         location: 'San Juan City',
@@ -680,6 +1770,7 @@ export const CondoLocations = [
         visualization: "",
         schematic: "",
     },
+    // THE SONOMA
     {
         name: 'The Sonoma',
         location: 'Sta. Rosa City',
@@ -718,13 +1809,14 @@ export const CondoLocations = [
         visualization: "",
         schematic: "",
     },
+    // CAMBRIDGE
     {
         name: 'Cambridge Village',
         location: 'Pasig City',
         description: "In the heart of Pasig City and Cainta, Rizal is an 8-hectare township with 37 mid-rise residential condominiums offering a convenient and comfortable suburban lifestyle. Cambridge Village is one of the micro-city development of Empire East that encapsulates the essential components of living in a self-sustaining community.",
         price: 4100000,
         img: [
-            "/cambridge-village.jpg",
+            "/cambridge-village.png",
         ],
         link: "/residence/cambridge-village",
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.506228613532!2d121.10569597400864!3d14.570205977822301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c7bdb7c133ff%3A0xb72413036b26dd74!2sCambridge%20Village!5e0!3m2!1sfil!2sph!4v1688827681679!5m2!1sfil!2sph",
@@ -737,8 +1829,8 @@ export const CondoLocations = [
             "Amenity 5",
         ],
         sitePlan: {
-            descriptions: [""],
-            img: ""
+            descriptions: ["In the heart of Pasig City and Cainta, Rizal is an 8-hectare township with 37 mid-rise residential condominiums offering a convenient and comfortable suburban lifestyle. Cambridge Village is one of the micro-city developments of Empire East that encapsulates the essential components of living in a self-sustaining community."],
+            img: "/cambridge/cambridge-siteplan.jpg"
         },
         units: [
             {

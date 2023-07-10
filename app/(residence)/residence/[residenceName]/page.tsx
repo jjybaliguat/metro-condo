@@ -9,6 +9,7 @@ import Select from '@/components/Select'
 import { CubeIcon } from "@heroicons/react/24/solid";
 import SelectUnit from '@/components/SelectUnit'
 import UnitsVewDialog from '@/components/UnitsVewDialog'
+import RevealAnimate from '@/helpers/reveal-animate'
 
 
 const page = ({
@@ -22,14 +23,6 @@ const page = ({
     const [units, setUnits] = useState<any | null>()
     const [openDialog, setOpenDialog] = useState({isOpen: false, image: ""})
     const [unitImages, setUnitImages] = useState<Array<string>>()
-
-    useEffect(()=>{
-        console.log(units);
-        
-        units?.units?.map((item: { image: string })=>{
-            unitImages ? setUnitImages([...unitImages, item.image]) : setUnitImages([item.image])
-        })
-    }, [units])
 
     useEffect(()=>{
         
@@ -96,26 +89,29 @@ const page = ({
           {/* End Main Site Description */}
           <div className='flex flex-col gap-10 mx-auto w-[90vw] h-fit py-10'>
             {/* Location */}
-            <div id="location" className="flex md:flex-row flex-col gap-5 p-5 bg-white rounded-[15px] shadow-lg">
-                <div className='flex md:flex-row flex-col gap-5 md:w-[50%] w-[100%]'>
-                    <MapPinIcon className="h-8 w-8 text-black" />
-                    <div className='flex flex-col gap-5'>
-                        <h1 className='md:text-[2rem] text-[1.5rem] font-bold'>LOCATION</h1>
-                        <h1>{residence.address}</h1>
+            <RevealAnimate direction={100}>
+                <div id="location" className="flex md:flex-row flex-col gap-5 p-5 bg-white rounded-[15px] shadow-lg">
+                    <div className='flex md:flex-row flex-col gap-5 md:w-[50%] w-[100%]'>
+                        <MapPinIcon className="h-8 w-8 text-black" />
+                        <div className='flex flex-col gap-5'>
+                            <h1 className='md:text-[2rem] text-[1.5rem] font-bold'>LOCATION</h1>
+                            <h1>{residence.address}</h1>
+                        </div>
+                    </div>
+                    <div className='md:h-[400px] h-[250px] md:w-[50%] w-[100%]'>
+                        <iframe src={residence.embedLink}
+                        className='h-full w-full'
+                        width="600" 
+                        height="450" 
+                        allowFullScreen={true} 
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <div className='md:h-[400px] h-[250px] md:w-[50%] w-[100%]'>
-                    <iframe src={residence.embedLink}
-                    className='h-full w-full'
-                    width="600" 
-                    height="450" 
-                    allowFullScreen={true} 
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
+            </RevealAnimate>
             {/* End Location */}
             {/* 5 Star Amenities */}
+            <RevealAnimate direction={100}>
             <div id="amenities" className="flex md:flex-row flex-col gap-5 p-5 bg-white rounded-[15px] shadow-lg">
                 <img className="h-12 w-12" src='/amenitiesicon.png' />
                 <div className='flex flex-col gap-5'>
@@ -128,8 +124,10 @@ const page = ({
                     ))}
                 </div>
             </div>
+            </RevealAnimate>
             {/* End 5 Star Amenities */}
             {/* Site Plan*/}
+            <RevealAnimate direction={100}>
             <div id="site-plan" className="flex md:flex-row flex-col gap-5 p-5 bg-white rounded-[15px] shadow-lg">
                 <img className="h-10 w-10 text-black" src='/site-plan-icon.png' />
                 <div className='flex flex-col gap-5'>
@@ -153,8 +151,10 @@ const page = ({
                     </div>
                 </div>
             </div>
+            </RevealAnimate>
             {/* End Site Plan */}
             {/* Unit Layout */}
+            <RevealAnimate direction={100}>
             <div id="layout" className="flex flex-col gap-10 p-5 bg-white rounded-[15px] shadow-lg">
                 <div className='flex md:flex-row md:justify-between flex-col'>
                     <div className='flex flex-row items-center gap-3'>
@@ -188,11 +188,11 @@ const page = ({
                                     <div className='flex flex-col gap-3 w-[250px] h-fit'>
                                         <div
                                         key={item.name}
-                                        className='w-full h-[250px] outline outline-1 
+                                        className='w-full h-fit outline outline-1 
                                         outline-secondary-100 cursor-pointer'
                                         onClick={()=>setOpenDialog({isOpen: true, image: item.image})}
                                         >
-                                            <img src={item.image} className='w-full h-full'/>
+                                            <img src={item.image} className='w-full'/>
                                         </div>
                                         <div className='flex flex-col gap-1'>
                                             <h1 className='font-extrabold'>{item.name}</h1>
@@ -213,11 +213,11 @@ const page = ({
                                     <div className='flex flex-col gap-3 w-[250px] h-fit'>
                                         <div
                                         key={item.name}
-                                        className='w-full h-[250px] outline outline-1 
+                                        className='w-full h-fit outline outline-1 
                                         outline-secondary-100 cursor-pointer'
                                         onClick={()=>setOpenDialog({isOpen: true, image: item.image})}
                                         >
-                                            <img src={item.image} className='w-full h-full'/>
+                                            <img src={item.image} className='w-full'/>
                                         </div>
                                         <div className='flex flex-col gap-1'>
                                             <h1 className='font-extrabold'>{item.name}</h1>
@@ -232,8 +232,10 @@ const page = ({
                     </div>
                 </div>
             </div>
+            </RevealAnimate>
             {/* End Unit Layout */}
             {/* 3D Visualization */}
+            <RevealAnimate direction={100}>
             <div id="3d-visualization" className="flex md:flex-row flex-col gap-5 p-5 bg-white rounded-[15px] shadow-lg">
                 <CubeIcon className="h-10 w-10 text-black" />
                 <div className='flex flex-col gap-5'>
@@ -262,8 +264,10 @@ const page = ({
                     </div> */}
                 </div>
             </div>
+            </RevealAnimate>
             {/* End 3D Visualization */}
             {/* Schematic */}
+            <RevealAnimate direction={100}>
             <div id="schematic" className="flex md:flex-row flex-col gap-5 p-5 bg-white rounded-[15px] shadow-lg">
                 <CubeIcon className="h-10 w-10 text-black" />
                 <div className='flex flex-col gap-5'>
@@ -292,6 +296,7 @@ const page = ({
                     </div> */}
                 </div>
             </div>
+            </RevealAnimate>
             {/* End Schematic */}
           </div>
       </div>
