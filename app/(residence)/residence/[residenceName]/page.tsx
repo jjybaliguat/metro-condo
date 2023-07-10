@@ -172,10 +172,10 @@ const page = ({
                     </div>
                 </div>
                 <div className='flex md:flex-row flex-col gap-5 mt-5'>
-                    <div className="w-[300px] h-[400px] mx-auto">
+                    <div className="md:w-[300px] w-[80vw] h-[400px] mx-auto">
                         <img src={units.image? units.image : residence.units[0].image} alt="unit image" className='w-full h-full'/>
                     </div>
-                    <div className='flex flex-wrap gap-5 justify-center'>
+                    <div className='flex flex-wrap gap-5 justify-center md:w-[70%] w-full'>
                         {
                             units.units? (
                                 units.units.map((item: {
@@ -185,10 +185,10 @@ const page = ({
                                     price: number
                                 }, index: number)=>(
                                     <>
-                                    <div className='flex flex-col gap-3'>
+                                    <div className='flex flex-col gap-3 w-[250px] h-fit'>
                                         <div
                                         key={item.name}
-                                        className='w-[250px] h-[250px] outline outline-1 
+                                        className='w-full h-[250px] outline outline-1 
                                         outline-secondary-100 cursor-pointer'
                                         onClick={()=>setOpenDialog({isOpen: true, image: item.image})}
                                         >
@@ -210,10 +210,10 @@ const page = ({
                                     price: number
                                 }, index: number)=>(
                                     <>
-                                    <div className='flex flex-col gap-3'>
+                                    <div className='flex flex-col gap-3 w-[250px] h-fit'>
                                         <div
                                         key={item.name}
-                                        className='w-[250px] h-[250px] outline outline-1 
+                                        className='w-full h-[250px] outline outline-1 
                                         outline-secondary-100 cursor-pointer'
                                         onClick={()=>setOpenDialog({isOpen: true, image: item.image})}
                                         >

@@ -236,8 +236,218 @@ export const CondoLocations = [
                         image: "/paddington/1-bedroom2.png",
                         price: 6700000
                     },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "35.64 SQM",
+                        image: "/paddington/1-bedroom3.png",
+                        price: 6800000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "37.63 SQM",
+                        image: "/paddington/1-bedroom4.png",
+                        price: 7100000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "40.27 SQM",
+                        image: "/paddington/1-bedroom5.png",
+                        price: 7600000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "42.74 SQM",
+                        image: "/paddington/1-bedroom6.png",
+                        price: 8050000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "51.34 SQM",
+                        image: "/paddington/1-bedroom7.png",
+                        price: 9600000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "70.30 SQM",
+                        image: "/paddington/2-bedroom.png",
+                        price: 13050000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "55.11 SQM",
+                        image: "/paddington/2-bedroom2.png",
+                        price: 10300000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "59.24 SQM",
+                        image: "/paddington/2-bedroom3.png",
+                        price: 11050000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "59.76 SQM",
+                        image: "/paddington/2-bedroom4.png",
+                        price: 11100000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "70.19 SQM",
+                        image: "/paddington/2-bedroom5.png",
+                        price: 13000000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "78.76 SQM",
+                        image: "/paddington/2-bedroom6.png",
+                        price: 14600000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "95.46 SQM",
+                        image: "/paddington/2-bedroom7.png",
+                        price: 17600000
+                    },
+                    {
+                        name: "TWO BEDROOM (TYPICAL & PENTHOUSE)",
+                        area: "48.78 SQM",
+                        image: "/paddington/2-bedroom-typical.png",
+                        price: 9150000
+                    },
+                    {
+                        name: "TWO BEDROOM (TYPICAL & PENTHOUSE)",
+                        area: "49.39 SQM",
+                        image: "/paddington/2-bedroom-typical2.png",
+                        price: 9250000
+                    },
+                    {
+                        name: "TWO BEDROOM (TYPICAL)",
+                        area: "47.37 SQM",
+                        image: "/paddington/2-bedroom-typical3.png",
+                        price: 8900000
+                    },
+                    {
+                        name: "TWO BEDROOM (TYPICAL)",
+                        area: "48.47 SQM",
+                        image: "/paddington/2-bedroom-typical4.png",
+                        price: 9100000
+                    },
+                    {
+                        name: "TWO BEDROOM (TYPICAL)",
+                        area: "61.76 SQM",
+                        image: "/paddington/2-bedroom-typical5.png",
+                        price: 11500000
+                    },
+                    {
+                        name: "TWO BEDROOM (TYPICAL)",
+                        area: "55.30 SQM",
+                        image: "/paddington/2-bedroom-typical6.png",
+                        price: 10300000
+                    },
                 ]
-            }
+            },
+            {
+                name: "Tower 2",
+                image: "/paddington/tower-2.png",
+                units: [
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "24.79 SQM",
+                        image: "/paddington/tower2-studio.png",
+                        price: 4800000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "25.85 SQM",
+                        image: "/paddington/tower2-studio2.png",
+                        price: 5000000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "27.27 SQM",
+                        image: "/paddington/tower2-studio3.png",
+                        price: 5250000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "28.35 SQM",
+                        image: "/paddington/tower2-studio4.png",
+                        price: 5400000
+                    },
+                    {
+                        name: "EXECUTIVE STUDIO",
+                        area: "29.08 SQM",
+                        image: "/paddington/tower2-studio5.png",
+                        price: 5600000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "39.04 SQM",
+                        image: "/paddington/tower2-onebedroom.png",
+                        price: 7400000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "43.18 SQM",
+                        image: "/paddington/tower2-onebedroom2.png",
+                        price: 8100000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "35.62 SQM",
+                        image: "/paddington/tower2-onebedroom3.png",
+                        price: 6750000
+                    },
+                    {
+                        name: "ONE BEDROOM",
+                        area: "36.56 SQM",
+                        image: "/paddington/tower2-onebedroom4.png",
+                        price: 6900000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "49.60 SQM",
+                        image: "/paddington/tower2-twobedroom.png",
+                        price: 9300000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "58.08 SQM",
+                        image: "/paddington/tower2-twobedroom2.png",
+                        price: 10800000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "63.30 SQM",
+                        image: "/paddington/tower2-twobedroom3.png",
+                        price: 11800000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "63.93 SQM",
+                        image: "/paddington/tower2-twobedroom4.png",
+                        price: 11900000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "76.41 SQM",
+                        image: "/paddington/tower2-twobedroom5.png",
+                        price: 14150000
+                    },
+                    {
+                        name: "TWO BEDROOM (PENTHOUSE)",
+                        area: "91.31 SQM",
+                        image: "/paddington/tower2-twobedroom6.png",
+                        price: 14150000
+                    },
+                    {
+                        name: "TWO BEDROOM (TYPICAL)",
+                        area: "54.23 SQM",
+                        image: "/paddington/tower2-twobedroom7.png",
+                        price: 10100000
+                    },
+                ]
+            },
         ],
         visualization: "",
         schematic: "",
