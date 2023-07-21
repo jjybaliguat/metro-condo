@@ -37,11 +37,15 @@ html {
 }
 
 .custom-btn {
-  @apply flex flex-row relative justify-center items-center py-3 px-5 outline-none;
+  @apply flex flex-row relative justify-center items-center py-3 px-5 outline-none hover:scale-105;
 }
 
 .section-title {
-  @apply md:text-[2rem] text-[1.5rem] text-center font-bold;
+  @apply md:text-[3rem] text-[1.5rem] text-center font-bold;
+}
+.vertical-text{
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
 }
 /* END: General styles */
 

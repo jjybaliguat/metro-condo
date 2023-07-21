@@ -59,6 +59,7 @@ const CondoCatalog = () => {
                 ) : (
                   CondoLocations.slice(0, 4).map((item)=>(
                     <CondoCard
+                           key={item.name} 
                             name={item.name}
                             location={item.location}
                             description={item.description}

@@ -5,16 +5,24 @@ import CustomButton from './CustomButton'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import {motion} from 'framer-motion'
-import Avatar from './Avatar'
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { signInWithPopup } from 'firebase/auth'
 import { auth, provider } from '@/lib/firebase'
 import {Link as LinkS} from 'react-scroll'
 import { styled } from 'styled-components'
+import { useDispatch } from 'react-redux'
+import { logIn } from '@/redux/features/auth-slice'
+import { AppDispatch, useAppSelector } from '@/redux/store'
+import ProfileDropDown from './ProfileDropDown'
 
 const NavLinks = [
   {
     title: "HOME",
     href: "/",
+  },
+  {
+    title: "BUILDERS",
+    href: "/builders",
   },
   {
     title: "PROJECTS",
@@ -48,23 +56,23 @@ const CustomLink = styled(LinkS)`
 `
 
 const Navbar = () => {
-  // const [user, setUser] = useState(
-  //   {
-  //     name: '',
-  //     email: '',
-  //     photoUrl: '',
-  //   }
-  // )
   const pathname = usePathname()
   const [showMenu, setShowMenu] = useState(false)
+  const dispatch = useDispatch<AppDispatch>()
+  const isAuth = useAppSelector((store)=>store.auth.value?.isAuth)
 
   const toggleMenu = () => setShowMenu(!showMenu)
 
   const handleSignIn = async() => {
     try {
       const data = await signInWithPopup(auth, provider)
-      console.log(data.user);
-      
+      const user = {
+        name: data.user?.displayName,
+        email: data.user?.email,
+        photo: data.user?.photoURL,
+        uid: data.user?.uid,
+      }
+      dispatch(logIn(user))
     } catch (error) {
       console.log(error)
     }
@@ -91,7 +99,7 @@ const Navbar = () => {
                 <span>METRO CONDO LIVING</span>
             </Link>
             <div className={`flex md:flex-row flex-col md:gap-10 gap-5 absolute md:static duration-500 
-            md:min-h-fit left-0 md:w-auto w-full items-center px-5 z-30
+            md:min-h-fit left-0 md:w-auto w-full items-center px-5 z-50
             py-10 md:py-3
             ${showMenu ? 'top-[70px] bg-white' : 'top-[-1000px]'}`}>
               {
@@ -106,15 +114,20 @@ const Navbar = () => {
                   </Link>
                 ))
               }
-              {/* {!user && ( */}
-              <button
-                  className='flex md:hidden justify-center py-2 w-full border border-[3px] border-primary rounded-full hover:scale-105'
-                  onClick={handleSignIn}
-              >
-                Signin
-              </button>
-              {/* )
-              } */}
+              {isAuth ? (
+                <ProfileDropDown 
+                style='flex md:hidden'
+                />
+                )
+                : (
+                <button
+                className='flex md:hidden justify-center py-2 w-full border border-[3px] border-primary rounded-full hover:scale-105'
+                onClick={handleSignIn}
+                >
+                  Signin
+                </button>
+                )
+                }
             </div>
             <div className='flex-center gap-2'>
                 <CustomButton
@@ -122,32 +135,28 @@ const Navbar = () => {
                   containerStyles='bg-primary text-[10px] md:text-[1rem] text-white rounded-full hover:scale-105'
                   handleClick={()=>alert("This site is under development")}
                 />
-                {/* {
-                  !user && ( */}
+                {isAuth ? (
+                    <ProfileDropDown
+                    style='md:flex hidden' 
+                    />
+                ) : (
                     <button type="button"
-                    onClick={handleSignIn}
-                    className='hidden md:flex py-3 px-5 outline-none'>
-                      Signin
+                      onClick={handleSignIn}
+                      className='hidden md:flex py-3 px-5 outline-none'>
+                        Signin
                     </button>
-                  {/* )
+                )
                 }
                 {
-                  user && ( */}
-                    {/* <Avatar
-                      size="small"
-                      // img='/mypic.jpg'
-                      style='cursor-pointer'
-                    /> */}
-                  {/* )
-                } */}
-                <Image
-                  className='flex md:hidden cursor-pointer'
+                  showMenu ? 
+                  <XMarkIcon 
                   onClick={toggleMenu}
-                  src={showMenu ? '/close.svg' : '/menubar.svg'}
-                  alt="menubar"
-                  height={35}
-                  width={35}
-                />
+                  className="h-8 w-8 text-black flex md:hidden" /> 
+                  : 
+                  <Bars3Icon 
+                  onClick={toggleMenu}
+                  className="h-8 w-8 text-black flex md:hidden" />
+                }
             </div>
         </nav>
     </header>
