@@ -53,7 +53,7 @@ const CondoCard = ({
       <div className='flex flex-between gap-5 mt-3'>
         <div className='flex flex-col'>
             <p>Starting from</p>
-            <p className='text-[red] font-bold'>{price}</p>
+            <p className='text-[red] font-bold'>{price}<sub> /mo.</sub></p>
         </div>
         <Link href={link}>
             <CustomButton

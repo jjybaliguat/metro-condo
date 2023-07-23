@@ -4,13 +4,15 @@ import NotFound from '@/app/not-found'
 import SideBar from '@/components/SideBar'
 import { PageWrapper } from '@/helpers/page-wrapper'
 import { CondoLocations } from '@/lib/contents/condo-locations'
-import React, { useEffect, useState } from 'react'
+import React, { Suspense, useEffect, useState } from 'react'
 import { MapPinIcon } from "@heroicons/react/24/solid";
 import Select from '@/components/Select'
 import { CubeIcon } from "@heroicons/react/24/solid";
 import SelectUnit from '@/components/SelectUnit'
 import UnitsVewDialog from '@/components/UnitsVewDialog'
 import RevealAnimate from '@/helpers/reveal-animate'
+import Image from 'next/image'
+import { Skeleton } from 'antd'
 
 
 const page = ({
@@ -93,7 +95,7 @@ const page = ({
             <RevealAnimate direction={100}>
                 <div id="location" className="flex md:flex-row flex-col gap-5 p-5 bg-white rounded-[15px] shadow-lg">
                     <div className='flex md:flex-row flex-col gap-5 md:w-[50%] w-[100%]'>
-                        <MapPinIcon className="h-8 w-8 text-black" />
+                        <img src="/mapsicon.png" alt="icon" className='h-[30px]' />
                         <div className='flex flex-col gap-5'>
                             <h1 className='md:text-[2rem] text-[1.5rem] font-bold'>LOCATION</h1>
                             <h1>{residence.address}</h1>
@@ -111,6 +113,30 @@ const page = ({
                 </div>
             </RevealAnimate>
             {/* End Location */}
+            {/* LandMArks */}
+            <RevealAnimate direction={100}>
+                <div id="landmarks" className="flex flex-col gap-5 p-5 pb-10 bg-white rounded-[15px] shadow-lg">
+                    <div className='flex md:flex-row flex-col gap-5 md:w-[50%] w-[100%]'>
+                        <img src="/mapsicon.png" alt="icon" className='h-[30px]' />
+                        <h1 className='md:text-[2rem] text-[1.5rem] font-bold'>LAND MARKS</h1>
+                    </div>
+                    {
+                        <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 px-10'>
+                          {
+                            [...new Array(3)].map((_, i)=>(
+                              <div key={i} className='w-[300px] h-fit'>
+                              <div className='flex flex-col gap-3'>
+                                <Skeleton.Image active />
+                                <Skeleton active />
+                              </div>
+                            </div>
+                            ))
+                          }
+                        </div>
+                    }
+                </div>
+            </RevealAnimate>
+            {/* End LandMArks */}
             {/* 5 Star Amenities */}
             <RevealAnimate direction={100}>
             <div id="amenities" className="flex md:flex-row flex-col gap-5 p-5 bg-white rounded-[15px] shadow-lg">

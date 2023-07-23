@@ -53,6 +53,11 @@ let useClickOutside = (handler: () => void) => {
         icon: <MapPinIcon className="h-6 w-6 text-gray-500" />,
     },
     {
+        name: "LAND MARKS",
+        href: "landmarks",
+        icon: <MapPinIcon className="h-6 w-6 text-gray-500" />,
+    },
+    {
         name: "AMENITIES",
         href: "amenities",
         icon: <MapPinIcon className="h-6 w-6 text-gray-500" />,
@@ -119,7 +124,7 @@ const SideBar = ({
                 <XMarkIcon className="h-8 w-8"/>
             </motion.div>
             {/* Main sidebar Links */}
-            <div className="flex flex-col justify-center w-full h-full gap-2">
+            <div className="flex flex-col justify-center w-full h-full gap-2 overflow-y-auto">
                 {
                     sideLinks.map((item, index)=> (
                         <CustomLink

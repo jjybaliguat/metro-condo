@@ -18,7 +18,7 @@ export default function Home() {
         <Testimonials />
         <Contact />
         <Link
-            href="tel: 09979112814"
+            href="tel: 09159828384"
             className='fixed top-0 right-[1rem] z-40 mt-[70px]'
             passHref
         >
