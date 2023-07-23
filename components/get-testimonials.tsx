@@ -14,6 +14,7 @@ const GetTestimonials = async() => {
         {
             testimonials.map((item: {img: string, name: string, testimony: string})=>(
             <TestimonialCard
+                key={item.name}
                 img={item.img}
                 name={item.name}
                 testimony={item.testimony}

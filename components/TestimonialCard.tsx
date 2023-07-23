@@ -12,7 +12,7 @@ const TestimonialCard = ({
 }) => {
 
   return (
-    <div className='w-full h-fit'>
+    <div className='w-full h-fit cursor-pointer'>
       <div className='flex flex-col gap-3'>
         <Image
             src={img}
