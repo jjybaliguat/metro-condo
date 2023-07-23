@@ -16,7 +16,7 @@ const CondoCard = ({
     location: string,
     img: string,
     description: string,
-    price: number,
+    price?: number,
     link: string,
 }) => {
   return (
@@ -53,7 +53,7 @@ const CondoCard = ({
       <div className='flex flex-between gap-5 mt-3'>
         <div className='flex flex-col'>
             <p>Starting from</p>
-            <p className='text-[red] font-bold'>{price}<sub> /mo.</sub></p>
+            <p className='text-[red] font-bold'>{price? `${price} /mo.` : <button>Get Quote</button>}</p>
         </div>
         <Link href={link}>
             <CustomButton
