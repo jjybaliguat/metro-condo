@@ -1,9 +1,8 @@
-"use client"
 import { PageWrapper } from '@/helpers/page-wrapper'
 import Image from 'next/image'
 import React from 'react'
 
-const Teams = () => {
+const page = () => {
   return (
     <PageWrapper>
         <div className='h-[100vh] w-[100vw] flex-center flex-col'>
@@ -16,10 +15,10 @@ const Teams = () => {
             />
             <h1
           className='text-[40px] text-center'
-          >Our Team section is under development</h1>
+          >Builders section is under development</h1>
         </div>
     </PageWrapper>
   )
 }
 
-export default Teams
+export default page

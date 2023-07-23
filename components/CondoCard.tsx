@@ -37,13 +37,14 @@ const CondoCard = ({
                   <p className='text-[10px] text-white'>{location}</p>
               </div>
           </div>
-          <Image
+          <img src="/empireeast-logo.png" alt='empireeastlogo' className='absolute top-0 right-0 h-[50px] w-[50px]'/>
+          {/* <Image
             src="/empireeast-logo.png"
             alt='empireeastlogo'
             height={50}
             width={50}
             className='absolute top-0 right-0'
-          />
+          /> */}
         </div>
       </Link>
       <div className='condo-description'>

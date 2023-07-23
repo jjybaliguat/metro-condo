@@ -1,4 +1,5 @@
 "use client"
+
 import NotFound from '@/app/not-found'
 import SideBar from '@/components/SideBar'
 import { PageWrapper } from '@/helpers/page-wrapper'

@@ -1,8 +1,6 @@
-
 import { Footer, Navbar } from '@/components'
 import './globals.css'
 import { ReduxProvider } from '@/redux/provider'
-
 
 export const metadata = {
   title: 'Residential | Metro Condo Living | Mandaluyong',

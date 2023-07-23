@@ -83,7 +83,7 @@ const Navbar = () => {
   // }, [user])
 
   return (
-    <header className='w-full sticky top-0 z-50 bg-white shadow-lg'>
+    <header className='w-full sticky top-0 z-40 bg-white shadow-lg'>
         <nav className='max-w-[1440px] h-[70px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4'>
             <Link
                 href="/"
