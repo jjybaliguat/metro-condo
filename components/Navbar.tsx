@@ -98,8 +98,8 @@ const Navbar = () => {
                 />
                 <span>METRO CONDO LIVING</span>
             </Link>
-            <div className={`flex md:flex-row flex-col md:gap-10 gap-5 absolute md:static duration-500 
-            md:min-h-fit left-0 md:w-auto w-full items-center px-5 z-50
+            <div className={`flex lg:flex-row flex-col gap-5 absolute lg:static duration-500 
+            lg:min-h-fit left-0 lg:w-auto w-full items-center px-5 z-50
             py-10 md:py-3
             ${showMenu ? 'top-[70px] bg-white' : 'top-[-1000px]'}`}>
               {
@@ -151,11 +151,11 @@ const Navbar = () => {
                   showMenu ? 
                   <XMarkIcon 
                   onClick={toggleMenu}
-                  className="h-8 w-8 text-black flex md:hidden" /> 
+                  className="h-8 w-8 text-black flex lg:hidden" /> 
                   : 
                   <Bars3Icon 
                   onClick={toggleMenu}
-                  className="h-8 w-8 text-black flex md:hidden" />
+                  className="h-8 w-8 text-black flex lg:hidden" />
                 }
             </div>
         </nav>
