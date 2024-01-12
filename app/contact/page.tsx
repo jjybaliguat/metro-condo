@@ -59,7 +59,7 @@ return (
                             </div>
                             <div className="flex flex-col gap-2">
                                 <h1 className='font-medium text-[2rem]'>Email</h1>
-                                <h1 className='text-[1rem]'>metrocondolifestyle@gmail.com</h1>
+                                <h1 className='text-[1rem]'>builders@metrocondoliving.com</h1>
                             </div>
                         </div>
                         <div className='flex md:flex-row flex-col md:items-center md:gap-5 gap-1'>
@@ -68,7 +68,7 @@ return (
                             </div>
                             <div className="flex flex-col gap-2">
                                 <h1 className='font-medium text-[2rem]'>Phone</h1>
-                                <h1 className='text-[1rem]'>N/A</h1>
+                                <h1 className='text-[1rem]'>09159828384</h1>
                             </div>
                         </div>
                         <div

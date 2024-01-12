@@ -13,7 +13,7 @@ const Footer = () => {
                 <h1 className='font-bold md:text-[2.5rem] text-[2rem]'>METRO CONDO LIVING</h1>
                 <p>632 Shaw Blvd, Mandaluyong, 1550 Metro Manila</p>
                 <p>09159828384</p>
-                <p>metrocondolifestyle@gmail.com</p>
+                <p>builders@metrocondoliving.com</p>
             </div>
             <div className='flex flex-col gap-3'>
                 <h1 className='font-bold md:text-[1.5rem] text-[1rem]'>Useful Links</h1>
@@ -24,13 +24,13 @@ const Footer = () => {
                     <span className='text-[1rem]'>&gt;</span>
                     Home
                 </Link>
-                <Link
+                {/* <Link
                     href="/"
                     className='flex gap-1'
                 >
                     <span className='text-[1rem]'>&gt;</span>
                     Projects
-                </Link>
+                </Link> */}
                 <Link
                     href="/"
                     className='flex gap-1'
@@ -68,7 +68,7 @@ const Footer = () => {
                     </Link>
                     <Link href="https://www.youtube.com/@markyjayromualdez4219" passHref legacyBehavior>
                         <a target="_blank">
-                            <Image className='rounded-full h-[50px]'
+                            <Image className='rounded-full'
                                 src="/ytlogo.png"
                                 alt="yt logo"
                                 width={50}

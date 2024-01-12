@@ -40,6 +40,13 @@ html {
   @apply flex flex-row relative justify-center items-center py-3 px-5 outline-none hover:scale-105;
 }
 
+.btn-primary {
+  @apply flex flex-row relative text-white justify-center items-center bg-primary px-4 py-2 shadow-xl ring-1 ring-slate-900/5 rounded-lg;
+}
+.btn-secondary{
+  @apply flex flex-row relative text-white justify-center items-center bg-secondary px-4 py-2 shadow-xl ring-1 ring-slate-900/5 rounded-lg;
+}
+
 .section-title {
   @apply md:text-[3rem] text-[1.5rem] text-center font-bold;
 }

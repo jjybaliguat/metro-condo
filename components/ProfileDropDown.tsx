@@ -58,7 +58,7 @@ const ProfileDropDown = ({
               </Menu.Item>
             <Menu.Item>
                 {({ active }) => (
-                  <Link href="/user/profile">
+                  <Link href="/profile">
                     <button
                       className={`${
                         active ? 'bg-secondary-100 text-black' : 'text-gray-900'

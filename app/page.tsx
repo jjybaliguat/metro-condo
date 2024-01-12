@@ -27,12 +27,6 @@ export default function Home() {
                 containerStyles='bg-primary text-white text-[12px] md:text-[1rem]'
             />
         </Link>
-        <button
-          className='origin-bottom-right -rotate-90 fixed bottom-[200px] right-0 
-          bg-[darkred] text-white p-2 md:p-3 z-50 hover:-translate-x-1 drop-shadow-md hover:drop-shadow-2xl text-[12px] md:text-[1rem]'
-        >
-          Rate your experience
-        </button>
       </main>
     </PageWrapper>
   )

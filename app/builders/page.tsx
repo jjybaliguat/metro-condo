@@ -15,7 +15,7 @@ const page = () => {
             />
             <h1
           className='text-[40px] text-center'
-          >Builders section is under development</h1>
+          >MCL Builders is Coming Soon...</h1>
         </div>
     </PageWrapper>
   )
