@@ -108,3 +108,10 @@ html {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
 }
+.team-description{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+}
+

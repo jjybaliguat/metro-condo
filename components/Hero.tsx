@@ -6,6 +6,8 @@ import { AnimatePresence, motion} from 'framer-motion'
 import Link from 'next/link'
 import {Link as LinkS} from 'react-scroll'
 import { styled } from 'styled-components'
+import { useRouter } from 'next/navigation'
+import SearchDialog from './SearchDialog'
 
 const images = [
     "/condoimage2.jpg",
@@ -51,7 +53,8 @@ const variants = {
 
 const Hero = () => {
     const [index, setIndex] = useState(0)
-    const [propertyType, setPropertytype] = useState('')
+    const router = useRouter()
+    const [open, setOpen] = useState(false)
 
     const forWardImage = () => {
         if(index == (images.length - 1)){
@@ -81,6 +84,10 @@ const Hero = () => {
 
   return (
     <AnimatePresence initial={false}>
+    <SearchDialog
+    isOpen={open}
+    closeModal={()=>setOpen(false)}
+    />
     <motion.div 
     className="hero bg-fixed bg-no-repeat bg-center bg-cover"
     style={{backgroundImage: `url("${images[index]}")`}}
@@ -163,13 +170,16 @@ const Hero = () => {
                   >
                     <CustomButton
                         title="Explore Condos"
+                        textStyles='text-[14px] md:text-[1rem]'
                         containerStyles="bg-primary text-white rounded-full mt-10 hover:scale-105"
                     />
                 </CustomLink>
                     <CustomButton
-                        title="Book Now"
+                        title="Search Property"
+                        textStyles='text-[14px] md:text-[1rem]'
                         containerStyles="border border-2 border-primary text-white rounded-full 
                         mt-10 hover:scale-105"
+                        handleClick={()=>setOpen(true)}
                     />
             </motion.div>
       </div>

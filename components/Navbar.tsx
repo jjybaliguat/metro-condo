@@ -2,10 +2,10 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import CustomButton from './CustomButton'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import Image from 'next/image'
 import {motion} from 'framer-motion'
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, MagnifyingGlassIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { signInWithPopup } from 'firebase/auth'
 import { auth, provider } from '@/lib/firebase'
 import {Link as LinkS} from 'react-scroll'
@@ -14,6 +14,7 @@ import { useDispatch } from 'react-redux'
 import { logIn } from '@/redux/features/auth-slice'
 import { AppDispatch, useAppSelector } from '@/redux/store'
 import ProfileDropDown from './ProfileDropDown'
+import SearchDialog from './SearchDialog'
 
 const NavLinks = [
   {
@@ -60,6 +61,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)
   const dispatch = useDispatch<AppDispatch>()
   const isAuth = useAppSelector((store)=>store.auth.value?.isAuth)
+  const router = useRouter()
 
   const toggleMenu = () => setShowMenu(!showMenu)
 
@@ -83,6 +85,7 @@ const Navbar = () => {
   // }, [user])
 
   return (
+    <>
     <header className='w-full sticky top-0 z-50 bg-white shadow-lg'>
         <nav className='max-w-[1440px] h-[70px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4'>
             <Link
@@ -96,7 +99,8 @@ const Navbar = () => {
                   width={50}
                   className='object-contain'
                 />
-                <span>METRO CONDO LIVING</span>
+                <span className='hidden md:flex'>METRO CONDO LIVING</span>
+                <span className='md:hidden flex text-[1.2rem]'>MCL</span>
             </Link>
             <div className={`flex lg:flex-row flex-col gap-5 absolute lg:static duration-500 
             lg:min-h-fit left-0 lg:w-auto w-full items-center px-5 z-50
@@ -129,11 +133,13 @@ const Navbar = () => {
                 )
                 }
             </div>
-            <div className='flex-center gap-2'>
+            <div className='flex-center gap-1'>
                 <CustomButton
-                  title="Book Now"
-                  containerStyles='bg-primary text-[10px] md:text-[1rem] text-white rounded-full hover:scale-105'
-                  handleClick={()=>alert("This site is under development")}
+                  title="Search Property"
+                  textStyles='mr-1 text-[14px]'
+                  rightIcon={<MagnifyingGlassIcon className="h-5 w-5 text-white" />}
+                  containerStyles='bg-primary p-2 text-[10px] md:text-[1rem] text-white rounded-full hover:scale-105'
+                  handleClick={()=>router.push("/property")}
                 />
                 {isAuth ? (
                     <ProfileDropDown
@@ -160,6 +166,7 @@ const Navbar = () => {
             </div>
         </nav>
     </header>
+    </>
   )
 }
 

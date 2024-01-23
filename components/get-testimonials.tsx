@@ -2,20 +2,33 @@ import React from 'react'
 import TestimonialCard from './TestimonialCard'
 
 async function getTestimonials() {
-    let res = await fetch("http://localhost:5000/testimonials")
-    return res.json()
+    const baseUrl = process.env.NEXT_PUBLIC_NODE_ENV == "development" ? "http://localhost:8000/api" : "https://metro-api.rdnaksnds.com/api"
+    const response = await fetch(`${baseUrl}/testimonials`, {cache: 'no-store'})
+    return response.json()
 }
 
+type Testimony = {
+    _id: string, 
+    name: string, 
+    testimony: string, 
+    photo: {
+        id: String,
+        webViewLink: String,
+        webContentLink: String
+    }
+}
+
+
 const GetTestimonials = async() => {
-    let testimonials = await getTestimonials()
+    let testimonials: any = await getTestimonials()
 
   return (
-    <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 px-10'>
-        {
-            testimonials.map((item: {img: string, name: string, testimony: string})=>(
+    <div className='mt-20 flex flex-wrap justify-center gap-10 mt-20 px-10'>
+        {testimonials &&
+            testimonials?.map((item: Testimony)=>(
             <TestimonialCard
-                key={item.name}
-                img={item.img}
+                key={item._id}
+                img={`https://drive.google.com/uc?export=view&id=${item?.photo?.id}`}
                 name={item.name}
                 testimony={item.testimony}
             />

@@ -15,7 +15,7 @@ import Image from 'next/image'
 import { Skeleton } from 'antd'
 
 
-const page = ({
+const Residence = ({
     params
 }: {
     params: { residenceName: string}
@@ -73,16 +73,35 @@ const page = ({
             {/* End Menu */}
             {/* Main Site Description */}
           <div className="relative flex md:flex-row flex-col w-full h-fit">
-              <div className="relative md:h-[100vh] h-[300px] md:w-[65%] w-full">
-                  <img src={residence?.img[0]} 
-                      className='h-full w-full'
-                  />
-                  <img
-                      src="/empireeast-logo.png"
-                      alt="empireast"
-                      className='absolute top-0 left-0 md:h-[100px] md:w-[120px] h-[80px] w-[100px]'
-                  />
-              </div>
+          <div className="relative md:h-[100vh] h-[300px] md:w-[65%] w-full">
+                <Image
+                    src={residence?.img[0]}
+                    placeholder='blur'
+                    blurDataURL={residence?.img[0]}
+                    alt='residence-img'
+                    fill
+                    style={{
+                        objectFit: 'cover',
+                        objectPosition: 'center'
+                    }}
+                />
+                {/* <img src={CondoLocations[0].img[1]} 
+                    className='h-full w-full'
+                /> */}
+                <div className='absolute top-0 left-0'>
+                    <div className='relative md:h-[150px] md:w-[200px] h-[80px] w-[80px]'>
+                        <Image
+                            src={residence?.logo}
+                            alt='empire-east-logo'
+                            fill
+                            style={{
+                                objectFit: 'cover',
+                                objectPosition: 'center'
+                            }}
+                        />
+                    </div>
+                </div>
+            </div>
               <div className="md:absolute right-0 md:h-[100vh] h-fit md:w-[55%] 
               w-full bg-primary flex flex-col gap-5 flex-center p-10 text-white">
                   <h1 className='md:text-[3rem] text-[2rem] font-bold text-center'>{residence.name}</h1>
@@ -95,7 +114,18 @@ const page = ({
             <RevealAnimate direction={100}>
                 <div id="location" className="flex md:flex-row flex-col gap-5 p-5 bg-white rounded-[15px] shadow-lg">
                     <div className='flex md:flex-row flex-col gap-5 md:w-[50%] w-[100%]'>
-                        <img src="/mapsicon.png" alt="icon" className='h-[30px]' />
+                        <div className='relative h-[30px] w-[30px]'>
+                            <Image
+                                fill
+                                src={'/mapsicon.png'}
+                                alt="icon"
+                                style={{
+                                    objectFit: 'cover',
+                                    objectPosition: 'center'
+                                }}
+                            />
+                        </div>
+                        {/* <img src="/mapsicon.png" alt="icon" className='h-[30px]' /> */}
                         <div className='flex flex-col gap-5'>
                             <h1 className='md:text-[2rem] text-[1.5rem] font-bold'>LOCATION</h1>
                             <h1>{residence.address}</h1>
@@ -117,7 +147,17 @@ const page = ({
             <RevealAnimate direction={100}>
                 <div id="landmarks" className="flex flex-col gap-5 p-5 pb-10 bg-white rounded-[15px] shadow-lg">
                     <div className='flex md:flex-row flex-col gap-5 md:w-[50%] w-[100%]'>
-                        <img src="/mapsicon.png" alt="icon" className='h-[30px]' />
+                        <div className='relative h-[30px] w-[30px]'>
+                            <Image
+                                fill
+                                src={'/mapsicon.png'}
+                                alt="icon"
+                                style={{
+                                    objectFit: 'cover',
+                                    objectPosition: 'center'
+                                }}
+                            />
+                        </div>
                         <h1 className='md:text-[2rem] text-[1.5rem] font-bold'>LAND MARKS</h1>
                     </div>
                     {
@@ -332,4 +372,4 @@ const page = ({
   )
 }
 
-export default page
+export default Residence

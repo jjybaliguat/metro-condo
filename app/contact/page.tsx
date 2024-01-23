@@ -4,6 +4,8 @@ import CustomButton from '@/components/CustomButton'
 import Select from '@/components/Select'
 import { PageWrapper } from '@/helpers/page-wrapper'
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/20/solid'
+import { Spin, message } from 'antd'
+import axios from 'axios'
 import React, { useState } from 'react'
 
 const incomeSources = [
@@ -25,10 +27,49 @@ const Contact = () => {
     incomeSource: 'Employed',
     message: ''
 })
+const [submitting, setSubmitting] = useState(false)
+const [error, setError] = useState<any | null>()
 
-const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+
+const emailApiUrl = process.env.NEXT_PUBLIC_NODE_ENV == "development" ? 'http://localhost:8000/api/email/message' : 'https://metro-api.rdnaksnds.com/api/email/message'
+
+const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    alert("form submitted")
+    setSubmitting(true)
+    try {
+        const response: any = await axios.post(emailApiUrl, {
+            fromAddress: 'MCL Quotes<builders@metrocondoliving.com>',
+            toAddress: 'builders@metrocondoliving.com',
+            subject: `Quote from ${messageData.name}`,
+            message: `<div>
+            <h1>Name: <strong>${messageData.name}</strong></h1>
+            <h1>Email: <strong>${messageData.email}</strong></h1>
+            <h1>Phone: <strong>${messageData.contact}</strong></h1>
+            <h1>Address: <strong>${messageData.address}</strong></h1>
+            <h1>Source Of Income: <strong>${messageData.incomeSource}</strong></h1>
+            <div style="margin-top: 25px">
+                <h1>Message: </h1>
+                <h1 style="text-align: center">${messageData.message}</h1>
+            </div>
+            </div>`
+        })
+        if(response?.data){
+            setSubmitting(false)
+            setError(false)
+            setMessageData({
+                name: '',
+                email: '',
+                address: '',
+                contact: '',
+                incomeSource: 'Employed',
+                message: ''
+            })
+        }
+    } catch (error) {
+        console.log(error)
+        setSubmitting(false)
+        setError(true)
+    }
 }
 
 
@@ -137,10 +178,16 @@ return (
                     />
                     <CustomButton
                         btnType='submit'
-                        title='Submit'
+                        title={submitting? 'Sending...' : 'Submit'}
+                        rightIcon={<Spin className={submitting ? 'flex' : 'hidden'} />}
                         containerStyles='bg-primary'
                         textStyles='text-white'
                     />
+                    {error != null && (!error? (<div className='mt-5'>
+                        <p className='text-success'>Your message has been sent to us. Thank you.</p>
+                    </div>) : (
+                        <p className='text-danger'>Error sending message</p>
+                    ) )} 
                 </form>
             </div>
         </div>

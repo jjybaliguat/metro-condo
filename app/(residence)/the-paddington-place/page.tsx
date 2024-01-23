@@ -10,15 +10,32 @@ const ThePaddingTon = () => {
    <PageWrapper>
     <div className="relative flex flex-col gap-0">
         <div className="relative flex md:flex-row flex-col w-full h-fit">
-            <div className="relative md:h-[100vh] h-[300px] md:w-[65%] w-full">
-                <img src={CondoLocations[1].img[0]} 
+        <div className="relative md:h-[100vh] h-[300px] md:w-[65%] w-full">
+                <Image
+                    src={CondoLocations[1].img[1]}
+                    alt='paddington-img'
+                    fill
+                    style={{
+                        objectFit: 'cover',
+                        objectPosition: 'center'
+                    }}
+                />
+                {/* <img src={CondoLocations[0].img[1]} 
                     className='h-full w-full'
-                />
-                <img
-                    src="/empireeast-logo.png"
-                    alt="empireast"
-                    className='absolute top-0 left-0 md:h-[150px] md:w-[200px] h-[80px] w-[100px]'
-                />
+                /> */}
+                <div className='absolute top-0 left-0'>
+                    <div className='relative md:h-[150px] md:w-[200px] h-[80px] w-[100px]'>
+                        <Image
+                            src={'/paddington-place-logo.png'}
+                            alt='empire-east-logo'
+                            fill
+                            style={{
+                                objectFit: 'cover',
+                                objectPosition: 'center'
+                            }}
+                        />
+                    </div>
+                </div>
             </div>
             <div className="md:absolute right-0 md:h-[100vh] h-fit md:w-[55%] 
             w-full bg-primary flex flex-col gap-5 flex-center p-10 text-white">

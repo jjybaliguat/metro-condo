@@ -16,7 +16,7 @@ const page = () => {
         <div className='flex flex-col items-center h-fit min-h-[100vh] pb-6'>
             <div className='mt-5 px-3'>
               <h1 className="section-title font-extrabold text-center text-primary tracking-wide">TESTIMONIALS</h1>
-              <p className='mt-5 text-center tracking-wide'><strong>Know what people are saying about us.</strong> Join the <i>MCL community</i> and share your thoughts about us.</p>
+              <p className='mt-5 text-center tracking-wide text-[1rem] md:text-[1.3rem]'><strong>Know what people are saying about us.</strong> Join the <i>MCL community</i> and share your thoughts about us.</p>
             </div>
               {
                     <Suspense fallback={

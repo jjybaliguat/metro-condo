@@ -8,6 +8,7 @@ const CondoCard = ({
     name,
     location,
     img,
+    logo,
     description,
     price,
     link
@@ -15,6 +16,7 @@ const CondoCard = ({
     name: string,
     location: string,
     img: string,
+    logo: string,
     description: string,
     price?: number,
     link: string,
@@ -29,7 +31,16 @@ const CondoCard = ({
           {name}
         </div>
         <div className='relative h-[180px] w-full bg-primary rounded-b-[10px]'>
-          <img src={img} alt="image" className='h-full w-full rounded-b-[10px]'/>
+          <Image
+            alt='residence-img'
+            src={img}
+            fill
+            style={{
+              objectFit: 'cover',
+              objectPosition: 'center'
+            }}
+          />
+          {/* <img src={img} alt="image" className='h-full w-full rounded-b-[10px]'/> */}
           <div className='absolute flex items-center bottom-0 left-0 h-[40px] w-[150px] bg-secondary
           rounded-bl-[10px] rounded-tr-[20px] p-3'>
               <div className="flex flex-row gap-1 items-center">
@@ -37,7 +48,20 @@ const CondoCard = ({
                   <p className='text-[10px] text-white'>{location}</p>
               </div>
           </div>
-          <img src="/empireeast-logo.png" alt='empireeastlogo' className='absolute top-0 right-0 h-[50px] w-[50px]'/>
+          <div className='absolute top-0 right-0'>
+            <div className='relative h-[50px] w-[50px]'>
+              <Image
+              alt='residence-logo'
+              src={logo}
+              fill
+              style={{
+                objectFit: 'cover',
+                objectPosition: 'center'
+              }}
+            />
+            </div>
+          </div>
+          {/* <img src="/empireeast-logo.png" alt='empireeastlogo' className=''/> */}
           {/* <Image
             src="/empireeast-logo.png"
             alt='empireeastlogo'

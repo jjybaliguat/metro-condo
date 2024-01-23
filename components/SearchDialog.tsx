@@ -7,6 +7,7 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 import SelectPropertyType from './SelectPropertyType';
 import CustomButton from './CustomButton';
 import SelectLocation from './SelectLocation';
+import { useRouter } from 'next/navigation';
 
 const Types = [
     "All Properties",
@@ -23,7 +24,7 @@ const Types = [
     "Pasig City",
     "San Juan City",
     "Sta. Rosa City, Laguna",
-    "Pasig City, Cainta",
+    "Pasig City - Cainta",
   ]
 
 
@@ -37,6 +38,7 @@ const SearchDialog = ({
 
     const [propertyType, setPropertyType] = useState('')
     const [location, setLocation] = useState('')
+    const router = useRouter()
 
     const handleSubmit = () => {
         alert("under development")
@@ -97,7 +99,7 @@ const SearchDialog = ({
                                     title='Search'
                                     containerStyles='bg-primary rounded-full cursor-pointer'
                                     isDisabled={propertyType === '' || location === ''}
-                                    handleClick={handleSubmit}
+                                    handleClick={()=>router.push(`/property?location=${location}&type=${propertyType}`)}
                                     textStyles='text-white font-bold'
                                 />
                             </div>
