@@ -46,7 +46,6 @@ const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
             <h1>Email: <strong>${messageData.email}</strong></h1>
             <h1>Phone: <strong>${messageData.contact}</strong></h1>
             <h1>Address: <strong>${messageData.address}</strong></h1>
-            <h1>Source Of Income: <strong>${messageData.incomeSource}</strong></h1>
             <div style="margin-top: 25px">
                 <h1>Message: </h1>
                 <h1 style="text-align: center">${messageData.message}</h1>
@@ -161,13 +160,13 @@ return (
                             onChange={(e)=>setMessageData({...messageData, contact: e.target.value})}
                             required
                         />
-                        <Select
+                        {/* <Select
                             // title='Select Income Source'
                             options={incomeSources}
                             containerStyle='w-full rounded-md outline-none focus:outline-2 focus:outline-primary'
                             selected={messageData.incomeSource}
                             handleSelect={(e) => setMessageData({...messageData, incomeSource: e})}
-                        />
+                        /> */}
                     </div>
                     <textarea
                         className='w-full h-[10rem] p-3 rounded-md outline-none focus:outline-2 focus:outline-primary shadow-md'

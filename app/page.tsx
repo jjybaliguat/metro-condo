@@ -1,10 +1,11 @@
 "use client"
-import { CondoCatalog, Contact, Faqs, Footer, Hero, Section3 } from '@/components'
+import { CondoCatalog, Faqs, Footer, Hero, Section3 } from '@/components'
 import ClientsFeedback from '@/components/ClientsFeedback'
 import CustomButton from '@/components/CustomButton'
 import Testimonials from '@/components/Testimonials'
 import { PageWrapper } from '@/helpers/page-wrapper'
 import Link from 'next/link'
+import Contact from './contact/page'
 
 export default function Home() {
   return (

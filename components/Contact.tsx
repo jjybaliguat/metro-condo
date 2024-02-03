@@ -25,7 +25,7 @@ const Contact = () => {
         email: '',
         address: '',
         contact: '',
-        incomeSource: 'Employed',
+        // incomeSource: 'Employed',
         message: ''
     })
 
@@ -120,13 +120,13 @@ const Contact = () => {
                             onChange={(e)=>setMessageData({...messageData, contact: e.target.value})}
                             required
                         />
-                        <Select
+                        {/* <Select
                             // title='Select Income Source'
                             options={incomeSources}
                             containerStyle='w-full rounded-md outline-none focus:outline-2 focus:outline-primary'
                             selected={messageData.incomeSource}
                             handleSelect={(e) => setMessageData({...messageData, incomeSource: e})}
-                        />
+                        /> */}
                     </div>
                     <textarea
                         className='w-full h-[10rem] p-3 rounded-md outline-none focus:outline-2 focus:outline-primary shadow-md'

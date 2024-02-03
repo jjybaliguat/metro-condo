@@ -6,11 +6,9 @@ import React from 'react'
 async function getData() {
   const baseUrl = process.env.NEXT_PUBLIC_NODE_ENV == "development" ? "http://localhost:8000/api" : "https://metro-api.rdnaksnds.com/api"
   const response = await fetch(`${baseUrl}/team`, {cache: 'no-store'})
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
+
  
   if (!response.ok) {
-    // This will activate the closest `error.js` Error Boundary
     throw new Error('Failed to fetch data')
   }
 
@@ -61,7 +59,7 @@ export default async function Teams(){
                  </div>
                 <div className='flex flex-col gap-1 items-center'>
                   <h1 className='text-[1.6rem] md:text-[1.3rem] lg:text-[1.6rem] text-center'>{team.name}</h1>
-                  <h1 className='font-semibold text-gray-500 text-[18px]'>{team.role}</h1>
+                  <h1 className='font-semibold text-gray-500 text-[18px] text-center'>{team.role}</h1>
                 </div>
                 <div className='team-description'>
                   <p className='text-center'>{team.description}</p>
