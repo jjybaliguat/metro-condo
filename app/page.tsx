@@ -2,10 +2,11 @@
 import { CondoCatalog, Faqs, Footer, Hero, Section3 } from '@/components'
 import ClientsFeedback from '@/components/ClientsFeedback'
 import CustomButton from '@/components/CustomButton'
-import Testimonials from '@/components/Testimonials'
 import { PageWrapper } from '@/helpers/page-wrapper'
 import Link from 'next/link'
 import Contact from './contact/page'
+import About from '@/components/About'
+import Testimonials from '@/components/Testimonials'
 
 export default function Home() {
   return (
@@ -14,9 +15,10 @@ export default function Home() {
         <Hero />
         <CondoCatalog />
         <Section3 />
+        <About />
+        <Testimonials />
         <Faqs />
         {/* <ClientsFeedback /> */}
-        <Testimonials />
         <Contact />
         <Link
             href="tel: 09159828384"
