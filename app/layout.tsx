@@ -6,7 +6,8 @@ import Link from 'next/link'
 import {headers} from 'next/headers'
 
 export const metadata = {
-  title: 'Residential | Metro Condo Living | Mandaluyong',
+  title: 'Condo for sale or rent in Pasig, San Juan and Mandaluyong.',
+  // title: 'Residential | Metro Condo Living | Mandaluyong',
   description: 'Stunning condo unit in the metro.',
   icons: {
     icon: "/favicon.ico",
