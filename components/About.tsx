@@ -38,7 +38,9 @@ const About = () => {
         <div className='bg-white rounded-lg w-full mx-auto max-w-5xl bg-white rounded-[2.5rem]'>
           <div className='py-12 md:px-12 px-8'>
             <h1 className='md:text-[4rem] text-[2rem] font-extrabold'>About Us</h1>
-            <div className='md:mt-12 mt-8'>
+            <div 
+            className='md:mt-12 mt-8'
+            >
               <div className='flex flex-col md:gap-6 gap-4'>
                 <h1 className='md:text-[1.5rem]'>Embark on a journey with Metro Condo Living, where luxury meets affordability in the heart of Metro Manila.</h1>
                 <h1 className='md:text-[1.5rem]'>Metro Condo Living is proud to offer its exceptional Rent To Own Condo service, which has consistently 

@@ -16,7 +16,7 @@ export default function Home() {
         <CondoCatalog />
         <Section3 />
         <About />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Faqs />
         {/* <ClientsFeedback /> */}
         <Contact />
