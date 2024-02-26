@@ -1,5 +1,5 @@
 import React from 'react'
-import TestimonialCard from './TestimonialCard'
+import TestimonialCard from './TestimonialCarousel'
 
 async function getTestimonials() {
     const baseUrl = process.env.NEXT_PUBLIC_NODE_ENV == "development" ? "http://localhost:8000/api" : "https://metro-api.rdnaksnds.com/api"

@@ -1,4 +1,3 @@
-"use client"
 import { CondoCatalog, Faqs, Footer, Hero, Section3 } from '@/components'
 import ClientsFeedback from '@/components/ClientsFeedback'
 import CustomButton from '@/components/CustomButton'
@@ -7,6 +6,7 @@ import Link from 'next/link'
 import Contact from './contact/page'
 import About from '@/components/About'
 import Testimonials from '@/components/Testimonials'
+import SuccessfullClients from '@/components/SuccessfullClients'
 
 export default function Home() {
   return (
@@ -15,8 +15,9 @@ export default function Home() {
         <Hero />
         <CondoCatalog />
         <Section3 />
-        <About />
+        {/* <About /> */}
         {/* <Testimonials /> */}
+        <SuccessfullClients />
         <Faqs />
         {/* <ClientsFeedback /> */}
         <Contact />

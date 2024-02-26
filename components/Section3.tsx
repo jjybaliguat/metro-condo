@@ -19,9 +19,9 @@ const Section3 = () => {
 
   return (
     <div id="discover"
-        className='h-fit pb-[5rem] w-full py-6 bg-secondary'
+        className='h-fit px-5 pb-[5rem] w-full py-12 bg-secondary'
     >
-       <div className='max-w-[1230px] h-full mx-auto'>
+       <div className='max-w-7xl h-full mx-auto'>
             <h1 className='section-title text-white'>DISCOVER RESIDENTIAL PROPERTIES FOR RENT/SALE</h1>
             
             <div className='flex flex-col md:flex-row items-center md:gap-10 gap-5 mt-9'>

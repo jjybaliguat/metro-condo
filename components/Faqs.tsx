@@ -6,8 +6,9 @@ import { ChevronUpIcon } from '@heroicons/react/20/solid'
 export default function Faqs() {
   return (
     <>
+    <div className='w-full bg-[#e8e8e8]'>
     <div
-        className='h-fit pb-[5rem] w-[100vw] py-6 bg-[#e8e8e8]'
+        className='h-fit px-5 pb-[5rem] w-[100vw] py-12 mx-auto max-w-7xl'
     >
         <h1 className='section-title'>Frequently Ask Questions</h1>
         <div className="w-full px-4 pt-10">
@@ -51,6 +52,7 @@ export default function Faqs() {
             </Disclosure>
         </div>
         </div>
+    </div>
     </div>
     </>
   )

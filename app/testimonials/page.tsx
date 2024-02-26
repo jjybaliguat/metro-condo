@@ -1,6 +1,6 @@
 "use client"
 
-import TestimonialCard from '@/components/TestimonialCard'
+import TestimonialCard from '@/components/TestimonialCarousel'
 import GetTestimonials from '@/components/get-testimonials'
 import { PageWrapper } from '@/helpers/page-wrapper'
 import RevealAnimate from '@/helpers/reveal-animate'

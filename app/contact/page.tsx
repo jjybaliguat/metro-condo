@@ -76,7 +76,7 @@ return (
 <>
   <PageWrapper>
     <div
-    className='h-fit pb-[5rem] w-full py-5' 
+    className='h-fit w-full px-5 py-12 mx-auto max-w-7xl' 
     >
         {/* <div className='absolute h-full w-full bg-white opacity-[0.7] z-0' /> */}
         <div className="flex flex-col">

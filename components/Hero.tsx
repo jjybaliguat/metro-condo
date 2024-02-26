@@ -147,7 +147,7 @@ const Hero = () => {
                 />
             </div>
         </div> */}
-        <div className="absolute flex-1 pt-36 padding-x z-20">
+        <div className="absolute flex-1 pt-36 padding-x z-20 mx-auto max-w-7xl">
             <h1 className="hero__title">
                 METRO CONDO LIVING
             </h1>

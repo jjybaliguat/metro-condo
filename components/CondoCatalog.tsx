@@ -22,9 +22,9 @@ const CondoCatalog = () => {
       <div className='absolute top-[-90px] mx-auto h-[100px] w-full
       bg-gradient-to-b from-[transparent] to-[rgb(255,255,255)]
       ' />
-        <div className='relative pb-[5rem] max-w-[90%] h-full mx-auto'>
+        <div className='relative px-5 pb-[5rem] max-w-7xl h-full mx-auto'>
             <h1 className='section-title'>Residences</h1>
-            <div className='flex flex-wrap gap-5 flex-center mt-10'>
+            <div className='flex flex-wrap gap-5 flex-center mt-10'>  
                 {viewAll ? (
                     CondoLocations.map((item)=> (
                         <CondoCard
