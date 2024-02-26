@@ -19,7 +19,7 @@ type Testimonial = {
 const TestimonialCarousel = ({
     testimonials,
 }: {
-    testimonials: Testimonial[]
+    testimonials: any
 }) => {
 
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
