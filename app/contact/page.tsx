@@ -40,6 +40,7 @@ const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
         const response: any = await axios.post(emailApiUrl, {
             fromAddress: 'MCL Quotes<builders@metrocondoliving.com>',
             toAddress: 'builders@metrocondoliving.com',
+            ccAddress: ['metrocondolifestyle@gmail.com'],
             subject: `Quote from ${messageData.name}`,
             message: `<div>
             <h1>Name: <strong>${messageData.name}</strong></h1>
