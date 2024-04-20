@@ -15,12 +15,74 @@ export const CondoLocations = [
         link: "/residence/empire-east-highland-city",
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30889.48245032833!2d121.0876140428903!3d14.588514379773875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b9d4c926b2ed%3A0xf20d8b6e90a6a72b!2sEmpire%20East%20Highland%20City!5e0!3m2!1sfil!2sph!4v1688827263285!5m2!1sfil!2sph",
         address: "Felix Avenue, Pasig City, and Cainta, Rizal boundary",
+        landmarks:[
+            {
+                name: "Ortigas Center",
+                img: "/empireeasthighland/empire-landmark1.jpg",
+                description: "Ortigas Center is a central business district located within the joint boundaries of Pasig, Mandaluyong and Quezon City, within the Metro Manila region in the Philippines. With an area of more than 100 hectares (250 acres), it is Metro Manila's second most important business district after the (Makati CBD).It is governed by Ortigas Center Association, Inc."
+            },
+            {
+                name: "SM City Taytay",
+                img: "/empireeasthighland/empire-landmark2.jpg",
+                description: "SM City Taytay, opened in 2007 in Rizal, Philippines, is part of the SM Supermalls chain. It offers a variety of shops, dining options, and entertainment facilities, catering to the needs of residents in and around Metro Manila and Rizal Province."
+            },
+            {
+                name: "Robinsons Metro East",
+                img: "/empireeasthighland/empire-landmark3.jpg",
+                description: "Robinsons Metro East (formerly known as Robinsons Place Metro East), is a shopping mall owned by Robinsons Malls. Robinsons Metro East is situated along Marcos Highway, located at Barangay San Isidro in Cainta, Rizal, Philippines. The mall opened on August 31, 2001, is currently the 3rd largest mall in the Philippines owned by Robinsons Malls."
+            },
+            {
+                name: "Santa Lucia East Grand Mall",
+                img: "/empireeasthighland/empire-landmark4.jpg",
+                description: "Santa Lucia East Grand Mall, located in Cainta, Rizal, Philippines, is a comprehensive shopping destination that features a mix of retail stores, dining options, cinemas, and entertainment venues. Established in the late 1970s, it caters to the suburban areas around eastern Metro Manila and nearby provinces."
+            },
+            {
+                name: "SM City Marikina",
+                img: "/empireeasthighland/empire-landmark5.jpg",
+                description: "SM City Marikina is a large shopping mall located in Marikina, Metro Manila, Philippines, part of the SM Supermalls chain operated by SM Prime Holdings. Opened in 2008, it is strategically situated along Marcos Highway and is known for its modern design and eco-friendly features. The mall offers a wide variety of retail shops, dining establishments, entertainment options, including cinemas, and service outlets, catering to the diverse needs of its visitors from Marikina and the surrounding areas."
+            },
+            {
+                name: "Eastwood City in Quezon City",
+                img: "/empireeasthighland/empire-landmark6.jpg",
+                description: "Eastwood City in Quezon City, Philippines, is a 17-hectare mixed-use development known as the country's first cyberpark. It features office towers, residential condos, shopping centers, and entertainment venues, offering a vibrant nightlife and urban living experience. Popular for its comprehensive blend of work, leisure, and residential spaces, Eastwood City is a key destination for young professionals and families."
+            },
+        ],
         amenities: [
-            "Amenity 1",
-            "Amenity 2",
-            "Amenity 3",
-            "Amenity 4",
-            "Amenity 5",
+            {
+                name: "Indoor Gym",
+                img: "/empireeasthighland/empire-amenity1.png",
+                description: "At Empire East Highland City, the indoor gym typically features cardio machines (treadmills, bikes), strength training equipment (free weights, resistance machines), a functional training zone with equipment like kettlebells, a stretching area for yoga or Pilates, and possibly spaces for group fitness classes. These amenities are designed to cater to a range of fitness needs and preferences for residents."
+            },
+            {
+                name: "500-seater Function Room",
+                img: "/empireeasthighland/empire-amenity2.png",
+                description: "The 500-seater function room at Empire East Highland City offers a versatile space ideal for events like birthdays, weddings, and debuts. Equipped with high-quality audio-visual equipment, customizable seating, elegant lighting, and air conditioning, it ensures a comfortable and memorable occasion. The room also features a stage for performances and may provide catering services, making it a sophisticated choice for any celebration."
+            },
+            {
+                name: "Indoor Swimming Pool",
+                img: "/empireeasthighland/empire-amenity3.png",
+                description: "The indoor swimming pool at Empire East Highland City offers a luxurious and year-round aquatic experience for residents and their families. Featuring temperature-controlled water, safety measures, and amenities like lounge areas and changing rooms, it's an ideal spot for leisure swimming and family relaxation."
+            },
+            {
+                name: "Sunbathing Corner",
+                img: "/empireeasthighland/empire-amenity4.png",
+                description: "The indoor swimming pool at Empire East Highland City also includes a sunbathing corner, providing a designated area for residents to relax and soak up the sun's rays. This sunbathing corner typically features comfortable lounge chairs or recliners strategically placed around the pool deck, allowing residents to enjoy the warmth and ambiance while lounging poolside. Whether it's for tanning, reading, or simply unwinding, this additional amenity enhances the leisure experience for residents and adds to the overall appeal of the indoor swimming facility."
+            },
+            {
+                name: "Indoor Basketball Court",
+                img: "/empireeasthighland/empire-amenity6.png",
+                description: "Empire East Highlands City offers a cutting-edge indoor basketball court with a professional wooden floor, ideal for both casual play and competitive matches. Residents and guests can enjoy top-notch facilities and exciting games in a modern urban setting."
+            },
+            {
+                name: "Empire East's Highlands Mall",
+                img: "/empireeasthighland/empire-amenity7.png",
+                description: "Experience luxury shopping like never before at Empire East's Highlands Mall, developed by Megaworld, renowned as one of the Philippines' premier developers. This upscale shopping destination boasts a stunning array of high-end stores, gourmet dining options, and exclusive boutiques, all set in a lavish and meticulously designed environment. With its grand architecture and opulent ambiance, Highlands Mall promises a truly exceptional retail experience for discerning shoppers and visitors alike."
+            },
+            {
+                name: "Catholic Church",
+                img: "/empireeasthighland/empire-amenity8.png",
+                description: "In the heart of Empire East Highlands City stands a magnificent Catholic church, seating 500 worshippers. This beautifully crafted sanctuary offers a serene space for spiritual reflection and community gatherings. With its elegant design and tranquil atmosphere, the church serves as a focal point for residents and visitors seeking solace and connection within this vibrant urban community."
+            },
         ],
         sitePlan: {
             descriptions: [
@@ -192,13 +254,8 @@ export const CondoLocations = [
         link: "/residence/the-paddington-place",
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.26888778488!2d121.04789967400892!3d14.583748277491235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8394a420d2d%3A0x254aa51e3ad54dff!2s632%20Bulebar%20Shaw%2C%20Mandaluyong%2C%201552%20Kalakhang%20Maynila!5e0!3m2!1sfil!2sph!4v1688826205319!5m2!1sfil!2sph",
         address: "632 Shaw Blvd, Mandaluyong, 1550 Metro Manila",
-        amenities: [
-            "Amenity 1",
-            "Amenity 2",
-            "Amenity 3",
-            "Amenity 4",
-            "Amenity 5",
-        ],
+        landmarks:[],
+        amenities: [],
         sitePlan: {
             descriptions: ["Under the Empire East Elite brand, a new four-tower cosmopolitan enclave will soon rise across the ebullient skyline of the Tiger City along Shaw Boulevard – The Paddington Place."],
             img: "/paddington/siteplan.png"
@@ -673,13 +730,8 @@ export const CondoLocations = [
         link: "/residence/kasara-urban-resort-residences",
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30892.15514307917!2d121.06027014286583!3d14.569454484443263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c809dac27529%3A0x361493293fe2fc4f!2sKasara%20Urban%20Resort%20Residences!5e0!3m2!1sfil!2sph!4v1688827355490!5m2!1sfil!2sph",
         address: "Eagle St. and P.E Antonio., Ugong, Pasig City. Walking distance from C-5 Road, Tiendesitas, SM Supercenter Pasig and Valle Verde Subdivisions.",
-        amenities: [
-            "Amenity 1",
-            "Amenity 2",
-            "Amenity 3",
-            "Amenity 4",
-            "Amenity 5",
-        ],
+        landmarks:[],
+        amenities: [],
         sitePlan: {
             descriptions: ["Wake up every morning to a refreshing view of the Sierra Madre mountains or your own lake-inspired pool and water cascades when you step out on the balcony of your two-bedroom home at Kasara Urban Resort Residences!"],
             img: "/kasara/kasara-siteplan.png"
@@ -1328,13 +1380,8 @@ export const CondoLocations = [
         link: "/residence/pioneer-woodlands",
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.46980630942!2d121.0447695740087!3d14.572284977771496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c84506f1b82f%3A0x29b1e75196a3519f!2sEpifanio%20de%20los%20Santos%20Ave%20%26%20Pioneer%20St%2C%20Mandaluyong%2C%20Metro%20Manila!5e0!3m2!1sfil!2sph!4v1688827407163!5m2!1sfil!2sph",
         address: "EDSA corner Pioneer St., Mandaluyong City",
-        amenities: [
-            "Amenity 1",
-            "Amenity 2",
-            "Amenity 3",
-            "Amenity 4",
-            "Amenity 5",
-        ],
+        landmarks:[],
+        amenities: [],
         sitePlan: {
             descriptions: ["Pioneer Woodlands is a six-high-rise-tower residential community that is directly connected to the Boni Ave. station of the MRT-3 railway system, which connects both the North and South districts in Metro Manila. Having this convenience offers premium exclusive mobility among its residents which can bring them to the Makati Central Business District, Ortigas Central Business District and more transportation hubs that serve as jump-off point to other leisure hubs and tourist spots in the Philippines."],
             img: "/pwl/pwl-siteplan.png"
@@ -1641,13 +1688,8 @@ export const CondoLocations = [
         link: "/residence/covent-garden",
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.9460552691694!2d121.00623187400926!3d14.60214887704093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9e4ec9b87a9%3A0x96ff6c492523d031!2sBulebar%20Magsaysay%2C%20Santa%20Mesa%2C%20Maynila%2C%20Kalakhang%20Maynila!5e0!3m2!1sfil!2sph!4v1688827445235!5m2!1sfil!2sph",
         address: "Santol Extension-Magsaysay Boulevard, Sta. Mesa, Manila",
-        amenities: [
-            "Amenity 1",
-            "Amenity 2",
-            "Amenity 3",
-            "Amenity 4",
-            "Amenity 5",
-        ],
+        landmarks:[],
+        amenities: [],
         sitePlan: {
             descriptions: [""],
             img: ""
@@ -1683,13 +1725,8 @@ export const CondoLocations = [
         link: "/residence/the-rochester",
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.8445078352247!2d121.07528357400824!3d14.550882978294153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c6299a193947%3A0x1081accea1bf1f76!2sElisco%20Road%2C%20Pasig%2C%20Kalakhang%20Maynila!5e0!3m2!1sfil!2sph!4v1688827489342!5m2!1sfil!2sph",
         address: "Elisco Road, San Joaquin, Pasig City",
-        amenities: [
-            "Amenity 1",
-            "Amenity 2",
-            "Amenity 3",
-            "Amenity 4",
-            "Amenity 5",
-        ],
+        landmarks:[],
+        amenities: [],
         sitePlan: {
             descriptions: [""],
             img: ""
@@ -1724,13 +1761,8 @@ export const CondoLocations = [
         link: "/residence/san-lorenzo-place",
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61791.951046140726!2d120.94624982167971!3d14.542167600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c93d8fe5c703%3A0x1e38613ba018b178!2sSan%20Lorenzo%20Place!5e0!3m2!1sfil!2sph!4v1688827529642!5m2!1sfil!2sph",
         address: "EDSA cor. Chino Roces Ave., Makati City",
-        amenities: [
-            "Amenity 1",
-            "Amenity 2",
-            "Amenity 3",
-            "Amenity 4",
-            "Amenity 5",
-        ],
+        landmarks:[],
+        amenities: [],
         sitePlan: {
             descriptions: [""],
             img: ""
@@ -1766,13 +1798,8 @@ export const CondoLocations = [
         link: "/residence/mango-tree-residence",
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.859722443119!2d121.03145077400929!3d14.607065776920509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7d4b6c1318d%3A0xc60eb565a12977dd!2sM.%20Paterno%20%26%20ledesma%2C%20San%20Juan%2C%20Metro%20Manila!5e0!3m2!1sfil!2sph!4v1688827577889!5m2!1sfil!2sph",
         address: "M. Paterno St. cor. Ledesma St., San Juan City.",
-        amenities: [
-            "Amenity 1",
-            "Amenity 2",
-            "Amenity 3",
-            "Amenity 4",
-            "Amenity 5",
-        ],
+        landmarks:[],
+        amenities: [],
         sitePlan: {
             descriptions: [""],
             img: ""
@@ -1807,13 +1834,8 @@ export const CondoLocations = [
         link: "/residence/the-sonoma",
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3867.2777277950677!2d121.05869136999574!3d14.237014355417625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd7dfb24f8225d%3A0x4e3e83e3ae1da5a8!2sThe%20Sonoma%20Residences!5e0!3m2!1sfil!2sph!4v1688827639448!5m2!1sfil!2sph",
         address: "Sonoma Blvd, Santa Rosa, Laguna",
-        amenities: [
-            "Amenity 1",
-            "Amenity 2",
-            "Amenity 3",
-            "Amenity 4",
-            "Amenity 5",
-        ],
+        landmarks:[],
+        amenities: [],
         sitePlan: {
             descriptions: [""],
             img: ""
@@ -1848,13 +1870,8 @@ export const CondoLocations = [
         link: "/residence/cambridge-village",
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.506228613532!2d121.10569597400864!3d14.570205977822301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c7bdb7c133ff%3A0xb72413036b26dd74!2sCambridge%20Village!5e0!3m2!1sfil!2sph!4v1688827681679!5m2!1sfil!2sph",
         address: "Cambridge St, Cainta, 1900 Rizal",
-        amenities: [
-            "Amenity 1",
-            "Amenity 2",
-            "Amenity 3",
-            "Amenity 4",
-            "Amenity 5",
-        ],
+        landmarks:[],
+        amenities: [],
         sitePlan: {
             descriptions: ["In the heart of Pasig City and Cainta, Rizal is an 8-hectare township with 37 mid-rise residential condominiums offering a convenient and comfortable suburban lifestyle. Cambridge Village is one of the micro-city developments of Empire East that encapsulates the essential components of living in a self-sustaining community."],
             img: "/cambridge/cambridge-siteplan.jpg"

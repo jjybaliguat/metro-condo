@@ -13,6 +13,7 @@ import UnitsVewDialog from '@/components/UnitsVewDialog'
 import RevealAnimate from '@/helpers/reveal-animate'
 import Image from 'next/image'
 import { Skeleton } from 'antd'
+import { SparklesIcon } from '@heroicons/react/24/outline'
 
 
 const Residence = ({
@@ -161,16 +162,32 @@ const Residence = ({
                         <h1 className='md:text-[2rem] text-[1.5rem] font-bold'>LAND MARKS</h1>
                     </div>
                     {
-                        <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 px-10'>
-                          {
-                            [...new Array(3)].map((_, i)=>(
-                              <div key={i} className='w-[300px] h-fit'>
-                              <div className='flex flex-col gap-3'>
-                                <Skeleton.Image active />
-                                <Skeleton active />
-                              </div>
+                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 gap-8'>
+                          {(residence?.landmarks.length > 0) ? (
+                            residence?.landmarks.map((landmark: any, index: React.Key | null | undefined)=>(
+                              <div key={index} className='w-full h-fit'>
+                                <div className='flex flex-col gap-3'>
+                                    <div className='relative h-[250px] w-[250px] md:w-full rounded-md shadow-lg outline outline-1 outline-slate-300'>
+                                        <Image
+                                            fill
+                                            src={landmark.img}
+                                            alt='img'
+                                            style={{
+                                                objectFit: "cover",
+                                                objectPosition: "center"
+                                            }}
+                                            className='rounded-md'
+                                        />
+                                        <div className='absolute left-0 bottom-0 rounded-bl-md p-1 bg-white'>
+                                            <h1 className='text-[14px]'>{landmark.name}</h1>
+                                        </div>
+                                    </div>
+                                    <p className='text-justify'>{landmark.description}</p>
+                                </div>
                             </div>
-                            ))
+                            )) ) : (
+                                <h1 className='text-[2rem] font-bold'>No Landmarks Available As Of Now</h1>
+                            )
                           }
                         </div>
                     }
@@ -179,16 +196,38 @@ const Residence = ({
             {/* End LandMArks */}
             {/* 5 Star Amenities */}
             <RevealAnimate direction={100}>
-            <div id="amenities" className="flex md:flex-row flex-col gap-5 p-5 bg-white rounded-[15px] shadow-lg">
-                <img className="h-12 w-12" src='/amenitiesicon.png' />
-                <div className='flex flex-col gap-5'>
-                    <h1 className='md:text-[2rem] text-[1.5rem] font-bold'>5 STAR AMENITIES</h1>
-                    {residence?.amenities?.map((item: string, index: React.Key | null | undefined)=>(
-                        <h1
-                        key={index}
-                        className='mt-3'
-                        >{item}</h1>
-                    ))}
+            <div id="amenities" className="flex flex-col gap-5 p-5 pb-10 bg-white rounded-[15px] shadow-lg">
+                <div className='flex md:flex-row flex-col gap-5 md:w-[50%] w-[100%]'>
+                    <SparklesIcon className="h-7 w-7 text-primary" />
+                    <h1 className='md:text-[2rem] text-[1.5rem] font-bold'>AMENITIES</h1>
+                </div>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 gap-8'>
+                    {(residence?.amenities.length) > 0 ? (
+                    residence?.amenities?.map((amenity: any, index: React.Key | null | undefined)=>(
+                        <div key={index} className='w-full h-fit'>
+                            <div className='flex flex-col gap-3'>
+                                <div className='relative h-[250px] w-[250px] md:w-full rounded-md shadow-lg outline outline-1 outline-slate-300'>
+                                    <Image
+                                        fill
+                                        src={amenity.img}
+                                        alt='img'
+                                        style={{
+                                            objectFit: "cover",
+                                            objectPosition: "center"
+                                        }}
+                                        className='rounded-md'
+                                    />
+                                    <div className='absolute left-0 bottom-0 rounded-bl-md p-1 bg-white'>
+                                        <h1 className='text-[14px]'>{amenity.name}</h1>
+                                    </div>
+                                </div>
+                                <p className='text-justify'>{amenity.description}</p>
+                            </div>
+                        </div>
+                    )) ) : (
+                        <h1 className='text-[2rem] font-bold'>No Amenities to show as of now</h1>
+                    )
+                    }
                 </div>
             </div>
             </RevealAnimate>
