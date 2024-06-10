@@ -2,13 +2,14 @@ import React from 'react'
 import TestimonialCarousel from './TestimonialCarousel'
 
 async function getTestimonials() {
-  const baseUrl = process.env.NEXT_PUBLIC_NODE_ENV == "development" ? "http://localhost:8000/api" : "https://metro-api.rdnaksnds.com/api"
-  const response = await fetch(`${baseUrl}/testimonials`, {cache: 'no-store'})
+  const baseUrl = process.env.NEXT_PUBLIC_NODE_ENV == "development" ? "http://localhost:8000/api" : "https://metrocondoliving.com/api"
+  const response: any = await fetch(`${baseUrl}/testimonials`, {cache: 'no-store'})
 
  
   if (!response.ok) {
     throw new Error('Failed to fetch data')
   }
+
 
   return response.json()
 }
