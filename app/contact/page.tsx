@@ -31,7 +31,7 @@ const [submitting, setSubmitting] = useState(false)
 const [error, setError] = useState<any | null>()
 
 
-const emailApiUrl = process.env.NEXT_PUBLIC_NODE_ENV == "development" ? 'http://localhost:8000/api/email/message' : 'https://metro-api.rdnaksnds.com/api/email/message'
+const emailApiUrl = process.env.NEXT_PUBLIC_NODE_ENV == "development" ? 'http://localhost:3000/api/email' : 'https://metrocondoliving/api/email'
 
 const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -53,6 +53,9 @@ const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
             </div>
             </div>`
         })
+
+        // console.log(response)
+
         if(response?.data){
             setSubmitting(false)
             setError(false)

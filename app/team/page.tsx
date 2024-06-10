@@ -4,7 +4,7 @@ import Image from 'next/image'
 import React from 'react'
 
 async function getData() {
-  const baseUrl = process.env.NEXT_PUBLIC_NODE_ENV == "development" ? "http://localhost:8000/api" : "https://metro-api.rdnaksnds.com/api"
+  const baseUrl = process.env.NEXT_PUBLIC_NODE_ENV == "development" ? "http://localhost:3000/api" : "https://metrocondoliving.com/api"
   const response = await fetch(`${baseUrl}/team`, {cache: 'no-store'})
 
  
