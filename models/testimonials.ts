@@ -20,6 +20,6 @@ const testimonialsSchema = new Schema({
 }
 )
 
-const Testimonials = mongoose.model("Testimonials", testimonialsSchema)
+const Testimonials = mongoose.models.Testimonials || mongoose.model("Testimonials", testimonialsSchema)
 export default Testimonials
 

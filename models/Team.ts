@@ -25,6 +25,6 @@ const teamSchema = new Schema({
     timestamps: true
 })
 
-const Team = mongoose.model("Team", teamSchema)
+const Team = mongoose.models.Team || mongoose.model("Team", teamSchema)
 export default Team
 
