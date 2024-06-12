@@ -181,6 +181,7 @@ return (
                     />
                     <CustomButton
                         btnType='submit'
+                        isDisabled={true}
                         title={submitting? 'Sending...' : 'Submit'}
                         rightIcon={<Spin className={submitting ? 'flex' : 'hidden'} />}
                         containerStyles='bg-primary'
