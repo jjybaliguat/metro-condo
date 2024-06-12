@@ -1,5 +1,5 @@
 export const CondoLocations = [
-    // HIGHLAND
+    // HIGHLAND -->done
     {
         name: 'Empire East Highland City',
         location: 'Pasig City - Cainta',
@@ -715,7 +715,7 @@ export const CondoLocations = [
         visualization: "",
         schematic: "",
     },
-    // KASARA
+    // KASARA -->done
     {
         name: 'Kasara Urban Resort Residences',
         location: 'Pasig City',
@@ -730,8 +730,85 @@ export const CondoLocations = [
         link: "/residence/kasara-urban-resort-residences",
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30892.15514307917!2d121.06027014286583!3d14.569454484443263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c809dac27529%3A0x361493293fe2fc4f!2sKasara%20Urban%20Resort%20Residences!5e0!3m2!1sfil!2sph!4v1688827355490!5m2!1sfil!2sph",
         address: "Eagle St. and P.E Antonio., Ugong, Pasig City. Walking distance from C-5 Road, Tiendesitas, SM Supercenter Pasig and Valle Verde Subdivisions.",
-        landmarks:[],
-        amenities: [],
+        landmarks: [
+            {
+                name: "Shangri-La Plaza",
+                img: "/kasara/kasara-landmark1.jpg",
+                description: "Shangri-La Plaza, located in Mandaluyong City, Metro Manila, Philippines, is a premier shopping and lifestyle destination. Known for its sophisticated architecture, the mall features over 300 shops including luxury and high-street brands, a variety of dining options, state-of-the-art cinemas, and regular cultural events. It's easily accessible via public transport, including the MRT Shaw Boulevard Station, making it a popular spot for shopping, dining, and entertainment."
+            },
+            {
+                name: "Eastwood Mall",
+                img: "/kasara/kasara-landmark2.jpg",
+                description: "Eastwood Mall, located in Eastwood City, Quezon City, Philippines, is part of the Megaworld Corporation's integrated urban development. This upscale mall opened in 2009 and features a variety of local and international retail brands, a diverse range of dining options, and a cinema complex. Its open-air atrium and waterfront promenade offer a pleasant shopping and dining atmosphere. The mall is also known for being pet-friendly and regularly hosts cultural events, making it a popular destination for families and young professionals."
+            },
+            {
+                name: "The Podium",
+                img: "/kasara/kasara-landmark3.jpg",
+                description: "The Podium is a high-end shopping mall located in the Ortigas Center, a major business and commercial district in Metro Manila, Philippines. Jointly developed by SM Prime Holdings and Keppel Land, The Podium was initially opened in 2002 and underwent significant expansion, which was completed in 2017. This expansion greatly enhanced its size and offerings."
+            },
+            {
+                name: "SM Megamall",
+                img: "/kasara/kasara-landmark4.jpg",
+                description: "SM Megamall, located in Metro Manila's Ortigas business district, is one of the largest malls in the Philippines. Owned by SM Prime Holdings, it features over 1,000 shops including international and local brands, department stores, and specialty shops. The mall also offers a variety of dining options, cinemas, a bowling alley, and an ice skating rink. Its Mega Fashion Hall extension brings in high-end retail and upscale dining, along with an IMAX theater. SM Megamall serves as a key community and shopping hub, attracting millions of visitors each year."
+            },
+            {
+                name: "Robinsons Galleria",
+                img: "/kasara/kasara-landmark5.jpg",
+                description: "Robinsons Galleria, situated in Quezon City, Metro Manila, is a well-established shopping destination developed by Robinsons Land Corporation. Opened in 1990, this five-level mall offers a diverse array of retail shops, including fashion, electronics, and specialty stores, alongside dining options ranging from fast food to casual dining. It also features cinemas, a supermarket, and various entertainment facilities. With convenient access to public transportation, Robinsons Galleria remains a bustling hub for shopping, leisure, and entertainment in the area."
+            },
+            {
+                name: "Ortigas Center",
+                img: "/kasara/kasara-landmark6.jpg",
+                description: "Ortigas Center is a central business district located within the joint boundaries of Pasig, Mandaluyong and Quezon City, within the Metro Manila region in the Philippines. With an area of more than 100 hectares (250 acres), it is Metro Manila's second most important business district after the (Makati CBD).It is governed by Ortigas Center Association, Inc."
+            },
+            {
+                name: "Eastwood City in Quezon City",
+                img: "/kasara/kasara-landmark7.jpg",
+                description: "Eastwood City in Quezon City, Philippines, is a 17-hectare mixed-use development known as the country's first cyberpark. It features office towers, residential condos, shopping centers, and entertainment venues, offering a vibrant nightlife and urban living experience. Popular for its comprehensive blend of work, leisure, and residential spaces, Eastwood City is a key destination for young professionals and families."
+            },
+            {
+                name: "BGC, or Bonifacio Global City",
+                img: "/kasara/kasara-landmark8.jpg",
+                description: "BGC, or Bonifacio Global City, is a vibrant district in Taguig City, Metro Manila, known for its modern infrastructure, commercial spaces, and green areas. Developed in the early 2000s, it's a hub for businesses, upscale shopping malls, dining options, and cultural events. With its cosmopolitan atmosphere and strategic location, BGC attracts residents, workers, and visitors seeking a dynamic urban lifestyle in the Philippines."
+            },
+        ],
+        amenities:[
+            {
+                name: "Modern Six-tower Residential Plan",
+                img: "/kasara/kasara-amenity1.jpg",
+                description: "Inside Kasara is a modern six-tower residential plan, beaming with open spaces where water amenities like lake-inspired swimming pool, turtle ponds, and pools are found. From your window is an unobstructed view of the beautiful mountains of Antipolo in the morning or the Ortigas skyline at night."
+            },
+            {
+                name: "",
+                img: "/kasara/kasara-amenity2.jpg",
+                description: "In here, the only sound that you hear is the chirping of birds echoing all over the 1.8 hectare property, the laughter of children running freely in the playground, the flowing water from the artificial falls and the wind’s gentle whisper to your ear as you meditate in the garden."
+            },
+            {
+                name: "",
+                img: "/kasara/kasara-amenity3.jpg",
+                description: "Feel the ticklish sensation of the grass on your feet as you walk around a garden carpeted with fresh, green grass. Let the cold refreshing lake water seduce you for a quick dip on a hot afternoon to cool your body or feel the smooth stones trying to massage your tired feet at the natural pool."
+            },
+            {
+                name: "Outdoor Basketball Court Surface",
+                img: "/kasara/kasara-amenity4.jpg",
+                description: "The Kasara Urban Resort Outdoor Basketball court surface is made of concrete, providing a durable and smooth area for playing. Additionally, the basketball area is designed to accommodate players of all skill levels, from beginners to more experienced athletes, and is a popular spot for residents to engage in recreational games or practice their basketball skills."
+            },
+            {
+                name: "Luxurious Lobby",
+                img: "/kasara/kasara-amenity5.jpg",
+                description: "The lobby at Kasara Urban Resort Residences exudes a sense of luxury and comfort, being fully air-conditioned to ensure a cool and pleasant environment for both residents and visitors. This space typically features elegant, contemporary decor with high-quality finishes, plush seating areas, and stylish lighting that complements the overall design aesthetic."
+            },
+            {
+                name: "Artistic Lobby",
+                img: "/kasara/kasara-amenity6.jpg",
+                description: "The lobby may also include artistic elements such as sculptures or water features, contributing to a tranquil and welcoming atmosphere. This premium setting not only serves as a functional entry and reception area but also as a social hub where residents can relax and socialize."
+            },
+            {
+                name: "Green Park",
+                img: "/kasara/kasara-amenity7.jpg",
+                description: "The green park at Kasara Urban Resort Residences serves as a serene, lush oasis within the urban environment of Pasig City, and is thoughtfully designed to be pet-friendly. This park provides a refreshing retreat with ample greenery, landscaped gardens, and shaded pathways ideal for leisurely walks. Residents and their pets can enjoy the open spaces and well-maintained grassy areas, which are perfect for play and exercise."
+            },
+        ],
         sitePlan: {
             descriptions: ["Wake up every morning to a refreshing view of the Sierra Madre mountains or your own lake-inspired pool and water cascades when you step out on the balcony of your two-bedroom home at Kasara Urban Resort Residences!"],
             img: "/kasara/kasara-siteplan.png"
