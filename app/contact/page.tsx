@@ -31,48 +31,48 @@ const [submitting, setSubmitting] = useState(false)
 const [error, setError] = useState<any | null>()
 
 
-const emailApiUrl = process.env.NEXT_PUBLIC_NODE_ENV == "development" ? 'http://localhost:3000/api/email' : 'https://metrocondoliving/api/email'
+// const emailApiUrl = process.env.NEXT_PUBLIC_NODE_ENV == "development" ? 'http://localhost:3000/api/email' : 'https://metrocondoliving/api/email'
 
 const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setSubmitting(true)
-    try {
-        const response: any = await axios.post(emailApiUrl, {
-            fromAddress: 'MCL Quotes<builders@metrocondoliving.com>',
-            toAddress: 'builders@metrocondoliving.com',
-            ccAddress: ['metrocondolifestyle@gmail.com'],
-            subject: `Quote from ${messageData.name}`,
-            message: `<div>
-            <h1>Name: <strong>${messageData.name}</strong></h1>
-            <h1>Email: <strong>${messageData.email}</strong></h1>
-            <h1>Phone: <strong>${messageData.contact}</strong></h1>
-            <h1>Address: <strong>${messageData.address}</strong></h1>
-            <div style="margin-top: 25px">
-                <h1>Message: </h1>
-                <h1 style="text-align: center">${messageData.message}</h1>
-            </div>
-            </div>`
-        })
+    // try {
+    //     const response: any = await axios.post(emailApiUrl, {
+    //         fromAddress: 'MCL Quotes<builders@metrocondoliving.com>',
+    //         toAddress: 'builders@metrocondoliving.com',
+    //         ccAddress: ['metrocondolifestyle@gmail.com'],
+    //         subject: `Quote from ${messageData.name}`,
+    //         message: `<div>
+    //         <h1>Name: <strong>${messageData.name}</strong></h1>
+    //         <h1>Email: <strong>${messageData.email}</strong></h1>
+    //         <h1>Phone: <strong>${messageData.contact}</strong></h1>
+    //         <h1>Address: <strong>${messageData.address}</strong></h1>
+    //         <div style="margin-top: 25px">
+    //             <h1>Message: </h1>
+    //             <h1 style="text-align: center">${messageData.message}</h1>
+    //         </div>
+    //         </div>`
+    //     })
 
-        // console.log(response)
+    //     // console.log(response)
 
-        if(response?.data){
-            setSubmitting(false)
-            setError(false)
-            setMessageData({
-                name: '',
-                email: '',
-                address: '',
-                contact: '',
-                incomeSource: 'Employed',
-                message: ''
-            })
-        }
-    } catch (error) {
-        console.log(error)
-        setSubmitting(false)
-        setError(true)
-    }
+    //     if(response?.data){
+    //         setSubmitting(false)
+    //         setError(false)
+    //         setMessageData({
+    //             name: '',
+    //             email: '',
+    //             address: '',
+    //             contact: '',
+    //             incomeSource: 'Employed',
+    //             message: ''
+    //         })
+    //     }
+    // } catch (error) {
+    //     console.log(error)
+    //     setSubmitting(false)
+    //     setError(true)
+    // }
 }
 
 
