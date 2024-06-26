@@ -1457,8 +1457,70 @@ export const CondoLocations = [
         link: "/residence/pioneer-woodlands",
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.46980630942!2d121.0447695740087!3d14.572284977771496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c84506f1b82f%3A0x29b1e75196a3519f!2sEpifanio%20de%20los%20Santos%20Ave%20%26%20Pioneer%20St%2C%20Mandaluyong%2C%20Metro%20Manila!5e0!3m2!1sfil!2sph!4v1688827407163!5m2!1sfil!2sph",
         address: "EDSA corner Pioneer St., Mandaluyong City",
-        landmarks:[],
-        amenities: [],
+        landmarks:[
+            {
+                name: "BGC",
+                img: "/pwl/pwl-landmark1.jpg",
+                description: "BGC, or Bonifacio Global City, is a vibrant district in Taguig City, Metro Manila, known for its modern infrastructure, commercial spaces, and green areas. Developed in the early 2000s, it's a hub for businesses, upscale shopping malls, dining options, and cultural events. With its cosmopolitan atmosphere and strategic location, BGC attracts residents, workers, and visitors seeking a dynamic urban lifestyle in the Philippines."
+            },
+            {
+                name: "Ortigas Center",
+                img: "/pwl/pwl-landmark2.jpg",
+                description: "Ortigas Center is a central business district located within the joint boundaries of Pasig, Mandaluyong and Quezon City, within the Metro Manila region in the Philippines. With an area of more than 100 hectares (250 acres), it is Metro Manila's second most important business district after the (Makati CBD).It is governed by Ortigas Center Association, Inc."
+            },
+            {
+                name: "SM Megamall",
+                img: "/pwl/pwl-landmark3.jpg",
+                description: "SM Megamall, located in Metro Manila's Ortigas business district, is one of the largest malls in the Philippines. Owned by SM Prime Holdings, it features over 1,000 shops including international and local brands, department stores, and specialty shops. The mall also offers a variety of dining options, cinemas, a bowling alley, and an ice skating rink. Its Mega Fashion Hall extension brings in high-end retail and upscale dining, along with an IMAX theater. SM Megamall serves as a key community and shopping hub, attracting millions of visitors each year."
+            },
+            {
+                name: "The Heart of Mandaluyong",
+                img: "/pwl/pwl-landmark4.jpg",
+                description: "The Heart of Mandaluyong Situated at the center of the new Mandaluyong CBD and bordered by main thoroughfares EDSA and Shaw Boulevard, and stretching towards Reliance and Sheridan Street, Greenfield District is easily accessible to other businesses, schools, hospitals, malls, lifestyle centers and transportation. Buildings are also interconnected and lead to MRT stations. It’s a perfect investment for any potential buyer."
+            },
+            {
+                name: "Forum Robinsons",
+                img: "/pwl/pwl-landmark5.jpg",
+                description: "Forum Robinsons (formerly known as Robinsons Place Pioneer), was a shopping mall located in Mandaluyong, Metro Manila, Philippines owned and operated by Robinsons Land. The mall opened on November 17, 2004. It is the 18th mall opened by Robinsons and the first mall in Mandaluyong with a gross floor area of 56,000 square meters (600,000 sq ft). The former name Robinsons Place Pioneer was dubbed after its location, Pioneer Street. Back then, the mall was envisioned to become a one stop shop for everyone in Cybergate Complex which was in turn envisioned to become a cyberhub in the city.In 2010, the mall was renamed to its current name to re-position itself as a cyber lifestyle mall focusing on IT products and to align itself with the vision of the Cybergate Complex."
+            },
+            {
+                name: "Rockwell Power Plant Mall",
+                img: "/pwl/pwl-landmark6.jpg",
+                description: "Rockwell Power Plant Mall, located in Rockwell Center, Makati City, Philippines, is an upscale shopping center that opened in December 2000. It features high-end fashion brands, a variety of dining options, a cinema, and various services like salons and fitness centers. Known for its stylish design, the mall also hosts events and is easily accessible with ample parking."
+            },
+            {
+                name: "Boni station",
+                img: "/pwl/pwl-landmark7.jpg",
+                description: "Boni station is an at-grade Metro Rail Transit station located on the MRT Line 3 system in Mandaluyong. It is named so due to its proximity to Boni Avenue, which is in turn named after the nickname of Bonifacio Javier, a World War II guerilla leader and former mayor of Mandaluyong."
+            },
+        ],
+        amenities: [
+            {
+                name: "Modern Gym",
+                img: "/pwl/pwl-amenity1.jpg",
+                description: "Pioneer Woodlands in Mandaluyong City offers a modern gym equipped with cardio machines, strength training equipment, and a functional training area. The gym features large windows with panoramic city views, creating an inspiring workout environment. Residents can enjoy personalized training sessions with professional trainers and participate in group exercise classes. Regular fitness challenges and wellness events foster a strong community spirit, enhancing the overall living experience."
+            },
+            {
+                name: "Over-looking Swimming Pool",
+                img: "/pwl/pwl-amenity2.jpg",
+                description: "Pioneer Woodlands in Mandaluyong City boasts a stunning over-looking swimming pool with breathtaking city skyline views. The pool area features comfortable lounge chairs and shaded spots, perfect for relaxation. It also hosts regular events like sunset yoga and weekend barbecues, making it a lively community hub."
+            },
+            {
+                name: "",
+                img: "/pwl/pwl-amenity3.jpg",
+                description: "Pioneer Woodlands in Mandaluyong City is directly connected to MRT Boni Station, offering residents quick and easy access to key city destinations. This seamless link ensures a convenient and efficient commute, making urban living more attractive and hassle-free."
+            },
+            {
+                name: "The elegant lobby",
+                img: "/pwl/pwl-amenity4.jpg",
+                description: "The elegant lobby is designed with stylish furnishings and sophisticated decor, creating a welcoming atmosphere for family, friends, and visitors. Its spacious seating areas and warm ambiance make it an ideal spot for socializing or relaxing. The lobby also offers 24/7 concierge services, adding a touch of convenience and luxury to the residents' experience."
+            },
+            {
+                name: "luxurious lobby",
+                img: "/pwl/pwl-amenity5.jpg",
+                description: "Pioneer Woodlands in Mandaluyong City boasts a luxurious lobby with stylish furnishings and a welcoming ambiance. It's perfect for greeting family, friends, and guests, with spacious seating areas and 24/7 concierge services and security adding to the convenience and elegance."
+            },
+    ],
         sitePlan: {
             descriptions: ["Pioneer Woodlands is a six-high-rise-tower residential community that is directly connected to the Boni Ave. station of the MRT-3 railway system, which connects both the North and South districts in Metro Manila. Having this convenience offers premium exclusive mobility among its residents which can bring them to the Makati Central Business District, Ortigas Central Business District and more transportation hubs that serve as jump-off point to other leisure hubs and tourist spots in the Philippines."],
             img: "/pwl/pwl-siteplan.png"
