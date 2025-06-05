@@ -94,7 +94,7 @@ return (
                             </div>
                             <div className="flex flex-col gap-2">
                                 <h1 className='font-medium text-[2rem]'>Location</h1>
-                                <h1 className='text-[1rem]'>632 Shaw Blvd, Mandaluyong, 1550 Metro Manila</h1>
+                                <h1 className='text-[1rem]'>Libertad Heights, Mandaluyong City</h1>
                             </div>
                         </div>
                         <div className='flex md:flex-row flex-col md:items-center md:gap-5 gap-1'>
@@ -104,6 +104,7 @@ return (
                             <div className="flex flex-col gap-2">
                                 <h1 className='font-medium text-[2rem]'>Email</h1>
                                 <h1 className='text-[1rem]'>builders@metrocondoliving.com</h1>
+                                <h1 className='text-[1rem]'>metrocondolifestyle@gmail.com</h1>
                             </div>
                         </div>
                         <div className='flex md:flex-row flex-col md:items-center md:gap-5 gap-1'>
@@ -112,13 +113,13 @@ return (
                             </div>
                             <div className="flex flex-col gap-2">
                                 <h1 className='font-medium text-[2rem]'>Phone</h1>
-                                <h1 className='text-[1rem]'>09159828384</h1>
+                                <h1 className='text-[1rem]'>+63 915 982 8384</h1>
                             </div>
                         </div>
                         <div
                             className='h-[12rem] w-full'
                         >
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.26888778488!2d121.04789967400892!3d14.583748277491235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8394a420d2d%3A0x254aa51e3ad54dff!2s632%20Bulebar%20Shaw%2C%20Mandaluyong%2C%201552%20Kalakhang%20Maynila!5e0!3m2!1sfil!2sph!4v1688742256504!5m2!1sfil!2sph" 
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4198.2122415921085!2d121.050423!3d14.5791385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c91e828ce7d3%3A0xd950b5126f21d98a!2sLibertad%20Heights!5e1!3m2!1sfil!2sph!4v1749014986414!5m2!1sfil!2sph" 
                             allowFullScreen={false}
                             style={{border:0, width: "100%", height: "100%"}}
                             loading="lazy" 

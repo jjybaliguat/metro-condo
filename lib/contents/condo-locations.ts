@@ -7,7 +7,7 @@ export const CondoLocations = [
         logo: '/empireeasthighland/empire-east-logo.png',
         description: "Empire East Highland City is a 22-hectare property located at the periphery of Pasig City and Cainta. Envisioned to be the prominent and prestigious benchmark of the country's exciting mixed-use development - Empire East Highland City will surely be the ideal destination not only of adventure-seeking individuals but also of families and professionals who wish to reside in this vibrant setting.",
         // price: 3900000,
-        price: 4000,
+        price: 6000,
         img: [
             "/empireeasthighland/city-2.jpg",
             "/empireeasthighland/empire-east-highland.jpg"
@@ -247,7 +247,7 @@ export const CondoLocations = [
         logo: '/paddington/paddington-place-logo.png',
         description: "The Paddington Place is a four-tower high-rise development rising at the Tiger City of the Philippines-- Mandaluyong City! This urban enclave is perfect for young professionals who want to bridge the gap between the bustling cities in the metro and juggle the work-life balance.",
         // price: 4000000,
-        price: 6000,
+        price: 9000,
         img: [
             "/paddington-perspective.jpg",
         ],
@@ -723,7 +723,7 @@ export const CondoLocations = [
         logo: '/kasara/kasara-logo.png',
         description: "Sensing a good life at Kasara Urban Resort Residences. At the heart of the highly urbanized community is a secret dwelling place where the air is fresher, the grass is greener and the water is cleaner. Step into Kasara Urban Resort Residences and live everyday like you’re in paradise. Wake up each day to the sun’s rays peeking through your window, inviting you to experience nature and the modern life through your senses.",
         // price: 3900000,
-        price: 10000,
+        price: 18000,
         img: [
             "/kasara.jpg",
         ],
@@ -1450,7 +1450,7 @@ export const CondoLocations = [
         logo: '/pwl/pioneer-logo.png',
         description: "Get on the railway of lifestyle enjoyment!  Let this address take you off space hindrances and on to the city's best places in a swift! Pioneer Woodlands is a 6-tower development situated right at the middle of thriving EDSA that instantly becomes the convergent zone of various business, shopping, leisure, entertainment and educational hubs in the city! Its direct link to the Boni station of MRT-3 makes this development one of the most coveted addresses in the metro that would truly be ideal for yuppies, students and starting families.",
         // price: 3600000,
-        price: 10000,
+        price: 20000,
         img: [
             "/pioneer-woodlands.jpg",
         ],

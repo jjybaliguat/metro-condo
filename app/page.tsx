@@ -22,7 +22,7 @@ export default function Home() {
         {/* <ClientsFeedback /> */}
         <Contact />
         <Link
-            href="tel: 09159828384"
+            href="tel: +63 915 982 8384"
             className='fixed top-0 right-[1rem] z-40 mt-[70px]'
             passHref
         >

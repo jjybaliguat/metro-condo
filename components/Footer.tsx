@@ -11,9 +11,9 @@ const Footer = () => {
         <div className="flex md:flex-row align-center flex-col gap-10 md:gap-28 p-8">
             <div className='flex flex-col gap-3 md:w-[40%] w-[90%]'>
                 <h1 className='font-bold md:text-[2.5rem] text-[2rem]'>METRO CONDO LIVING</h1>
-                <p>632 Shaw Blvd, Mandaluyong, 1550 Metro Manila</p>
-                <p>09159828384</p>
-                <p>builders@metrocondoliving.com</p>
+                <p>Libertad Heights, Mandaluyong City</p>
+                <p>+63 915 982 8384</p>
+                <p>builders@metrocondoliving.com, metrocondolifestyle@gmail.com</p>
             </div>
             <div className='flex flex-col gap-3'>
                 <h1 className='font-bold md:text-[1.5rem] text-[1rem]'>Useful Links</h1>
