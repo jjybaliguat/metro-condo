@@ -11,9 +11,9 @@ const Footer = () => {
         <div className="flex md:flex-row align-center flex-col gap-10 md:gap-28 p-8">
             <div className='flex flex-col gap-3 md:w-[40%] w-[90%]'>
                 <h1 className='font-bold md:text-[2.5rem] text-[2rem]'>METRO CONDO LIVING</h1>
-                <p>Libertad Heights, Mandaluyong City</p>
+                <p>Libertad Heights, Domingo M. Guevarra, Highway Hills, Mandaluyong City, Metro Manila, Philippines, 1550</p>
                 <p>+63 915 982 8384</p>
-                <p>builders@metrocondoliving.com, metrocondolifestyle@gmail.com</p>
+                <p>builders@metrocondoliving.com metrocondolifestyle@gmail.com</p>
             </div>
             <div className='flex flex-col gap-3'>
                 <h1 className='font-bold md:text-[1.5rem] text-[1rem]'>Useful Links</h1>
@@ -56,7 +56,7 @@ const Footer = () => {
             <div className='flex flex-col gap-3'>
                 <h1 className='font-bold md:text-[1.5rem] text-[1rem]'>Social Networks</h1>
                 <div className='flex gap-3'>
-                    <Link href="https://facebook.com" passHref legacyBehavior>
+                    <Link href="https://www.facebook.com/share/1EDCUJrsAz/?mibextid=wwXIfr" passHref legacyBehavior>
                         <a target="_blank">
                             <Image className='rounded-full h-[50px]'
                                 src="/fblogo.png"
@@ -76,7 +76,7 @@ const Footer = () => {
                             />
                         </a>
                     </Link>
-                    <Link href="https://instagram.com" passHref legacyBehavior>
+                    <Link href="https://www.instagram.com/metro_condo_living?igsh=bmVqeDJlMjdlc2xv&utm_source=qr" passHref legacyBehavior>
                         <a target="_blank">
                             <Image className='rounded-full h-[50px]'
                                 src="/insta.jpg"

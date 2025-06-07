@@ -2,6 +2,7 @@
 
 import { Disclosure } from '@headlessui/react'
 import { ChevronUpIcon } from '@heroicons/react/20/solid'
+import { useState } from 'react'
 
 const FaqsList = [
     {
@@ -19,10 +20,41 @@ const FaqsList = [
     {
         question: "Can the Overseas Filipino Worker (OFW) buy the property?",
         answer: "- Yes, we also have free online viewing for them"
-    }
+    },
+    {
+        question: "How much are condo fees and what do they cover?",
+        answer: "-₱80–₱150 per sqm monthly. \nCovers security, maintenance, and shared utilities. \nNote: Water, electricity, and internet are paid separately."
+    },
+    {
+        question: "Is buying a pre-selling condo safe?",
+        answer: "-Yes, if the developer is trusted and permits are complete. It’s cheaper and offers flexible terms, but watch out for delays or changes."
+    },
+    {
+        question: "Which is better: RFO or Pre-selling condo?",
+        answer: "—RFO (Ready for Occupancy): Move in right away, good for urgent housing. \nPre-selling: Lower price and flexible terms, but with waiting time. \nTip: Choose RFO if you need it soon; Pre-selling if you’re investing."
+    },
+    {
+        question: "Can I rent out my condo if I’m not using it?",
+        answer: "-Yes, most developers allow rentals. It’s a good way to earn income. \nROI Tip: Payback time depends on location, rent rate, and loan terms."
+    },
+    {
+        question: "What are the requirements to buy a condo?",
+        answer: "-Basic requirements include: \n\n1. Valid government-issued ID. \n2. Proof of income or employment. \n3. Reservation fee and downpayment \n\nGood news: Most developers allow installment payments for downpayment."
+    },
+    {
+        question: "Is it safe to live in a condo?",
+        answer: "Yes. Most condos have: \n-24/7 security guards \n-CCTV in common areas \n-Secure entry points"
+    },
+    {
+        question: "What is the lifespan of a condo building?",
+        answer: "-Usually 50 years or more, depending on maintenance and building quality. \nTip: Condo corporations can vote to renovate or redevelop the building."
+    },
 ]
 
 export default function Faqs() {
+    const [viewAll, setViewAll] = useState(false)
+    const toggleViewAll = () => setViewAll(!viewAll)
+
   return (
     <>
     <div className='w-full bg-[#e8e8e8]'>
@@ -32,27 +64,7 @@ export default function Faqs() {
         <h1 className='section-title'>Frequently Ask Questions</h1>
         <div className="w-full px-4 pt-10">
         <div className="mx-auto w-full rounded-2xl p-2">
-            {FaqsList.map((faq, index)=>(
-                <Disclosure as="div" className="mt-2" defaultOpen={index == 0}>
-                {({ open }) => (
-                    <>
-                    <Disclosure.Button className="flex w-full justify-between rounded-lg shadow-lg bg-white px-4 py-4 text-left text-md font-medium 
-                    focus:outline-none focus-visible:ring focus-visible:ring-primary focus-visible:ring-opacity-75">
-                        <span>{faq.question}</span>
-                        <ChevronUpIcon
-                        className={`${
-                            open ? 'rotate-180 transform' : ''
-                        } h-5 w-5 text-black`}
-                        />
-                    </Disclosure.Button>
-                    <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-                        {faq.answer}
-                    </Disclosure.Panel>
-                    </>
-                )}
-                </Disclosure>
-            ))}
-            <Disclosure as="div" className="mt-2">
+            <Disclosure as="div" className="mt-2" defaultOpen>
             {({ open }) => (
                 <>
                 <Disclosure.Button className="flex w-full justify-between rounded-lg shadow-lg bg-white px-4 py-4 text-left text-md font-medium 
@@ -80,6 +92,61 @@ export default function Faqs() {
                 </>
             )}
             </Disclosure>
+            {viewAll? (
+                FaqsList.map((faq, index)=>(
+                    <Disclosure as="div" className="mt-2" defaultOpen={index == 0}>
+                    {({ open }) => (
+                        <>
+                        <Disclosure.Button className="flex w-full justify-between rounded-lg shadow-lg bg-white px-4 py-4 text-left text-md font-medium 
+                        focus:outline-none focus-visible:ring focus-visible:ring-primary focus-visible:ring-opacity-75">
+                            <span>{faq.question}</span>
+                            <ChevronUpIcon
+                            className={`${
+                                open ? 'rotate-180 transform' : ''
+                            } h-5 w-5 text-black`}
+                            />
+                        </Disclosure.Button>
+                        <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                            <pre>
+                                {faq.answer}
+                            </pre>
+                        </Disclosure.Panel>
+                        </>
+                    )}
+                    </Disclosure>
+                ))
+            ) : (
+                FaqsList.slice(0, 5).map((faq, index)=>(
+                    <Disclosure as="div" className="mt-2" defaultOpen={index == 0}>
+                    {({ open }) => (
+                        <>
+                        <Disclosure.Button className="flex w-full justify-between rounded-lg shadow-lg bg-white px-4 py-4 text-left text-md font-medium 
+                        focus:outline-none focus-visible:ring focus-visible:ring-primary focus-visible:ring-opacity-75">
+                            <span>{faq.question}</span>
+                            <ChevronUpIcon
+                            className={`${
+                                open ? 'rotate-180 transform' : ''
+                            } h-5 w-5 text-black`}
+                            />
+                        </Disclosure.Button>
+                        <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                            <pre>
+                                {faq.answer}
+                            </pre>
+                        </Disclosure.Panel>
+                        </>
+                    )}
+                    </Disclosure>
+                ))
+            )}
+            <div className="mt-6 text-center">
+            <button
+                onClick={toggleViewAll}
+                className="px-6 py-2 bg-white text-secondary font-semibold rounded-full shadow-md hover:bg-gray-100 transition"
+            >
+                {viewAll ? "View Less" : "View More"}
+            </button>
+            </div>
         </div>
         </div>
     </div>
