@@ -1,6 +1,8 @@
 import React from 'react'
 import TestimonialCarousel from './TestimonialCarousel'
 
+export const revalidate = 0
+
 async function getTestimonials() {
   const baseUrl = process.env.NEXT_PUBLIC_NODE_ENV == "development" ? "http://localhost:3000/api" : "https://metrocondoliving.com/api"
   const response: any = await fetch(`${baseUrl}/testimonials`, {cache: 'no-store'})

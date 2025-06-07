@@ -31,48 +31,50 @@ const [submitting, setSubmitting] = useState(false)
 const [error, setError] = useState<any | null>()
 
 
-// const emailApiUrl = process.env.NEXT_PUBLIC_NODE_ENV == "development" ? 'http://localhost:3000/api/email' : 'https://metrocondoliving/api/email'
+// const emailApiUrl = process.env.NEXT_PUBLIC_NODE_ENV == "development" ? 'http://localhost:3000/api/send-email' : 'https://metrocondoliving.com/api/send-email'
 
 const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setSubmitting(true)
-    // try {
-    //     const response: any = await axios.post(emailApiUrl, {
-    //         fromAddress: 'MCL Quotes<builders@metrocondoliving.com>',
-    //         toAddress: 'builders@metrocondoliving.com',
-    //         ccAddress: ['metrocondolifestyle@gmail.com'],
-    //         subject: `Quote from ${messageData.name}`,
-    //         message: `<div>
-    //         <h1>Name: <strong>${messageData.name}</strong></h1>
-    //         <h1>Email: <strong>${messageData.email}</strong></h1>
-    //         <h1>Phone: <strong>${messageData.contact}</strong></h1>
-    //         <h1>Address: <strong>${messageData.address}</strong></h1>
-    //         <div style="margin-top: 25px">
-    //             <h1>Message: </h1>
-    //             <h1 style="text-align: center">${messageData.message}</h1>
-    //         </div>
-    //         </div>`
-    //     })
+    try {
+        const response = await fetch('/api/send-email', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                name: messageData.name,
+                email: messageData.email,
+                contact: messageData.contact,
+                address: messageData.address,
+                message: messageData.message,
+            }),
+            });
 
-    //     // console.log(response)
+        const data = await response.json()
 
-    //     if(response?.data){
-    //         setSubmitting(false)
-    //         setError(false)
-    //         setMessageData({
-    //             name: '',
-    //             email: '',
-    //             address: '',
-    //             contact: '',
-    //             incomeSource: 'Employed',
-    //             message: ''
-    //         })
-    //     }
-    // } catch (error) {
-    //     console.log(error)
-    //     setSubmitting(false)
-    //     setError(true)
-    // }
+        if(!response.ok){
+            setError(true)
+        }else{
+            if(data.success){
+                setSubmitting(false)
+                setError(false)
+                setMessageData({
+                    name: '',
+                    email: '',
+                    address: '',
+                    contact: '',
+                    incomeSource: 'Employed',
+                    message: ''
+                })
+            }else{
+                setError(true)
+                setSubmitting(false)
+            }
+        }
+    } catch (error) {
+        console.log(error)
+        setSubmitting(false)
+        setError(true)
+    }
 }
 
 
@@ -151,19 +153,19 @@ return (
                     <input
                         type='text'
                         className='w-full p-3 rounded-md outline-none focus:outline-2 focus:outline-primary shadow-md'
-                        placeholder='Your address'
+                        placeholder='Your address (optional)'
                         value={messageData.address}
                         onChange={(e)=>setMessageData({...messageData, address: e.target.value})}
-                        required
+                        // required
                     />
                     <div className="flex flex-col md:flex-row gap-3">
                         <input
                             type='text'
                             className='w-full p-3 rounded-md outline-none focus:outline-2 focus:outline-primary shadow-md'
-                            placeholder='Contact Number'
+                            placeholder='Contact Number (optional)'
                             value={messageData.contact}
                             onChange={(e)=>setMessageData({...messageData, contact: e.target.value})}
-                            required
+                            // required
                         />
                         {/* <Select
                             // title='Select Income Source'
@@ -182,14 +184,14 @@ return (
                     />
                     <CustomButton
                         btnType='submit'
-                        isDisabled={true}
+                        // isDisabled={true}
                         title={submitting? 'Sending...' : 'Submit'}
                         rightIcon={<Spin className={submitting ? 'flex' : 'hidden'} />}
                         containerStyles='bg-primary'
                         textStyles='text-white'
                     />
                     {error != null && (!error? (<div className='mt-5'>
-                        <p className='text-success'>Your message has been sent to us. Thank you.</p>
+                        {!submitting && <p className='text-success'>Your message has been sent to us. Thank you.</p>}
                     </div>) : (
                         <p className='text-danger'>Error sending message</p>
                     ) )} 
