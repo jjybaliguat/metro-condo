@@ -31,14 +31,14 @@ export default function RootLayout({
         <ReduxProvider>
           <Navbar />
           {children}
-          <Link
+          {/* <Link
           href="/contact"
             className='flex items-center gap-1 origin-bottom-right fixed bottom-1 right-0 rounded-[14px]
             bg-[darkred] text-white p-2 md:p-3 z-50 hover:scale-[110%] drop-shadow-md hover:drop-shadow-2xl md:text-[20px]'
           >
             <h1>Get Quote</h1>
             <PencilSquareIcon className="h-6 w-6 text-white" />
-          </Link>
+          </Link> */}
           <Footer />
         </ReduxProvider>
         {/* <!--Start of Tawk.to Script-->
