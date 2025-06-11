@@ -49,7 +49,7 @@ export default async function Teams() {
       {/* Team Section */}
       <section className="w-full bg-white px-4 py-12 md:px-8 lg:px-16">
         {teams && teams.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 place-items-center">
             {teams.map((team: TeamMember) => (
               <div
                 key={team._id}

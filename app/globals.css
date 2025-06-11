@@ -1,5 +1,5 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Helvetica:wght@200;300;400;500;600;700;800&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500&display=swap');  
+/* Import luxury font pairings */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -9,11 +9,26 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Apply default body font */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter Tight', sans-serif;
+  font-family: 'Lato', sans-serif; /* Lato as default body font */
+}
+
+/* Luxury heading style override */
+h1, h2, h3, h4, h5, h6, .section-title, .hero__title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Optional: subtitle enhancement */
+.hero__subtitle {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.3px;
 }
 
 /* START: General styles */
@@ -44,19 +59,20 @@ html {
 .btn-primary {
   @apply flex flex-row relative text-white justify-center items-center bg-primary px-4 py-2 shadow-xl ring-1 ring-slate-900/5 rounded-lg;
 }
-.btn-secondary{
+.btn-secondary {
   @apply flex flex-row relative text-white justify-center items-center bg-secondary px-4 py-2 shadow-xl ring-1 ring-slate-900/5 rounded-lg;
 }
 
 .section-title {
   @apply md:text-[2.5rem] text-[1.5rem] font-bold;
 }
-.vertical-text{
+
+.vertical-text {
   writing-mode: vertical-rl;
   text-orientation: mixed;
 }
 
-.loading-bar{
+.loading-bar {
   height: 100%;
   transition: width 0.5s ease-in-out;
   background-color: #b29c5b;
@@ -64,7 +80,6 @@ html {
 /* END: General styles */
 
 /* Hero Styles */
-
 .hero {
   @apply flex xl:flex-row flex-col gap-5 relative z-0 w-full h-[80vh] bg-black text-white;
 }
@@ -89,40 +104,39 @@ html {
   @apply w-full h-full z-0;
 }
 
-.image-slideshow{
+.image-slideshow {
   @apply m-auto w-full h-full relative overflow-hidden bg-fixed bg-no-repeat bg-center bg-cover;
 }
 
-.slides{
+.slides {
   @apply absolute top-0 left-0 w-full h-full object-cover object-center;
 }
 
 /* Catalog Section */
-
-.catalog{
+.catalog {
   @apply relative h-fit bg-white w-full pt-[1rem] pb-[1rem];
 }
 
-.condo-description{
+.condo-description {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
 }
-.team-description{
+
+.team-description {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 6;
 }
 
-
 /* Embla carousel styles */
-
 .embla {
   overflow: hidden;
   position: relative;
 }
+
 .embla__container {
   display: flex;
   height: 375px;
@@ -134,26 +148,26 @@ html {
   min-width: 0;
   margin-right: 15px;
   margin-left: 7.5px;
-} 
+}
+
 .embla__slide2 {
   position: relative;
   flex: 0 0 100%;
   min-width: 0;
   margin-right: 18px;
   margin-left: 9px;
-} 
+}
 
-.embla__prev{
+.embla__prev {
   position: absolute;
   left: 10px;
   top: 40%;
-  /* transform: translateY(60%); */
 }
-.embla__next{
+
+.embla__next {
   position: absolute;
   right: 10px;
   top: 40%;
-  /* transform: translateY(60%); */
 }
 
 @media (max-width: 768px) {
@@ -166,4 +180,3 @@ html {
     height: 280px;
   }
 }
-

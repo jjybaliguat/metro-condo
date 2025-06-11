@@ -6,7 +6,9 @@ import TestimonialCarousel from './TestimonialCarousel'
 
 // Fetcher function
 const GetTestimonials = async () => {
-  const response = await fetch("/api/testimonials")
+  const response = await fetch("/api/testimonials", {
+    cache: 'no-store'
+  })
 
   if (!response.ok) {
     throw new Error("Failed to fetch testimonials")
