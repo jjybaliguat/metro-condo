@@ -16,12 +16,6 @@ const projects = [
       '/builders-projects/air-residence/img-2.JPG', 
       '/builders-projects/air-residence/img-3.JPG',
       '/builders-projects/air-residence/img-4.JPG',
-      '/builders-projects/air-residence/img-5.JPG',
-      '/builders-projects/air-residence/img-6.JPG',
-      '/builders-projects/air-residence/img-7.JPG',
-      '/builders-projects/air-residence/img-8.JPG',
-      '/builders-projects/air-residence/img-9.JPG',
-      '/builders-projects/air-residence/img-10.JPG',
     ]
   },
   {
@@ -37,9 +31,6 @@ const projects = [
       '/builders-projects/park-triangle/img-5.JPG',
       '/builders-projects/park-triangle/img-6.JPG',
       '/builders-projects/park-triangle/img-7.JPG',
-      '/builders-projects/park-triangle/img-8.JPG',
-      '/builders-projects/park-triangle/img-9.JPG',
-      '/builders-projects/park-triangle/img-10.JPG',
     ]
   },
   {
@@ -55,9 +46,6 @@ const projects = [
       '/builders-projects/solstice/img-5.JPG',
       '/builders-projects/solstice/img-6.JPG',
       '/builders-projects/solstice/img-7.JPG',
-      '/builders-projects/solstice/img-8.JPG',
-      '/builders-projects/solstice/img-9.JPG',
-      '/builders-projects/solstice/img-10.JPG',
     ]
   },
   {
@@ -72,10 +60,6 @@ const projects = [
       '/builders-projects/studio-7/img-4.JPG',
       '/builders-projects/studio-7/img-5.JPG',
       '/builders-projects/studio-7/img-6.JPG',
-      '/builders-projects/studio-7/img-7.JPG',
-      '/builders-projects/studio-7/img-8.JPG',
-      '/builders-projects/studio-7/img-9.JPG',
-      '/builders-projects/studio-7/img-10.JPG',
     ]
   },
 ];
@@ -138,7 +122,7 @@ export default function BuildersPage() {
               Building Exceptional Spaces
             </h1>
             <p className="mt-4 text-lg max-w-2xl">
-              Discover our mission, legacy, and the signature Metrocondo Living projects we've brought to life.
+              Discover our mission, legacy, and the signature Metro Condo Living projects we've brought to life.
             </p>
             <a
               href="#projects"
@@ -185,7 +169,7 @@ export default function BuildersPage() {
           <div className="container mx-auto text-center px-4">
             <h2 className="text-2xl font-semibold mb-4">Ready to Partner?</h2>
             <p className="mb-6 text-gray-700">
-              Whether you’re looking to develop your next project or explore partnership opportunities, Metrocondo Living Builders is here to craft excellence.
+              Whether you’re looking to develop your next project or explore partnership opportunities, Metro Condo Living Builders is here to craft excellence.
             </p>
             <a
               href="/contact"

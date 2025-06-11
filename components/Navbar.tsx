@@ -125,10 +125,10 @@ const Navbar = () => {
                 )
                 : (
                 <button
-                className='flex md:hidden justify-center py-2 w-full border border-[3px] border-primary rounded-full hover:scale-105'
+                className='flex md:hidden justify-center py-2 w-full border-[3px] border-primary rounded-full hover:scale-105'
                 onClick={handleSignIn}
                 >
-                  Signin
+                  Sign in
                 </button>
                 )
                 }
@@ -149,7 +149,7 @@ const Navbar = () => {
                     <button type="button"
                       onClick={handleSignIn}
                       className='hidden md:flex py-3 px-5 outline-none'>
-                        Signin
+                        Sign in
                     </button>
                 )
                 }

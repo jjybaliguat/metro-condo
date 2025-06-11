@@ -7,11 +7,11 @@ import { useState } from 'react'
 const FaqsList = [
     {
         question: "How much is the downpayment for ready for occupancy unit?",
-        answer: "- The downpayment for ready for occupancy unit is 5% to 10% of the total contract price or 300,000 depends on the project"
+        answers: ["- The downpayment for ready for occupancy unit is 5% to 10% of the total contract price or 300,000 depends on the project"]
     },
     {
         question: "How long is the turn over of pre-selling project?",
-        answer: "- The expected turn over for pre-selling project is waiting at least 3 years."
+        answers: ["- The expected turn over for pre-selling project is waiting at least 3 years."]
     },
     // {
     //     question: "What are the available locations?",
@@ -19,35 +19,35 @@ const FaqsList = [
     // },
     {
         question: "Can the Overseas Filipino Worker (OFW) buy the property?",
-        answer: "- Yes, we also have free online viewing for them"
+        answers: ["- Yes, we also have free online viewing for them"]
     },
     {
         question: "How much are condo fees and what do they cover?",
-        answer: "-₱80–₱150 per sqm monthly. \nCovers security, maintenance, and shared utilities. \nNote: Water, electricity, and internet are paid separately."
+        answers: ["-₱80–₱150 per sqm monthly. \nCovers security, maintenance, and shared utilities. \nNote: Water, electricity, and internet are paid separately."]
     },
     {
         question: "Is buying a pre-selling condo safe?",
-        answer: "-Yes, if the developer is trusted and permits are complete. It’s cheaper and offers flexible terms, but watch out for delays or changes."
+        answers: ["-Yes, if the developer is trusted and permits are complete. It’s cheaper and offers flexible terms, but watch out for delays or changes."]
     },
     {
         question: "Which is better: RFO or Pre-selling condo?",
-        answer: "—RFO (Ready for Occupancy): Move in right away, good for urgent housing. \nPre-selling: Lower price and flexible terms, but with waiting time. \nTip: Choose RFO if you need it soon; Pre-selling if you’re investing."
+        answers: ["—RFO (Ready for Occupancy): Move in right away, good for urgent housing. ", "Pre-selling: Lower price and flexible terms, but with waiting time.", "Tip: Choose RFO if you need it soon; Pre-selling if you’re investing."]
     },
     {
         question: "Can I rent out my condo if I’m not using it?",
-        answer: "-Yes, most developers allow rentals. It’s a good way to earn income. \nROI Tip: Payback time depends on location, rent rate, and loan terms."
+        answers: ["-Yes, most developers allow rentals. It’s a good way to earn income.", "ROI Tip: Payback time depends on location, rent rate, and loan terms."]
     },
     {
         question: "What are the requirements to buy a condo?",
-        answer: "-Basic requirements include: \n\n1. Valid government-issued ID. \n2. Proof of income or employment. \n3. Reservation fee and downpayment \n\nGood news: Most developers allow installment payments for downpayment."
+        answers: ["-Basic requirements include:", "1. Valid government-issued ID. ", "2. Proof of income or employment.", "3. Reservation fee and downpayment ", "Good news: Most developers allow installment payments for downpayment."]
     },
     {
         question: "Is it safe to live in a condo?",
-        answer: "Yes. Most condos have: \n-24/7 security guards \n-CCTV in common areas \n-Secure entry points"
+        answers: ["Yes. Most condos have: ", "-24/7 security guards ", "-CCTV in common areas ", "-Secure entry points"]
     },
     {
         question: "What is the lifespan of a condo building?",
-        answer: "-Usually 50 years or more, depending on maintenance and building quality. \nTip: Condo corporations can vote to renovate or redevelop the building."
+        answers: ["-Usually 50 years or more, depending on maintenance and building quality. ", "Tip: Condo corporations can vote to renovate or redevelop the building."]
     },
 ]
 
@@ -107,9 +107,9 @@ export default function Faqs() {
                             />
                         </Disclosure.Button>
                         <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-                            <pre>
-                                {faq.answer}
-                            </pre>
+                            {faq.answers.map((answer)=> (
+                                <p>{answer}</p>
+                            ))}
                         </Disclosure.Panel>
                         </>
                     )}
@@ -130,9 +130,9 @@ export default function Faqs() {
                             />
                         </Disclosure.Button>
                         <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-                            <pre>
-                                {faq.answer}
-                            </pre>
+                            {faq.answers.map((answer)=> (
+                                <p>{answer}</p>
+                            ))}
                         </Disclosure.Panel>
                         </>
                     )}
