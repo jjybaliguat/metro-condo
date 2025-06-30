@@ -254,8 +254,65 @@ export const CondoLocations = [
         link: "/residence/the-paddington-place",
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.26888778488!2d121.04789967400892!3d14.583748277491235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8394a420d2d%3A0x254aa51e3ad54dff!2s632%20Bulebar%20Shaw%2C%20Mandaluyong%2C%201552%20Kalakhang%20Maynila!5e0!3m2!1sfil!2sph!4v1688826205319!5m2!1sfil!2sph",
         address: "632 Shaw Blvd, Mandaluyong, 1550 Metro Manila",
-        landmarks:[],
-        amenities: [],
+        landmarks:[
+            {
+                name: "BGC",
+                img: "/pwl/pwl-landmark1.jpg",
+                description: "BGC, or Bonifacio Global City, is a vibrant district in Taguig City, Metro Manila, known for its modern infrastructure, commercial spaces, and green areas. Developed in the early 2000s, it's a hub for businesses, upscale shopping malls, dining options, and cultural events. With its cosmopolitan atmosphere and strategic location, BGC attracts residents, workers, and visitors seeking a dynamic urban lifestyle in the Philippines."
+            },
+            {
+                name: "Ortigas Center",
+                img: "/pwl/pwl-landmark2.jpg",
+                description: "Ortigas Center is a central business district located within the joint boundaries of Pasig, Mandaluyong and Quezon City, within the Metro Manila region in the Philippines. With an area of more than 100 hectares (250 acres), it is Metro Manila's second most important business district after the (Makati CBD).It is governed by Ortigas Center Association, Inc."
+            },
+            {
+                name: "SM Megamall",
+                img: "/pwl/pwl-landmark3.jpg",
+                description: "SM Megamall, located in Metro Manila's Ortigas business district, is one of the largest malls in the Philippines. Owned by SM Prime Holdings, it features over 1,000 shops including international and local brands, department stores, and specialty shops. The mall also offers a variety of dining options, cinemas, a bowling alley, and an ice skating rink. Its Mega Fashion Hall extension brings in high-end retail and upscale dining, along with an IMAX theater. SM Megamall serves as a key community and shopping hub, attracting millions of visitors each year."
+            },
+            {
+                name: "The Heart of Mandaluyong",
+                img: "/pwl/pwl-landmark4.jpg",
+                description: "The Heart of Mandaluyong Situated at the center of the new Mandaluyong CBD and bordered by main thoroughfares EDSA and Shaw Boulevard, and stretching towards Reliance and Sheridan Street, Greenfield District is easily accessible to other businesses, schools, hospitals, malls, lifestyle centers and transportation. Buildings are also interconnected and lead to MRT stations. It’s a perfect investment for any potential buyer."
+            },
+            {
+                name: "Forum Robinsons",
+                img: "/pwl/pwl-landmark5.jpg",
+                description: "Forum Robinsons (formerly known as Robinsons Place Pioneer), was a shopping mall located in Mandaluyong, Metro Manila, Philippines owned and operated by Robinsons Land. The mall opened on November 17, 2004. It is the 18th mall opened by Robinsons and the first mall in Mandaluyong with a gross floor area of 56,000 square meters (600,000 sq ft). The former name Robinsons Place Pioneer was dubbed after its location, Pioneer Street. Back then, the mall was envisioned to become a one stop shop for everyone in Cybergate Complex which was in turn envisioned to become a cyberhub in the city.In 2010, the mall was renamed to its current name to re-position itself as a cyber lifestyle mall focusing on IT products and to align itself with the vision of the Cybergate Complex."
+            },
+            {
+                name: "Rockwell Power Plant Mall",
+                img: "/pwl/pwl-landmark6.jpg",
+                description: "Rockwell Power Plant Mall, located in Rockwell Center, Makati City, Philippines, is an upscale shopping center that opened in December 2000. It features high-end fashion brands, a variety of dining options, a cinema, and various services like salons and fitness centers. Known for its stylish design, the mall also hosts events and is easily accessible with ample parking."
+            },
+            {
+                name: "Boni station",
+                img: "/pwl/pwl-landmark7.jpg",
+                description: "Boni station is an at-grade Metro Rail Transit station located on the MRT Line 3 system in Mandaluyong. It is named so due to its proximity to Boni Avenue, which is in turn named after the nickname of Bonifacio Javier, a World War II guerilla leader and former mayor of Mandaluyong."
+            },
+        ],
+        amenities: [
+            {
+              name: "Starbucks and McDonald",
+              img: "/paddington/amenity-1.jpg",
+              description: "Enjoy the ease of having popular establishments like Starbucks and McDonald’s right at your doorstep — perfect for quick coffee breaks, casual meals, and meetups with friends. The mall features a stylish, open layout with escalator access and a clean, contemporary design, making it both visually inviting and highly functional."  
+            },
+            {
+              name: "Swimming Pool",
+              img: "/paddington/amenity-2.jpg",
+              description: "Enjoy resort-style living with The Paddington Place’s beautifully designed swimming pool  perfect for relaxing weekends with family and friends. Whether you're looking to unwind or entertain guests, this amenity adds great value for Airbnb hosts seeking to attract short- and long-term renters who want a refreshing, hotel-like experience right at home."  
+            },
+            {
+              name: "World-Class Lobby",
+              img: "/paddington/amenity-3.jpg",
+              description: "Step into elegance with The Paddington Place’s world-class lobby, designed to impress with its modern aesthetics and warm, welcoming vibe. It sets the tone for a luxurious living experience perfect for residents and ideal for Airbnb guests looking for that first-class impression upon arrival."  
+            },
+            {
+              name: "Versatile Function Room",
+              img: "/paddington/amenity-4.jpg",
+              description: "Host your special celebrations in style at The Paddington Place's versatile function room! Perfect for birthdays, weddings, debuts, reunions, and other memorable events, this spacious and elegantly designed venue provides a welcoming atmosphere for your family and friends. Equipped with modern amenities and customizable setups, it ensures a seamless and unforgettable experience for any occasion. Celebrate life’s milestones with comfort and convenience at The Paddington Place!"  
+            },
+        ],
         sitePlan: {
             descriptions: ["Under the Empire East Elite brand, a new four-tower cosmopolitan enclave will soon rise across the ebullient skyline of the Tiger City along Shaw Boulevard – The Paddington Place."],
             img: "/paddington/siteplan.png"
