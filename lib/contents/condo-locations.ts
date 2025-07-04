@@ -1885,7 +1885,28 @@ export const CondoLocations = [
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.9460552691694!2d121.00623187400926!3d14.60214887704093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9e4ec9b87a9%3A0x96ff6c492523d031!2sBulebar%20Magsaysay%2C%20Santa%20Mesa%2C%20Maynila%2C%20Kalakhang%20Maynila!5e0!3m2!1sfil!2sph!4v1688827445235!5m2!1sfil!2sph",
         address: "Santol Extension-Magsaysay Boulevard, Sta. Mesa, Manila",
         landmarks:[],
-        amenities: [],
+        amenities: [
+            {
+                name: "Beautifully Designed Swimming Pool",
+                img: "/covent/amenity-1.jpg",
+                description: "Experience the perfect escape right in the heart of Santa Mesa, Manila with Covent Garden’s beautifully designed swimming pool area. Whether you’re looking to cool off, enjoy quality time with family and friends, or simply lounge under the sun, this relaxing amenity offers something for everyone. Surrounded by lush greenery and stylish seating, it’s the ideal spot for creating unforgettable moments be it a weekend swim, a casual get-together, or a peaceful afternoon retreat."
+            },
+            {
+                name: "Lush Greenery, Soothing Water",
+                img: "/covent/amenity-2.jpg",
+                description: "Step into the beautifully landscaped garden of Covent Garden Santa Mesa, where lush greenery, soothing water features, and open spaces create a truly inviting atmosphere. Perfect for morning strolls, afternoon chats, or simply unwinding with your loved ones, this peaceful sanctuary is designed for relaxation and connection. Enjoy quality time with family and friends in a setting that brings nature closer to home right in the heart of the city."
+            },
+            {
+                name: "Schools, Malls, Hospitals, and Major Business Hubs",
+                img: "/covent/amenity-3.jpg",
+                description: "Covent Garden is a two-tower residential development by Empire East, featuring the South and North Towers located along Magsaysay Boulevard, Santa Mesa, Manila. It offers stylish and comfortable condo units perfect for families, students, and young professionals. Enjoy easy access to schools, malls, hospitals, and major business hubs like Ortigas, Quezon City, and Makati plus walking distance to LRT 2 V. Mapa Station."
+            },
+            {
+                name: "Spacious Living with Studio",
+                img: "/covent/amenity-4.jpg",
+                description: "Enjoy comfortable and spacious living with studio, 1-bedroom, and 2-bedroom units—perfect for singles, couples, or families. Each unit is designed with an open layout, big windows for natural light, and quality finishes, giving you a cozy and functional home in the heart of Manila."
+            },
+        ],
         sitePlan: {
             descriptions: [""],
             img: ""
@@ -1921,8 +1942,49 @@ export const CondoLocations = [
         link: "/residence/the-rochester",
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.8445078352247!2d121.07528357400824!3d14.550882978294153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c6299a193947%3A0x1081accea1bf1f76!2sElisco%20Road%2C%20Pasig%2C%20Kalakhang%20Maynila!5e0!3m2!1sfil!2sph!4v1688827489342!5m2!1sfil!2sph",
         address: "Elisco Road, San Joaquin, Pasig City",
-        landmarks:[],
-        amenities: [],
+        landmarks: [
+            {
+                name: "Shangri-La Plaza",
+                img: "/kasara/kasara-landmark1.jpg",
+                description: "Shangri-La Plaza, located in Mandaluyong City, Metro Manila, Philippines, is a premier shopping and lifestyle destination. Known for its sophisticated architecture, the mall features over 300 shops including luxury and high-street brands, a variety of dining options, state-of-the-art cinemas, and regular cultural events. It's easily accessible via public transport, including the MRT Shaw Boulevard Station, making it a popular spot for shopping, dining, and entertainment."
+            },
+            {
+                name: "Eastwood Mall",
+                img: "/kasara/kasara-landmark2.jpg",
+                description: "Eastwood Mall, located in Eastwood City, Quezon City, Philippines, is part of the Megaworld Corporation's integrated urban development. This upscale mall opened in 2009 and features a variety of local and international retail brands, a diverse range of dining options, and a cinema complex. Its open-air atrium and waterfront promenade offer a pleasant shopping and dining atmosphere. The mall is also known for being pet-friendly and regularly hosts cultural events, making it a popular destination for families and young professionals."
+            },
+            {
+                name: "The Podium",
+                img: "/kasara/kasara-landmark3.jpg",
+                description: "The Podium is a high-end shopping mall located in the Ortigas Center, a major business and commercial district in Metro Manila, Philippines. Jointly developed by SM Prime Holdings and Keppel Land, The Podium was initially opened in 2002 and underwent significant expansion, which was completed in 2017. This expansion greatly enhanced its size and offerings."
+            },
+            {
+                name: "SM Megamall",
+                img: "/kasara/kasara-landmark4.jpg",
+                description: "SM Megamall, located in Metro Manila's Ortigas business district, is one of the largest malls in the Philippines. Owned by SM Prime Holdings, it features over 1,000 shops including international and local brands, department stores, and specialty shops. The mall also offers a variety of dining options, cinemas, a bowling alley, and an ice skating rink. Its Mega Fashion Hall extension brings in high-end retail and upscale dining, along with an IMAX theater. SM Megamall serves as a key community and shopping hub, attracting millions of visitors each year."
+            },
+            {
+                name: "Robinsons Galleria",
+                img: "/kasara/kasara-landmark5.jpg",
+                description: "Robinsons Galleria, situated in Quezon City, Metro Manila, is a well-established shopping destination developed by Robinsons Land Corporation. Opened in 1990, this five-level mall offers a diverse array of retail shops, including fashion, electronics, and specialty stores, alongside dining options ranging from fast food to casual dining. It also features cinemas, a supermarket, and various entertainment facilities. With convenient access to public transportation, Robinsons Galleria remains a bustling hub for shopping, leisure, and entertainment in the area."
+            },
+            {
+                name: "Ortigas Center",
+                img: "/kasara/kasara-landmark6.jpg",
+                description: "Ortigas Center is a central business district located within the joint boundaries of Pasig, Mandaluyong and Quezon City, within the Metro Manila region in the Philippines. With an area of more than 100 hectares (250 acres), it is Metro Manila's second most important business district after the (Makati CBD).It is governed by Ortigas Center Association, Inc."
+            },
+            {
+                name: "Eastwood City in Quezon City",
+                img: "/kasara/kasara-landmark7.jpg",
+                description: "Eastwood City in Quezon City, Philippines, is a 17-hectare mixed-use development known as the country's first cyberpark. It features office towers, residential condos, shopping centers, and entertainment venues, offering a vibrant nightlife and urban living experience. Popular for its comprehensive blend of work, leisure, and residential spaces, Eastwood City is a key destination for young professionals and families."
+            },
+            {
+                name: "BGC, or Bonifacio Global City",
+                img: "/kasara/kasara-landmark8.jpg",
+                description: "BGC, or Bonifacio Global City, is a vibrant district in Taguig City, Metro Manila, known for its modern infrastructure, commercial spaces, and green areas. Developed in the early 2000s, it's a hub for businesses, upscale shopping malls, dining options, and cultural events. With its cosmopolitan atmosphere and strategic location, BGC attracts residents, workers, and visitors seeking a dynamic urban lifestyle in the Philippines."
+            },
+        ],
+        amenities:[],
         sitePlan: {
             descriptions: [""],
             img: ""
@@ -1995,7 +2057,23 @@ export const CondoLocations = [
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.859722443119!2d121.03145077400929!3d14.607065776920509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7d4b6c1318d%3A0xc60eb565a12977dd!2sM.%20Paterno%20%26%20ledesma%2C%20San%20Juan%2C%20Metro%20Manila!5e0!3m2!1sfil!2sph!4v1688827577889!5m2!1sfil!2sph",
         address: "M. Paterno St. cor. Ledesma St., San Juan City.",
         landmarks:[],
-        amenities: [],
+        amenities: [
+            {
+                name: "Beautifully Designed Swimming Pool",
+                img: "/mango-tree/amenity-1.jpg",
+                description: "Experience the perfect escape right in the heart of San Juan City with Mango Tree Residences' beautifully designed swimming pool area. Whether you’re looking to take a refreshing dip, spend quality time with family and friends, or simply relax under the sun, this inviting amenity has something for everyone. Surrounded by lush greenery and stylish lounge areas, it’s the perfect place to create lasting memories—be it for a weekend swim, a casual get-together, or a peaceful afternoon retreat."
+            },
+            {
+                name: "Fitness Center",
+                img: "/mango-tree/amenity-2.jpg",
+                description: "Achieve your fitness goals without leaving home at Mango Tree Residences' fully equipped fitness center. Perfect for your daily workouts, this convenient amenity helps you stay active, healthy, and productive right within your community. Whether you prefer cardio, strength training, or a quick exercise session, everything you need for a balanced lifestyle is just steps away."
+            },
+            {
+                name: "",
+                img: "/mango-tree/amenity-3.jpg",
+                description: "Mango Tree Residences is a two-tower residential development by Empire East, located along M. Paterno Street, San Juan City. Offering studio, 1-bedroom, and 2-bedroom units, it combines modern living with nature-inspired amenities. Enjoy a swimming pool, fitness center, garden lounge, and function room—all in a prime location near Greenhills, top schools, hospitals, and major business hubs. Live comfortably and conveniently in the heart of the city."
+            },
+        ],
         sitePlan: {
             descriptions: [""],
             img: ""
