@@ -2095,41 +2095,41 @@ export const CondoLocations = [
         schematic: "",
     },
     // THE SONOMA
-    // {
-    //     name: 'The Sonoma',
-    //     location: 'Sta. Rosa City',
-    //     type: [''],
-    //     logo: '',
-    //     description: "Blessed with nature's beauty, The Sonoma in Sta. Rosa City, Laguna creates a refreshing community for your family. Surrounded with lush greeneries, a variety of flower-bearing plants, tree-lined roads and wide open spaces, The Sonoma is your modern paradise.",
-    //     // price: 4100000,
-    //     img: [
-    //         "/the-sonoma.jpg",
-    //     ],
-    //     link: "/residence/the-sonoma",
-    //     embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3867.2777277950677!2d121.05869136999574!3d14.237014355417625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd7dfb24f8225d%3A0x4e3e83e3ae1da5a8!2sThe%20Sonoma%20Residences!5e0!3m2!1sfil!2sph!4v1688827639448!5m2!1sfil!2sph",
-    //     address: "Sonoma Blvd, Santa Rosa, Laguna",
-    //     landmarks:[],
-    //     amenities: [],
-    //     sitePlan: {
-    //         descriptions: [""],
-    //         img: ""
-    //     },
-    //     units: [
-    //         {
-    //             name: "",
-    //             image: "",
-    //             units: [
-    //                 {
-    //                     name: "",
-    //                     area: "",
-    //                     price: ""
-    //                 },
-    //             ]
-    //         }
-    //     ],
-    //     visualization: "",
-    //     schematic: "",
-    // },
+    {
+        name: 'The Sonoma',
+        location: 'Sta. Rosa City',
+        type: [''],
+        logo: '',
+        description: "Blessed with nature's beauty, The Sonoma in Sta. Rosa City, Laguna creates a refreshing community for your family. Surrounded with lush greeneries, a variety of flower-bearing plants, tree-lined roads and wide open spaces, The Sonoma is your modern paradise.",
+        // price: 4100000,
+        img: [
+            "/the-sonoma.jpg",
+        ],
+        link: "/residence/the-sonoma",
+        embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3867.2777277950677!2d121.05869136999574!3d14.237014355417625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd7dfb24f8225d%3A0x4e3e83e3ae1da5a8!2sThe%20Sonoma%20Residences!5e0!3m2!1sfil!2sph!4v1688827639448!5m2!1sfil!2sph",
+        address: "Sonoma Blvd, Santa Rosa, Laguna",
+        landmarks:[],
+        amenities: [],
+        sitePlan: {
+            descriptions: [""],
+            img: ""
+        },
+        units: [
+            {
+                name: "",
+                image: "",
+                units: [
+                    {
+                        name: "",
+                        area: "",
+                        price: ""
+                    },
+                ]
+            }
+        ],
+        visualization: "",
+        schematic: "",
+    },
     // CAMBRIDGE
     {
         name: 'Cambridge Village',
