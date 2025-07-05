@@ -247,12 +247,37 @@ const Residence = ({
                                 >{item}</h1>
                             ))}
                         </div>
-                        <div className="md:w-[50%] w-[100%] md:h-[400px] h-[250px] cursor-pointer"
-                        onClick={()=>setOpenDialog({isOpen: true, image: residence.sitePlan?.img})}
-                        >
-                            <img src={residence.sitePlan?.img} 
-                                className='w-full h-full'
-                            />
+                        <div className="flex flex-wrap gap-4">
+                            <div className="relative w-[250px] h-[250px] cursor-pointer"
+                                onClick={()=>setOpenDialog({isOpen: true, image: residence?.sitePlan?.img})}
+                                >
+                                    <Image
+                                    src={residence?.sitePlan?.img}
+                                    alt='img'
+                                    fill
+                                    style={{
+                                        objectFit: "cover",
+                                        objectPosition: "center"
+                                    }}
+                                    className='w-full h-full'
+                                    />
+                                </div>
+                            {residence?.sitePlan?.images && residence.sitePlan?.images?.map((image: string)=> (
+                                <div key={image} className="relative w-[250px] h-[250px] cursor-pointer"
+                                onClick={()=>setOpenDialog({isOpen: true, image: image})}
+                                >
+                                    <Image
+                                    src={image}
+                                    alt='img'
+                                    fill
+                                    style={{
+                                        objectFit: "cover",
+                                        objectPosition: "center"
+                                    }}
+                                    className='w-full h-full'
+                                    />
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>

@@ -1884,7 +1884,38 @@ export const CondoLocations = [
         link: "/residence/covent-garden",
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.9460552691694!2d121.00623187400926!3d14.60214887704093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9e4ec9b87a9%3A0x96ff6c492523d031!2sBulebar%20Magsaysay%2C%20Santa%20Mesa%2C%20Maynila%2C%20Kalakhang%20Maynila!5e0!3m2!1sfil!2sph!4v1688827445235!5m2!1sfil!2sph",
         address: "Santol Extension-Magsaysay Boulevard, Sta. Mesa, Manila",
-        landmarks:[],
+        landmarks:[
+            {
+                name: "Unciano General Hospital",
+                img: "/covent/landmark-1.jpg",
+                description: "Unciano General Hospital - Approx. 1 km away. A trusted private hospital offering comprehensive healthcare services including emergency care, diagnostics, and specialized treatments. Its accessible location makes it a reliable choice for Covent Garden residents in need of quality medical assistance."
+            },
+            {
+                name: "Our Lady of Lourdes Hospital",
+                img: "/covent/landmark-2.png",
+                description: "Our Lady of Lourdes Hospital - Approx. 2.8 km away. One of Manila’s well-established hospitals known for compassionate care and excellent medical services. It has modern facilities, specialized departments, and is part of the Metro Pacific group—making it a dependable healthcare option nearby."
+            },
+            {
+                name: "Ortigas Central Business District",
+                img: "/covent/landmark-3.png",
+                description: "Ortigas Central Business District. Distance: ~3.7 km. One of Metro Manila’s major CBDs, housing top-tier offices, financial institutions, and coworking spaces, along with upscale dining and retail in megamalls like SM Megamall and Shangri-La Plaza. Ideal for professionals seeking a short commute."
+            },
+            {
+                name: "SM City Sta. Mesa",
+                img: "/covent/landmark-4.png",
+                description: "SM City Sta. Mesa -  Approx. 1 km away. A bustling shopping mall featuring retail stores, cinemas, restaurants, and essential services. It’s a go-to destination for shopping, dining, and entertainment just minutes from Covent Garden, perfect for daily convenience and leisure."
+            },
+            {
+                name: "Polytechnic University of the Philippines (PUP Main Campus)",
+                img: "/covent/landmark-5.png",
+                description: "Polytechnic University of the Philippines (PUP Main Campus) -  Approx. 500 meters away. One of the largest and most affordable state universities in the country, offering a wide range of academic programs. Its presence adds a vibrant, youthful energy to the neighborhood and provides easy access to higher education."
+            },
+            {
+                name: "University of the East Ramon Magsaysay Memorial Medical Center",
+                img: "/covent/landmark-6.png",
+                description: "University of the East Ramon Magsaysay Memorial Medical Center (UERMMMC) Approx. 2 km away. A top-tier medical university and hospital that specializes in healthcare education and advanced patient care. Known for producing some of the country’s best medical professionals, it’s a key institution near Covent Garden."
+            },
+        ],
         amenities: [
             {
                 name: "Beautifully Designed Swimming Pool",
@@ -1984,10 +2015,39 @@ export const CondoLocations = [
                 description: "BGC, or Bonifacio Global City, is a vibrant district in Taguig City, Metro Manila, known for its modern infrastructure, commercial spaces, and green areas. Developed in the early 2000s, it's a hub for businesses, upscale shopping malls, dining options, and cultural events. With its cosmopolitan atmosphere and strategic location, BGC attracts residents, workers, and visitors seeking a dynamic urban lifestyle in the Philippines."
             },
         ],
-        amenities:[],
+        amenities:[
+            {
+                name: "Modern Gym",
+                img: "/rochester/amenity-1.jpg",
+                description: "Stay active and live healthy at The Rochester Condo's modern gym in Pasig! Perfect for your daily workout routine, this fully equipped fitness center offers a wide range of exercise machines and free weights to help you stay in shape without leaving the comfort of your community. Whether you're into cardio, strength training, or just looking to break a sweat, this inviting space makes it easy to achieve your fitness goals while enjoying a healthier lifestyle every day."
+            },
+            {
+                name: "Beautifully Landscaped Garden",
+                img: "/rochester/amenity-2.jpg",
+                description: "Experience peace and relaxation at The Rochester Condo's beautifully landscaped garden in Pasig a perfect escape from the city buzz. Surrounded by lush greenery and fresh air, it's an ideal spot for morning walks, quiet reading, or simply unwinding after a busy day. Whether you're spending time alone or with loved ones, this serene garden offers a refreshing space to relax, recharge, and connect with nature right within your community."
+            },
+            {
+                name: "Spacious Basketball Court",
+                img: "/rochester/amenity-3.jpg",
+                description: "Stay active and have fun at The Rochester Condo’s spacious basketball court in Pasig perfect for daily exercise and bonding with family and friends. Whether you're shooting hoops for fitness, playing a friendly game, or teaching the kids new skills, this vibrant outdoor space offers a great way to stay healthy while creating unforgettable moments. Enjoy the game, break a sweat, and make every day an opportunity to move and connect!"
+            },
+            {
+                name: "Beautifully Designed Swimming Pool",
+                img: "/rochester/amenity-4.jpg",
+                description: "Dive into relaxation at The Rochester Condo’s beautifully designed swimming pool in Pasig perfect for creating fun and memorable moments with family and friends. Surrounded by a refreshing ambiance and stylish lounge areas, it’s the ideal spot to cool off, unwind, or simply soak up the relaxing view. Whether it’s a weekend swim, a quick dip after work, or a casual hangout, this inviting pool offers the perfect escape right at your doorstep."
+            },
+        ],
         sitePlan: {
-            descriptions: [""],
-            img: ""
+            descriptions: [
+                ""
+            ],
+            img: "/rochester/site-plan-1.jpg",
+            images: [
+                // "/rochester/site-plan-1.jpg",
+                "/rochester/site-plan-2.jpg",
+                "/rochester/site-plan-3.jpg",
+                "/rochester/site-plan-4.jpg",
+            ]
         },
         units: [
             {
@@ -2019,8 +2079,60 @@ export const CondoLocations = [
         link: "/residence/san-lorenzo-place",
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61791.951046140726!2d120.94624982167971!3d14.542167600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c93d8fe5c703%3A0x1e38613ba018b178!2sSan%20Lorenzo%20Place!5e0!3m2!1sfil!2sph!4v1688827529642!5m2!1sfil!2sph",
         address: "EDSA cor. Chino Roces Ave., Makati City",
-        landmarks:[],
-        amenities: [],
+        landmarks:[
+            {
+                name: "MRT MAGALLANES STATION",
+                img: "/slp/landmark-1.jpg",
+                description: "MRT MAGALLANES STATION - Just ~170 m from the podium, this elevated station on MRT‑3 opened in July 2000. Provides seamless connection to Taft Avenue, Ortigas, and North Avenue, and links directly to San Lorenzo and Alphaland Southgate malls"
+            },
+            {
+                name: "San Lorenzo Place Mall",
+                img: "/slp/landmark-2.jpg",
+                description: "San Lorenzo Place Mall -  A 3‑level, resident-focused mall integrated at podium level with ample parking, grocery, pharmacy, salon, gym, clinic, and F&B outlets. Known for clean, relaxed atmosphere and convenience for everyday needs ."
+            },
+            {
+                name: "Alphaland Southgate Mall",
+                img: "/slp/landmark-3.png",
+                description: "Alphaland Southgate Mall is just across Chino Roces Avenue from San Lorenzo Place. It offers three levels of retail space with a supermarket, fashion stores, restaurants, cafés, and home improvement shops. The mall also features a rooftop dining area with scenic city views, making it a convenient spot for shopping, dining, and relaxation."
+            },
+            {
+                name: "Glorietta (Ayala Center)",
+                img: "/slp/landmark-4.png",
+                description: "Glorietta (Ayala Center) is a popular shopping and entertainment mall located about 1.25 km from San Lorenzo Place, Makati. It features a wide range of shops, restaurants, cinemas, and department stores, offering everything from fashion and gadgets to dining and leisure. Connected to nearby malls like Greenbelt and SM Makati, Glorietta is a convenient destination for shopping, dining, and entertainment all in the heart of Makati’s business district."
+            },
+            {
+                name: "Salcedo Park & Weekend Market",
+                img: "/slp/landmark-5.png",
+                description: "Salcedo Park & Weekend Market is a well-loved green space located about 1 km from San Lorenzo Place in Salcedo Village, Makati. This 0.7-hectare park serves as a peaceful spot for relaxation, jogging, and family time amidst the busy city. Every Saturday, the park transforms into the lively Salcedo Community Market, one of Makati’s most popular weekend markets. It features: Fresh local produc, gourmet food and international delicacies, homemade and organic products, artisan crafts, flowers, and gift items. The market is also a hub for art exhibits and cultural events, attracting food lovers, families, and tourists alike. With its combination of green space and vibrant community activities, Salcedo Park & Market offers a perfect weekend escape just minutes from San Lorenzo Place."
+            },
+            {
+                name: "Makati Medical Center",
+                img: "/slp/landmark-6.png",
+                description: "Makati Medical Center is a top hospital located just 12 minutes from San Lorenzo Place, Makati. It offers advanced healthcare services, including emergency care, specialist consultations, diagnostics, and surgery. Known for its world-class facilities and expert doctors, it provides quality medical care for individuals and families in the heart of the city."
+            },
+        ],
+        amenities: [
+            {
+                name: "Beautifully Designed Swimming Pool",
+                img: "/slp/amenity-1.jpg",
+                description: "Experience the luxury lifestyle at San Lorenzo Place, Makati, where you can unwind and create lasting memories with family and friends at the beautifully designed swimming pool. Perfect for relaxation or fun get-togethers, this exclusive amenity offers a refreshing escape right in the heart of the city. Situated in a prime Makati location, San Lorenzo Place combines convenience and elegance bringing you closer to everything that matters."
+            },
+            {
+                name: "Well-designed Basketball Court",
+                img: "/slp/amenity-2.jpg",
+                description: "Enjoy an active and exciting lifestyle at San Lorenzo Place, Makati with its well-designed basketball court , perfect for friendly games and bonding moments with family and friends. This exclusive amenity adds to the uxurious living experience in a prime Makati location, where convenience meets leisureright at y our doorstep."
+            },
+            {
+                name: "Beautifully Landscaped Garden Area",
+                img: "/slp/amenity-3.jpg",
+                description: "Discover a peaceful retreat in the heart of the city at San Lorenzo Place, Makati with its beautifully landscaped garden area the perfect spot to relax, unwind, and spend quality time with family and friends. Surrounded by greenery and fresh air, this serene space complements the luxurious lifestyle of the community, all set within a prime Makati location close to everything you need."
+            },
+            {
+                name: "",
+                img: "/slp/amenity-4.jpg",
+                description: "San Lorenzo Place, Makati is a luxurious condominium located in a prime location right along EDSA, directly connected to MRT Magallanes Station for ultimate convenience. This modern development features 4 residential towers and an integrated mall, offering everything you need just steps away. Residents can enjoy top-notch amenities including a swimming pool, basketball court, fitness gym, landscaped gardens, and function rooms—perfect for spending quality time with family and friends. With its unbeatable location and complete lifestyle features, San Lorenzo Place offers the best of city living in the heart of Makati."
+            },
+        ],
         sitePlan: {
             descriptions: [""],
             img: ""
@@ -2056,7 +2168,38 @@ export const CondoLocations = [
         link: "/residence/mango-tree-residence",
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.859722443119!2d121.03145077400929!3d14.607065776920509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7d4b6c1318d%3A0xc60eb565a12977dd!2sM.%20Paterno%20%26%20ledesma%2C%20San%20Juan%2C%20Metro%20Manila!5e0!3m2!1sfil!2sph!4v1688827577889!5m2!1sfil!2sph",
         address: "M. Paterno St. cor. Ledesma St., San Juan City.",
-        landmarks:[],
+        landmarks:[
+            {
+                name: "UERM Memorial Medical Center", 
+                img: "/mango-tree/landmark-1.png",
+                description: "UERM Memorial Medical Center Distance: ~1.5 km from Mango Tree Residences UERM is a well-known tertiary hospital and teaching facility located along Aurora Boulevard, Quezon City. It offers 24/7 emergency services, specialized treatments, diagnostic tests, and compassionate patient care. As the medical school of the University of the East Ramon Magsaysay, it is also a leading center for medical education and research, making it a trusted healthcare choice for families and individuals."
+            },
+            {
+                name: "Cardinal Santos Medical Center", 
+                img: "/mango-tree/landmark-2.png",
+                description: "Cardinal Santos Medical Center Distance: ~1.54 km A private hospital known for high-quality care, with full-service departments including cardiology, oncology, and women’s health. The ICU and surgical wards are frequently cited for excellent service ."
+            },
+            {
+                name: "Ortigas Central Business District", 
+                img: "/mango-tree/landmark-3.png",
+                description: "Ortigas Central Business District Distance: ~3.7 km. One of Metro Manila’s major CBDs, housing top-tier offices, financial institutions, and coworking spaces, along with upscale dining and retail in megamalls like SM Megamall and Shangri-La Plaza. Ideal for professionals seeking a short commute ."
+            },
+            {
+                name: "Araneta Center (Cubao)", 
+                img: "/mango-tree/landmark-4.png",
+                description: "Araneta Center (Cubao) Distance: ~2.7 km. An established mixed-use area in Quezon City featuring major transit (LRT/MRT), commercial buildings, BPO offices, and entertainment venues like Gateway Mall and Smart Araneta Coliseum"
+            },
+            {
+                name: "Robinsons Magnolia", 
+                img: "/mango-tree/landmark-5.png",
+                description: "Robinsons Magnolia Distance: ~1 km. A mid-sized, family-friendly mall with supermarkets, cinemas, and a curated selection of retail and dining outlets. It caters to daily necessities as well as lifestyle and leisure options ."
+            },
+            {
+                name: "Greenhills Shopping Center", 
+                img: "/mango-tree/landmark-6.png",
+                description: "Greenhills Shopping Center Distance: ~1.75 km. A sprawling, iconic mixed-use retail complex spanning 16 hectares, home to over 2,000 shops, bargain bazaars, specialty boutiques, plus cinemas and restaurants. Known as a prime destination for varied shopping experiences including electronics, fashion, and antiques ."
+            },
+        ],
         amenities: [
             {
                 name: "Beautifully Designed Swimming Pool",
