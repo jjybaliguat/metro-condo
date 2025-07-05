@@ -141,7 +141,7 @@ const Navbar = () => {
                   containerStyles='bg-primary p-2 text-[10px] md:text-[1rem] text-white rounded-full hover:scale-105'
                   handleClick={()=>router.push("/property")}
                 />
-                {isAuth ? (
+                {/* {isAuth ? (
                     <ProfileDropDown
                     style='md:flex hidden' 
                     />
@@ -152,7 +152,7 @@ const Navbar = () => {
                         Sign in
                     </button>
                 )
-                }
+                } */}
                 {
                   showMenu ? 
                   <XMarkIcon 
