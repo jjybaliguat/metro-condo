@@ -21,10 +21,10 @@ const NavLinks = [
     title: "HOME",
     href: "/",
   },
-  {
-    title: "BUILDERS",
-    href: "/builders",
-  },
+  // {
+  //   title: "BUILDERS",
+  //   href: "/builders",
+  // },
   // {
   //   title: "PROJECTS",
   //   href: "/projects",
