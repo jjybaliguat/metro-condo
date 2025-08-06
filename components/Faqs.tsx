@@ -97,18 +97,18 @@ export default function Faqs() {
                     <Disclosure as="div" className="mt-2" defaultOpen={index == 0}>
                     {({ open }) => (
                         <>
-                        <Disclosure.Button className="flex w-full justify-between rounded-lg shadow-lg bg-white px-4 py-4 text-left text-md font-medium 
+                        <Disclosure.Button className="flex w-full justify-between rounded-lg shadow-lg bg-white px-4 py-4 text-left font-medium 
                         focus:outline-none focus-visible:ring focus-visible:ring-primary focus-visible:ring-opacity-75">
-                            <span>{faq.question}</span>
+                            <span className='text-gray-700 leading-relaxed text-sm md:text-base'>{faq.question}</span>
                             <ChevronUpIcon
                             className={`${
                                 open ? 'rotate-180 transform' : ''
                             } h-5 w-5 text-black`}
                             />
                         </Disclosure.Button>
-                        <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                        <Disclosure.Panel className="px-4 pt-4 pb-2">
                             {faq.answers.map((answer)=> (
-                                <p>{answer}</p>
+                                <p className='text-gray-700 leading-relaxed text-sm md:text-base'>{answer}</p>
                             ))}
                         </Disclosure.Panel>
                         </>
@@ -120,18 +120,18 @@ export default function Faqs() {
                     <Disclosure as="div" className="mt-2" defaultOpen={index == 0}>
                     {({ open }) => (
                         <>
-                        <Disclosure.Button className="flex w-full justify-between rounded-lg shadow-lg bg-white px-4 py-4 text-left text-md font-medium 
+                        <Disclosure.Button className="flex w-full justify-between rounded-lg shadow-lg bg-white px-4 py-4 text-left font-medium 
                         focus:outline-none focus-visible:ring focus-visible:ring-primary focus-visible:ring-opacity-75">
-                            <span>{faq.question}</span>
+                            <span className='text-gray-700 leading-relaxed text-sm md:text-base'>{faq.question}</span>
                             <ChevronUpIcon
                             className={`${
                                 open ? 'rotate-180 transform' : ''
                             } h-5 w-5 text-black`}
                             />
                         </Disclosure.Button>
-                        <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                        <Disclosure.Panel className="px-4 pt-4 pb-2">
                             {faq.answers.map((answer)=> (
-                                <p>{answer}</p>
+                                <p className='text-gray-700 leading-relaxed text-sm md:text-base'>{answer}</p>
                             ))}
                         </Disclosure.Panel>
                         </>

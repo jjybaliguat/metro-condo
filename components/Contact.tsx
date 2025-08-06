@@ -43,7 +43,7 @@ const Contact = () => {
             <h1 className='section-title'>Contact Us</h1>
             <div className="flex flex-col-reverse md:flex-row items-center gap-5 mx-auto w-full max-w-[90vw] mt-5">
                 {/* Location Section */}
-                <div className='flex flex-col gap-5 md:w-[35%] w-[90%] bg-[#e8e8e8] shadow-lg p-6 rounded-lg'>
+                <div className='flex flex-col gap-5 md:w-[35%] w-[90%] bg-[#e8e8e8] shadow-lg p-6 rounded-lg text-gray-700 leading-relaxed'>
                     <div className='flex md:flex-row flex-col md:items-center md:gap-5 gap-1'>
                         <div className='h-[2rem] w-[2rem] rounded-full bg-primary p-1'>
                             <MapPinIcon className="h-full w-full text-white" />

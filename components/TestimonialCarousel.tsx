@@ -41,8 +41,8 @@ const TestimonialCarousel = ({
               <div key={testimony._id} className="embla__slide2 w-full"> 
                 <div className='w-full flex flex-col-reverse md:flex-row gap-4 p-5 md:justify-between items-center'>
                   <div className='flex flex-col gap-4 md:gap-8 md:max-w-[60%]'>
-                    <h1 className='md:text-[1.5rem] text-center md:text-left'>"{testimony.testimony}"</h1>
-                    <p className='md:text-[1.2rem] font-bold text-center md:text-left'>{testimony.name}</p>
+                    <h1 className='md:text-[1.5rem] text-center md:text-left text-gray-700 leading-relaxed'>"{testimony.testimony}"</h1>
+                    <p className='md:text-[1.2rem] font-bold text-center md:text-left text-gray-700 leading-relaxed'>{testimony.name}</p>
                   </div>
                   <div className='relative h-[180px] w-[180px] md:h-[300px] md:w-[300px] rounded-full'>
                   <Image

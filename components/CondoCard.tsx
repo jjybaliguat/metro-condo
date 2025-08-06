@@ -72,7 +72,7 @@ const CondoCard = ({
         </div>
       </Link>
       <div className='condo-description'>
-        <p className='md:text-[14px] text-[1rem] text-justify'>{description}</p>
+        <p className='text-gray-700 leading-relaxed text-sm md:text-base'>{description}</p>
       </div>
       <div className='flex flex-between gap-5 mt-3'>
         <div className='flex flex-col'>
