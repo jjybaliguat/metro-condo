@@ -78,9 +78,9 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-2">
           <p className="text-center md:text-left">© 2023 Metro Condo Living. All rights reserved.</p>
           <div className="flex gap-4">
-            <Link href="/terms" className="hover:text-gray-300 transition">TERMS OF USE</Link>
+            <Link href="/terms-of-use" className="hover:text-gray-300 transition">TERMS OF USE</Link>
             <span>|</span>
-            <Link href="/policy" className="hover:text-gray-300 transition">PRIVACY POLICY</Link>
+            <Link href="/privacy-policy" className="hover:text-gray-300 transition">PRIVACY POLICY</Link>
           </div>
         </div>
       </div>
