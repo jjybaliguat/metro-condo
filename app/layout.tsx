@@ -32,7 +32,11 @@ export default function RootLayout({
         <ReduxProvider>
           <Navbar />
           {children}
-          <script defer src="https://app.fastbots.ai/embed.js" data-bot-id="cmewa2zgn03wapg1llwknmg7i"></script>
+          <Script
+            src="https://app.fastbots.ai/embed.js"
+            strategy="lazyOnload"
+            data-bot-id="cmewa2zgn03wapg1llwknmg7i"
+          />
           {/* <Link
           href="/contact"
             className='flex items-center gap-1 origin-bottom-right fixed bottom-1 right-0 rounded-[14px]
