@@ -4,6 +4,7 @@ import { ReduxProvider } from '@/redux/provider'
 import { PencilSquareIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import {headers} from 'next/headers'
+import Script from "next/script";
 
 export const metadata = {
   title: 'Condo for sale or rent in Pasig, San Juan and Mandaluyong.',
@@ -31,6 +32,7 @@ export default function RootLayout({
         <ReduxProvider>
           <Navbar />
           {children}
+          <script defer src="https://app.fastbots.ai/embed.js" data-bot-id="cmewa2zgn03wapg1llwknmg7i"></script>
           {/* <Link
           href="/contact"
             className='flex items-center gap-1 origin-bottom-right fixed bottom-1 right-0 rounded-[14px]
